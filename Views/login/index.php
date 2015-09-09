@@ -31,7 +31,7 @@
 		<script
 			src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
-		<script src="views/login/js/index.js"></script>
+		<script src="Views/login/js/index.js"></script>
 
 </body>
 </html>
