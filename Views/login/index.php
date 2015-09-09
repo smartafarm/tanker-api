@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <title>Smart Farm Login</title>
-<link rel="stylesheet" href="views/login/css/style.css">
+<link rel="stylesheet" href="Views/login/css/style.css">
 </head>
 
 <body>
 	<nav class="navbar navbar-default">
 		<div class="container-fluid">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="#"> <img alt="Brand" src="views/login/smartfarm.png">
+				<a class="navbar-brand" href="#"> <img alt="Brand" src="Views/login/smartfarm.png">
 				</a>
 			</div>
 		</div>
