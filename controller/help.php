@@ -3,6 +3,8 @@
 class help extends controller{
 	function __construct() {
 		parent::__construct();
-		echo 'This is controller/help <br />';
+	}
+	public function index(){
+		$this->view->render('help/index');
 	}
 }

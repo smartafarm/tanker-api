@@ -12,4 +12,10 @@ require 'libs/controller.php';										// This initialtes the controller for UR
 require 'libs/view.php';											// This will trigger the view for the URL
 require 'libs/model.php';											// This initiates business logic of website
 
+//CONFIGURATION
+require 'config/paths.php';
+
+// Libraries
+require 'libs/database.php';
+require 'libs/session.php';
 $app = new bootstrap();

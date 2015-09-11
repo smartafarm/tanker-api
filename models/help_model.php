@@ -1,5 +1,5 @@
 <?php
-class help_model {
+class help_model extends Model{
 	function __construct() {
 		
 	}
