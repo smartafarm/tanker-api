@@ -28,6 +28,7 @@
  		 $controller = new error();
  		 return false;
  		}
+ 		
  		$controller = new $url[0];
  		$controller->loadModel($url[0]);
  		

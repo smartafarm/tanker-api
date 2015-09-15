@@ -1,7 +1,9 @@
 <?php
 class Model {
 	
-	function __construct() {
-		$this->db =  new database();	
+	public function __construct( ) {
+		//$this->connection = new MongoClient ();
+		//$this->db = $this->connection->smartfarm;	
+		
 	}
 }

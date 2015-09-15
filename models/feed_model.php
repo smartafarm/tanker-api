@@ -11,14 +11,14 @@
 class feed_model extends Model{
 	function __construct() {
 		$this->connection = new MongoClient ();
-		$this->db = $this->connection->smartfarm;
+		$this->db = $this->connection->smartfarm;		
 		$this->param = array(0 => "DEVICE" , 1=>"SENSOR COUNT" ,2=>"LAT",3=>"LONG",4=>"TIME STAMP");
 	}
 
 	public function getStatus(){
 	if ($_SERVER['REQUEST_METHOD'] == "POST"){	
 		$args =$_POST;
-		
+	
 		if (empty($args["query"])) {												// IF no string received
 			$msg  =		"204 No Content"; 
 			return 		$msg;
@@ -47,24 +47,27 @@ class feed_model extends Model{
 					}
 					
 					$s_count = (int)$r_string[1];
-					echo count($r_string)."<br>";
+					
 					$data =array(
 					"did"		=> $r_string[0],		
 					"s_count"	=>(int)$r_string[1],
 					"lat" 		=>$r_string[2],
 					"long" 		=>$r_string[3],
-					"dt"		=>strtotime($r_string[4])
+					"dt"		=>$r_string[4]
 							
 					);
-					for ($i =5;$i<count($r_string)-2;$i++ )
+					for ($i =5;$i<count($r_string)-1;$i++ )
 					{ 
 						$key = substr($r_string[$i], 0,3);									// Breaking string for readings
 						$value =substr($r_string[$i], 3,strlen($r_string[$i]));				// Breaking string for value
-						$data[$key] = $value;
+						$data[$key] = $value;						
+						
 					}
-					
 				
-					return $data;
+					$collection = $this->db->deviceData;
+					$collection->insert($data);
+					$msg = "201 Created";
+					return $msg;
 					
 					
 				}// end of device checking IF

@@ -5,7 +5,8 @@ class feed extends controller{
 	}
 	public function index(){
 		$this->view->msg = $this->model->getStatus();
-		$this->view->render('feed/index',false);
+		echo  json_encode($this->view->msg);
+		
 	}
 	
 }

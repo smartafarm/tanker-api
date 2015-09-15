@@ -1,3 +1,4 @@
 <?php
-print_r ($this->msg);
+'$data['response'] = $this->msg;
+'echo json_encode($data);
 ?>	
