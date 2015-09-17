@@ -3,6 +3,7 @@ $(function() {
 	var poll = function(){
 		$.ajax({
 	        type: "GET",
+	        cache: false,
 	        url: "dashboard/getUpdate",
 	        datatype:'JSON',
 	        success: function(data){
