@@ -17,7 +17,7 @@
 		{
 			foreach ($this->css as $css)
 			{
-				echo '<link rel="stylesheet" href="'.URL.'views/'.$css.'">';
+				echo '<link rel="stylesheet" href="'.URL.'Views/'.$css.'">';
 			}
 		}
 	?>
