@@ -1,3 +1,3 @@
 <?php
-define ('URL','/');
+define ('URL','');
 define('PROJECT_NAME' , 'SMARTAFARM');

@@ -65,9 +65,13 @@ class feed_model extends Model{
 					}
 				
 					$collection = $this->db->deviceData;
+					$options = array('fsync'=>\TRUE);
+					$collection->insert($data,$options);
+					$collection = $this->db->pollStatus;
 					$collection->insert($data);
 					$msg = "201 Created";
-					return $msg;
+					//
+					echo json_encode($msg);
 					
 					
 				}// end of device checking IF
