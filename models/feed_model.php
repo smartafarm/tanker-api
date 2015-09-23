@@ -9,9 +9,8 @@
  *  1.0 - Inititalizing the file to receive the request
  */
 class feed_model extends Model{
-	function __construct() {
-		$this->connection = new MongoClient ();
-		$this->db = $this->connection->smartfarm;		
+	function __construct(database $database) {
+		parent::__construct();		
 		$this->param = array(0 => "DEVICE" , 1=>"SENSOR COUNT" ,2=>"LAT",3=>"LONG",4=>"TIME STAMP");
 	}
 
@@ -72,15 +71,14 @@ class feed_model extends Model{
 					$msg = "201 Created";
 					//
 					echo json_encode($msg);
-					
-					
+										
 				}// end of device checking IF
 			}
 	}
 	else
 	{
 		$msg = "400 BAD REQUEST";
-		return $msg;	
+		echo $msg;	
 	}
 	
 	}// end of get status

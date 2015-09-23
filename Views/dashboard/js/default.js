@@ -1,99 +1,91 @@
 
 $(function() {
+
+	$.ajax({
+        type: "GET",
+        url: "dashboard/getDevices",
+        datatype:'json',
+        async:true,
+        success: function(data){
+            var result =data;            
+           
+            addDevice(result);
+            addReadings(result);
+            
+    		$( "#device-data" ).accordion({heightStyle: "content",});// end of accordion inside ajax
+            
+        }
+    });
+	
+	
+	setInterval(function(){
+		poll();
+	},10000);
 	var poll = function(){
 		$.ajax({
 	        type: "GET",
 	        cache: false,
 	        url: "dashboard/getUpdate",
-	        datatype:'JSON',
+	        datatype:'json',
 	        success: function(data){
-	        	var result =JSON.parse(data);
+	        	var result =data;
 	        	console.log (result);
-	        	if (result[0].flag == 1){
-	        		
-	        	 for (var i = 0; i < result.length; i++)
-	     		{
-	        		
-		        		 var d = new Date(result[i].dt); 
-		        		 
-		        		 
-		        		 var newElement = $('<div class="highlight" ><h4> Data Feeded : ' + d.getDate() + '-'+ (d.getMonth()+1)+ '-'+ d.getFullYear()+' Time : '+ d.toLocaleTimeString() +'</h4>' 
-						     				+'<p> Readings:'+
-						     				'<p>Temprature 1 : ' + result[i].T01 + '°C Level 1 : ' + result[i].L01 +' % </p>'+
-						     				'<p>Temprature 2 : ' + result[i].T02 + '°C Level 2 : ' + result[i].L02 +' % </p>'
-						     				+'</p></div>'	);
-		        	if(i != 0){
-		        		 $.notify({
-		        				message: 'New readings received from Device '+ result[i].did
-		        			});
-		        		 }
-		             	$('#'+result[i].did+'nodata').remove();
-		     			$('#'+result[i].did).append(newElement);
-		     			
-		     			  setTimeout(function(){
-		     				 newElement.removeClass('highlight');
-	    		          },15000);
-		     					             	
-		     		};
-	            
+	        	if (result['flag'] == 1){
+	        		addReadings(result)
 	        	};
         	}
 	    });
 		
 	};// end of poll
 	
+
+	var addReadings = function(data){
+		var result = data 
+	       for (var i = 0; i < result['readings'].length; i++)
+   			{
+	    	var d = new Date(result['readings'][i].dt);
+           	$('#'+result['readings'][i].did+'nodata').remove();
+           	var html 
+           	if (typeof result['flag'] !== 'undefined') {	    		   
+	   		    	html = '<div class="highlight">';	
+	   		    	$.notify({message: 'New readings received from Device '+ result['readings'][i].did});	     			  
+		   		}
+           	else{
+		   			html = '<div>'
+		   		}
+           	
+           	html = html + '<h4> Data Feeded : ' + d.getDate() + '-'+ (d.getMonth()+1)+ '-'+ d.getFullYear()+' Time : '+ d.toLocaleTimeString() +'</h4>' 
+   				+'<p> Readings:'+
+   				'<p>Temprature 1 : ' + result['readings'][i].T01 + '°C Level 1 : ' + result['readings'][i].L01 +' % </p>'+
+   				'<p>Temprature 2 : ' + result['readings'][i].T02 + '°C Level 2 : ' + result['readings'][i].L02 +' % </p>'
+   				+'</p>'+
+   				'</div>'
+   				
+   			$('#'+result['readings'][i].did).append(html);
+          		
+       		
+   		};
+	};// end of add readings
 	
 	
-	$.ajax({
-        type: "GET",
-        url: "dashboard/getDevices",
-        datatype:'JSON',
-        success: function(data){
-            var result =JSON.parse(data);
-            for (var i = 0; i < result.length; i++)
-    		{
-    			$('#device-data').append(
+	
+	
+	
+	
+	var addDevice = function(data){
+		var result = data 
+		 for (var i = 0; i < result['device'].length; i++)
+ 		{
+ 			$('#device-data').append(
 					
 					'<div class="well well-sm"><h3>Device ' + (i+1) +'</h3></div>'
-					+'<div id='+result[i]._id+'><p id="'+result[i]._id+'nodata">No Data Feeded</p></div>'
-    					
-    			);
-    		}
-            
-        }
-    });
-	$.ajax({
-        type: "GET",
-        url: "dashboard/getReadings",
-        datatype:'JSON',
-        success: function(data){
-            var result =JSON.parse(data);
-            for (var i = 0; i < result.length; i++)
-    		{
-            	var d = new Date(result[i].dt); 
-            	$('#'+result[i].did+'nodata').remove();
-    			$('#'+result[i].did).append(
-    				'<h4> Data Feeded : ' + d.getDate() + '-'+ (d.getMonth()+1)+ '-'+ d.getFullYear()+' Time : '+ d.toLocaleTimeString() +'</h4>' 
-    				+'<p> Readings:'+
-    				'<p>Temprature 1 : ' + result[i].T01 + '°C Level 1 : ' + result[i].L01 +' % </p>'+
-    				'<p>Temprature 2 : ' + result[i].T02 + '°C Level 2 : ' + result[i].L02 +' % </p>'
-    				+'</p>'	
-    			);
-            	
-    		};
-    		$( "#device-data" ).accordion({heightStyle: "content",
-    			activate: function(event, ui) {
-    				
-    		        
-    		  }
-    		});// end of accordion inside ajax
-        }
-    });
+					+'<div id='+result['device'][i]._id+'><p id="'+result['device'][i]._id+'nodata">No Data Feeded</p></div>'
+ 					
+ 			);
+ 		}
+	};// end of add readings
 	
-	setInterval(function(){
-		poll();
-	},10000);
-
+	
 });
 
 

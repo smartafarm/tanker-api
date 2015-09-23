@@ -13,8 +13,7 @@
 		</div>
 		<div class="navbar-collapse collapse">
 			<ul class="nav navbar-nav">
-				<li><a href="dashboard">Dashboard </a></li>
-				<li><a href="index">Index </a></li>
+				<li><a href="dashboard">Dashboard </a></li>				
 				<li><a href="http://ec2-52-64-140-205.ap-southeast-2.compute.amazonaws.com/" target="_blank">Feeder </a></li>
 				
 			</ul>

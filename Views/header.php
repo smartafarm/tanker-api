@@ -17,6 +17,7 @@
 		{
 			foreach ($this->css as $css)
 			{
+				// loading all css files of current view
 				echo '<link rel="stylesheet" href="'.URL.'Views/'.$css.'">';
 			}
 		}

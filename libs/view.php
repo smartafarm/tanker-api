@@ -5,12 +5,7 @@
  */
 
 class View {
-	function __construct() {
-		/*
-		 * @desc - constructor of the main view class
-		 */
-		
-	}// end of constructor
+
 	
 	public function render($name,$noInclude=true) {
 	/*

@@ -17,6 +17,7 @@
 		{
 			foreach ($this->js as $js)
 			{
+				// loading the js files of current view
 				echo '<script type="text/javascript" src="'.URL.'Views/'.$js.'"></script>';
 			}
 		}

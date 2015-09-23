@@ -18,4 +18,9 @@ require 'config/paths.php';
 // Libraries
 require 'libs/database.php';
 require 'libs/session.php';
+
+// Initializing session
+Session::init();
+
+// initializing applciation
 $app = new bootstrap();

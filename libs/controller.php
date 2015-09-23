@@ -8,8 +8,11 @@
  * 1.0 - initiated the class and extended it to its sub classes
  */
 class controller {
+	
 	function __construct($check = true) {
 		$this->view =  new View();
+		
+		// Setting session if the credentials are true and destroying if false
 		if ($check) {
 			Session::init();
 			$logged = Session::get('loggedIn');
@@ -18,16 +21,20 @@ class controller {
 				header('Location: login');
 				exit;
 			}
+			
 		}
+		
 		
 	}
 	public function loadModel($name) {
-		$path = 'models/'.$name.'_model.php';
+		// loading the model if it exists
+		$path = 'models/'.$name.'_model.php';		
 		if (file_exists($path)) {
 			require $path;
-		
 			$modelName = $name.'_model';
-			$this->model = new $modelName ();
+			
+			// passing database instance to each model
+			$this->model = new $modelName (new database());
 		}
 	}
 }
