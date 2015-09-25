@@ -3,7 +3,7 @@ $(function() {
 
 	$.ajax({
         type: "GET",
-        url: "dashboard/getDevices",
+        url: "fetch/getDevices",
         datatype:'json',
         async:true,
         success: function(data){
@@ -25,7 +25,7 @@ $(function() {
 		$.ajax({
 	        type: "GET",
 	        cache: false,
-	        url: "dashboard/getUpdate",
+	        url: "fetch/getUpdate",
 	        datatype:'json',
 	        success: function(data){
 	        	var result =data;
