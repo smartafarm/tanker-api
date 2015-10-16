@@ -11,19 +11,7 @@ class controller {
 	
 	function __construct($check = true) {
 		$this->view =  new View();
-		
-		// Setting session if the credentials are true and destroying if false
-		if ($check) {
-			Session::init();
-			$logged = Session::get('loggedIn');
-			if($logged ==false){
-				Session::destroy();
-				header('Location: login');
-				exit;
-			}
-			
-		}
-		
+		Session::init();			
 		
 	}
 	public function loadModel($name) {

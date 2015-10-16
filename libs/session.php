@@ -10,6 +10,7 @@ class session {
 	public static function init()
 	{
 		@session_start();
+		//$_SESSION["TOKENS"] =array();
 	}
 	public static function set($key,$value){
 		// sets the value in Session Global as per the request by server

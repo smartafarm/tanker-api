@@ -19,7 +19,24 @@ class login extends controller{
 		/*
 		 * responds to the login credintials
 		 */
-		$check = $this->model->check($_POST['username'],$_POST['password']);
+		$data = json_decode(file_get_contents('php://input'), true);		
+		$check = $this->model->check($data);
+		
+	}
+	public function validate(){
+		/*
+		 * responds to the login credintials
+		 */
+		$data = json_decode(file_get_contents('php://input'), true);		
+		$check = $this->model->validate($data);
+		
+	}
+	public function destroy(){
+		/*
+		 * responds to the login credintials
+		 */
+		$data = json_decode(file_get_contents('php://input'), true);		
+		$check = $this->model->destroy($data);
 		
 	}
 }

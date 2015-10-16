@@ -52,7 +52,7 @@ class feed_model extends Model{
 					"s_count"	=>(int)$r_string[1],
 					"lat" 		=>$r_string[2],
 					"long" 		=>$r_string[3],
-					"dt"		=>$r_string[4]
+					"dt"		=> new MongoDate(strtotime($r_string[4]))
 							
 					);
 					for ($i =5;$i<count($r_string)-1;$i++ )

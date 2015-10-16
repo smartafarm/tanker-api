@@ -39,7 +39,7 @@ class fetch_model extends Model{
 		echo json_encode( $result , JSON_PRETTY_PRINT);
 	}
 	
-	function getUpdate($timestamp) {
+	function getUpdate() {
 	
 		/*
 		 *
@@ -48,11 +48,11 @@ class fetch_model extends Model{
 		 *
 		 */
 	
-		/*define('MESSAGE_POLL_MICROSECONDS',500000);
+		define('MESSAGE_POLL_MICROSECONDS',500000);
 		define('MESSAGE_TIMEOUT_SECONDS',11);
 		
-		
-		
+		$collection = $this->db->pollStatus;
+		$readings = $collection->find();		
 		set_time_limit(MESSAGE_TIMEOUT_SECONDS);
 		$time_start = microtime(true); 	 
 		$counter = MESSAGE_TIMEOUT_SECONDS;
@@ -75,27 +75,21 @@ class fetch_model extends Model{
 			$counter -= MESSAGE_POLL_MICROSECONDS/1000000;
 			}
 			
-		}*/
-			
-			
-			$time =  new MongoDate($timestamp);
-			//find({"dt" : { $gte : $time }});
-			$collection = $this->db->deviceData;			
-			$condition = array('dt' => array('$lte'=>$time) );	
-			$readings = $collection->find($condition);
+		}
+			$readings = $collection->find();
 			$result = Array();
 			$result["readings"] = array();
 	
 			foreach ( $readings as $id => $value )
 			{
-			//	array_push($result["readings"], $value);
-				print_r($value)			;
+				array_push($result["readings"], $value);
+				$delID = $value['_id'];
 			//	$collection->remove(array('_id' => new MongoId($delID)));
 			}
 				
 		
 		header('Content-Type: application/json');
-		//echo json_encode($result,JSON_PRETTY_PRINT);
+		echo json_encode($result,JSON_PRETTY_PRINT);
 	}
 
 	function testSocket() {
