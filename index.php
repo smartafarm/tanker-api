@@ -19,6 +19,10 @@ require 'config/paths.php';
 require 'libs/database.php';
 require 'libs/session.php';
 
+//Authentication
+require 'libs/JWT.php';
+
+
 // Initializing session
 Session::init();
 

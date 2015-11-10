@@ -1,5 +1,5 @@
 <?php
-class fetch extends controller{
+class update extends controller{
 	protected $bearer;
 	function __construct() {
 		$reqHeader =apache_request_headers();
@@ -21,21 +21,22 @@ class fetch extends controller{
 		}
 	}
 	
-	public function getDevices(){
+	public function deviceStatus(){
 		/*
-		 * get the devices and readings of the deivces
-		 * responds array of Json
+		 * get new status updates
 		 */
-		$reqBearer = $this->bearer;
-		$this->model->getDevices($reqBearer);
+		$data = json_decode(file_get_contents('php://input'), true);
+		$this->model->deviceStatus($data);
+
+		}
+	public function fname(){
+	/*
+	 * get new device name updates
+	 */
+	$data = json_decode(file_get_contents('php://input'), true);
+	$this->model->fname($data);
+
 	}
 
-	public function getUpdate(){
-		// Triggers a notification if new reading has been added.
-		// responds JSON data of reading to ajax poll.
-		$reqBearer = $this->bearer;
-		$this->model->getUpdate($_GET['t'],$reqBearer);
-		
-	}
 	
 }

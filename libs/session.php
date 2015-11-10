@@ -6,6 +6,7 @@
  * 1.0 - Basic session creating functions
  *
  */
+use \Firebase\JWT\JWT;
 class session {
 	public static function init()
 	{
@@ -28,5 +29,25 @@ class session {
 	
 	public static function destroy() {
 		@session_destroy();
+	}
+	public static function validate($token,$bearer) {
+		if(self::get($bearer) != $token)
+		{
+			return false;
+		}else
+		{
+			$decoded =(array) JWT::decode($token, TOKEN_KEY, array('HS256'));
+			$user = $decoded['user'];
+			$validation = self::get($user);
+			if(!$validation) {
+				return false;
+			}elseif($validation != $token){
+				return false;
+			}
+			else{
+				return true;
+			}
+		}
+
 	}
 }// end session class

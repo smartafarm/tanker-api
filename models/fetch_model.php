@@ -8,15 +8,15 @@ class fetch_model extends Model{
 	}
 
 
-	function getDevices() {
+	function getDevices($bearer) {
 		/*
 		 *
 		 * Gets all the devices in the dataBase and passes Json array to the request
 		 *
 		 */
+		
 
-
-		$collection = $this->db->device;
+		$collection = $this->db->DeviceMaster;
 		$collection1 = $this->db->deviceData;
 		$devices = $collection->find();
 		$result = Array();
@@ -25,21 +25,44 @@ class fetch_model extends Model{
 		foreach ( $devices as $id => $device )
 		{
 			$data["_id"] = $device["_id"];
+			$data["name"]	=  $device["EquipName"];
+			$data["Desc"]	=  $device["Description"];
+			$data["Status"]	=  $device["status"];
 			$data["readings"] = array();
 			$readings = $collection1->find(array('did' => $device["_id"]));
+			$index = 0;
 			foreach ($readings as $key => $reading) {
+				/*"_id": {
+                    "$id": "5626da24c2677bcc14000029"
+                },
+                "did": "s123xyz",
+                "s_count": 4,
+                "lat": "lattitude",
+                "long": "longitude",
+                "dt": {
+                    "sec": 1445386788,
+                    "usec": 0
+                },
+                "T01": "1",
+                "T02": "23",
+                "L01": "35",
+                "L02": "45"*/
+
 				array_push($data["readings"],$reading);
+				$data["readings"][$index]["dt"] = date(DATE_ISO8601, $data["readings"][$index]["dt"]->sec);
+				$index++;
 			}
-			array_push($result,$data);
-				
+			array_push($result,$data);	
 		
 		}
-		
+		if(!isset($_SESSION['timestamps'][$bearer])){
+			Session::set('timestamps', array($bearer => date('c')));
+		}
 		header('Content-Type: application/json');
 		echo json_encode( $result , JSON_PRETTY_PRINT);
 	}
 	
-	function getUpdate($timestamp) {
+	function getUpdate($timestamp,$bearer) {
 	
 		/*
 		 *
@@ -47,68 +70,39 @@ class fetch_model extends Model{
 		 * Json array returned
 		 *
 		 */
-	
-		/*define('MESSAGE_POLL_MICROSECONDS',500000);
-		define('MESSAGE_TIMEOUT_SECONDS',11);
+		$lastReadings = Session::get('timestamps');
+		$bearerLastReading = new MongoDate(strtotime($lastReadings[$bearer]));
 		
 		
 		
-		set_time_limit(MESSAGE_TIMEOUT_SECONDS);
-		$time_start = microtime(true); 	 
-		$counter = MESSAGE_TIMEOUT_SECONDS;
-		while($counter>0){
-			if (microtime(true) - $time_start > 10){
-			$readings = $collection->find();
-			if($readings->count() != 0){
-				break;
-			}else{
-				die(http_response_code(408));
-			}
-			}
-			$readings = $collection->find();
-			if($readings->count() != 0){
-				break;
-			}
-			else{
-			usleep(MESSAGE_POLL_MICROSECONDS);
-			clearstatcache();
-			$counter -= MESSAGE_POLL_MICROSECONDS/1000000;
-			}
+			$time =  new MongoDate(strtotime($timestamp));
 			
-		}*/
-			
-			
-			$time =  new MongoDate($timestamp);
+		//	echo $time;
 			//find({"dt" : { $gte : $time }});
 			$collection = $this->db->deviceData;			
-			$condition = array('dt' => array('$lte'=>$time) );	
+			$condition = array('dt' => array(
+				'$gte'=>$bearerLastReading,
+				'$lte'=>$time
+				) 
+			);	
 			$readings = $collection->find($condition);
 			$result = Array();
-			$result["readings"] = array();
-	
+			$result["readings"] = array();	
+			$index = 0;		
 			foreach ( $readings as $id => $value )
 			{
-			//	array_push($result["readings"], $value);
-				print_r($value)			;
-			//	$collection->remove(array('_id' => new MongoId($delID)));
+				array_push($result["readings"], $value);
+				$result["readings"][$index]["dt"] = date(DATE_ISO8601, $result["readings"][$index]["dt"]->sec);
+				$index++;			
 			}
 				
-		
+		Session::set('timestamps', array($bearer => $timestamp));
 		header('Content-Type: application/json');
-		//echo json_encode($result,JSON_PRETTY_PRINT);
+		echo json_encode($result,JSON_PRETTY_PRINT);
 	}
 
-	function testSocket() {
 	
-		require 'bin/chat.php';
-
-		/* Create new queue object */
-		$queue = new ZMQSocket(new ZMQContext(), ZMQ::SOCKET_PUB);
-		$queue->bind("tcp://127.0.0.1:8080");
-		$queue->send("hello");
-		//$push =  new chat();
-		//$push->onMessage($queue,"hello");
-
-		
-	}
+	
 }	
+//1445297068211 
+//1445297090211
