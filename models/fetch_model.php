@@ -101,6 +101,7 @@ class fetch_model extends Model{
 		echo json_encode($result,JSON_PRETTY_PRINT);
 	}
 
+
 	
 	
 }	

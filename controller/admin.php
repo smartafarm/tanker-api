@@ -29,6 +29,20 @@ class admin extends controller{
 		$this->model->createUser($data);
 
 		}
+	public function getUsers(){
+		// Triggers a notification if new reading has been added.
+		// responds JSON data of reading to ajax poll.
+		
+		$this->model->getUsers();
+		
+	}
+	public function getAllDevices(){
+		/*
+		 * get the devices and readings of the deivces
+		 * responds array of Json
+		 */
+		$this->model->getAllDevices();
+	}
 	
 
 	
