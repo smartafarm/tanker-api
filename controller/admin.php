@@ -43,6 +43,21 @@ class admin extends controller{
 		 */
 		$this->model->getAllDevices();
 	}
+	public function getDeviceFunc(){
+		/*
+		 * get the devices and readings of the deivces
+		 * responds array of Json
+		 */
+		$this->model->getDeviceFunc();
+	}
+	public function setDeviceAccess(){
+		/*
+		 * get new status updates
+		 */
+		$data = json_decode(file_get_contents('php://input'), true);
+		$this->model->setDeviceAccess($data);
+
+		}
 	
 
 	

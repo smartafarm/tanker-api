@@ -59,7 +59,7 @@ class admin_model extends Model{
 	
 		$collection = $this->db->DeviceMaster;
 		$readings = $collection->find(array('EquipTypeID' => 'c1'));
-		$result = Array();
+		
 		$result = array();	
 		
 		foreach ( $readings as $id => $device )
@@ -74,5 +74,37 @@ class admin_model extends Model{
 	
 	header('Content-Type: application/json');
 	echo json_encode($result,JSON_PRETTY_PRINT);
+	}
+	public function getDeviceFunc() {
+
+	/*
+	 *
+	 * Helper function to return all user
+	 *
+	 */	
+	
+		$collection = $this->db->functionMaster;
+		$readings = $collection->find(array('type' => 'Device'));
+		$result = array();	
+		
+		foreach ( $readings as $id => $function )
+		{
+			
+			array_push($result, $function);	
+
+		}				
+	
+	header('Content-Type: application/json');
+	echo json_encode($result,JSON_PRETTY_PRINT);
+	}
+	public function setDeviceAccess($data) {
+	
+		$collection = $this->db->userMaster;
+		print_r($data);		
+		/*$data['serverData']['password'] = "default123";
+		$data['serverData']['device'] = new stdClass();
+		$data['serverData']['genFunc'] = new stdClass();
+		$collection->insert($data['serverData']);*/
+	
 	}
 }
