@@ -15,11 +15,16 @@ class admin_model extends Model{
 	
 	public function createUser($data){
 		$collection = $this->db->userMaster;
-		print_r($data);		
+		
 		$data['serverData']['password'] = "default123";
 		$data['serverData']['device'] = new stdClass();
 		$data['serverData']['genFunc'] = new stdClass();
-		$collection->insert($data['serverData']);
+		$response = $collection->insert($data['serverData']);
+		if($response['ok'] == 0){
+			http_response_code(202);
+		}		
+		header('Content-Type: application/json');
+		echo json_encode( $response, JSON_PRETTY_PRINT);
 	}
 	public function getUsers() {
 
@@ -100,7 +105,22 @@ class admin_model extends Model{
 	public function setDeviceAccess($data) {
 	
 		$collection = $this->db->userMaster;
-		print_r($data);		
+		//print_r($data['serverData']);
+		$username = $data['serverData']['uname'];		
+		$access = $data['serverData']['dAccess'];
+		$response =$collection->update(
+		    array('uname' => $username),
+		    array(
+		        '$set' => array("device" => $access),
+		    ),
+		    array("upsert" => false)
+		);
+		
+		if($response['n'] == 0){
+			http_response_code(202);
+		}		
+		header('Content-Type: application/json');
+		echo json_encode( $response, JSON_PRETTY_PRINT);
 		/*$data['serverData']['password'] = "default123";
 		$data['serverData']['device'] = new stdClass();
 		$data['serverData']['genFunc'] = new stdClass();
