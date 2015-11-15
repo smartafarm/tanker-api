@@ -15,9 +15,9 @@ class login_model extends Model {
 	
 	public function check($data) {
 		
-		$collection = $this->db->users1;
+		$collection = $this->db->userMaster;
 		$authenticate = array (
-				"username" => $data['credentials']['username'],
+				"uname" => $data['credentials']['username'],
 				"password" => $data['credentials']['password'] 				
 		);		
 

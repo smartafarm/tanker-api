@@ -1,5 +1,5 @@
 <?php
-
+error_reporting(E_ALL ^ E_NOTICE);
 class fetch_model extends Model{
 	function __construct(database $database) {
 		// getting the base properties for the parent model
@@ -14,11 +14,22 @@ class fetch_model extends Model{
 		 * Gets all the devices in the dataBase and passes Json array to the request
 		 *
 		 */
-		
+		$dAccess = array();
+		$userCollection = $this->db->userMaster;
+		$dAccessResponse = $userCollection->find(array('uname'=>$bearer), array("device"));	
+		foreach($dAccessResponse as $key=> $value)
+		{
+			$alldAccess = $value['device'];
 
+		}	
+		foreach($alldAccess as $key=> $value)
+		{
+			array_push($dAccess, $value['_id'][0]);
+		}	
+		
 		$collection = $this->db->DeviceMaster;
 		$collection1 = $this->db->deviceData;
-		$devices = $collection->find();
+		$devices = $collection->find(array('_id'=>array('$in' => $dAccess)));
 		$result = Array();
 		$result = array();
 		$i=0;
@@ -28,6 +39,13 @@ class fetch_model extends Model{
 			$data["name"]	=  $device["EquipName"];
 			$data["Desc"]	=  $device["Description"];
 			$data["Status"]	=  $device["status"];
+			foreach($alldAccess as $key=> $value)
+			{
+				if ($value['_id'][0] == $device["_id"])
+				{
+					$data["func"] = $value['func'];
+				}
+			}	
 			$data["readings"] = array();
 			$readings = $collection1->find(array('did' => $device["_id"]));
 			$index = 0;
@@ -70,6 +88,18 @@ class fetch_model extends Model{
 		 * Json array returned
 		 *
 		 */
+		$dAccess = array();
+		$userCollection = $this->db->userMaster;
+		$dAccessResponse = $userCollection->find(array('uname'=>$bearer), array("device"));	
+		foreach($dAccessResponse as $key=> $value)
+		{
+			$alldAccess = $value['device'];
+
+		}	
+		foreach($alldAccess as $key=> $value)
+		{
+			array_push($dAccess, $value['_id'][0]);
+		}	
 		$lastReadings = Session::get('timestamps');
 		$bearerLastReading = new MongoDate(strtotime($lastReadings[$bearer]));
 		
@@ -83,7 +113,8 @@ class fetch_model extends Model{
 			$condition = array('dt' => array(
 				'$gte'=>$bearerLastReading,
 				'$lte'=>$time
-				) 
+				) ,
+			'did'=>array('$in' => $dAccess)
 			);	
 			$readings = $collection->find($condition);
 			$result = Array();

@@ -35,7 +35,7 @@ class admin_model extends Model{
 	 */	
 	
 		$collection = $this->db->userMaster;
-		$readings = $collection->find();
+		$readings = $collection->find(array('uname' => array('$ne' => 'admin')));
 		$result = Array();
 		$result["users"] = array();	
 		$index = 0;		
