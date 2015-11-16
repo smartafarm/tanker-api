@@ -7,7 +7,7 @@
  *
  */
 use \Firebase\JWT\JWT;
-error_reporting(E_ALL ^ E_NOTICE);
+//error_reporting(E_ALL ^ E_NOTICE);
 class login_model extends Model {
 	function __construct(database $database) {
 		parent::__construct();

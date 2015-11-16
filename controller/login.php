@@ -19,6 +19,7 @@ class login extends controller{
 		/*
 		 * responds to the login credintials
 		 */
+		
 		$data = json_decode(file_get_contents('php://input'), true);		
 		$check = $this->model->check($data);
 		
