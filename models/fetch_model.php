@@ -1,5 +1,5 @@
 <?php
-error_reporting(E_ALL ^ E_NOTICE);
+error_reporting(E_NOTICE);
 class fetch_model extends Model{
 	function __construct(database $database) {
 		// getting the base properties for the parent model
