@@ -11,7 +11,7 @@ class request {
     		if($_SERVER['REQUEST_METHOD'] == "GET")
         	{
                 // Setting accepted headers for get request
-        	    header('Content-Type: application/json');
+        	    
         	    header('Access-Control-Allow-Headers: accept, bearer, x-auth-token');	
                
         	}
