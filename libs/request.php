@@ -12,12 +12,12 @@ class request {
         	{
                 // Setting accepted headers for get request
         	    
-        	    header('Access-Control-Allow-Headers: accept, bearer, x-auth-token');
+        	    header('Access-Control-Allow-Headers:accept,bearer,x-auth-token');
                 if($checkToken) {
                        if(Session::tokenCheck($_SERVER,$checkAdmin)){               
                            return true;
                        }
-               } 	
+                     } 	
                
         	}
             elseif($_SERVER['REQUEST_METHOD'] == "OPTIONS")
@@ -56,7 +56,7 @@ class request {
                            if(Session::tokenCheck($_SERVER,$checkAdmin)){               
                                return true;
                            }
-                   } 
+                        } 
                 }
                 else{
                     die("POSTing Only Allowed from http://smartafarm.com.au");
