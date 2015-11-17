@@ -9,6 +9,9 @@ class update_model extends Model{
 
 
 	function deviceStatus($data) {
+		/*
+		@var - $data - revices device id and receives the device status
+		 */
 		$collection = $this->db->DeviceMaster;
 		$collection->update(
 		    array('_id' => $data['serverData']['_id']),
@@ -23,6 +26,9 @@ class update_model extends Model{
 	}
 
 		function fname($data) {
+		/*
+		@var - $data - revices device id and friendly name
+		 */
 		$collection = $this->db->DeviceMaster;
 		$collection->update(
 		    array('_id' => $data['serverData']['_id']),

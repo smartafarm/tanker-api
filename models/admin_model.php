@@ -4,23 +4,28 @@
  * @author - Vandish Gandhi
  * @Version Control:
  * 1.0 - Base model class , get passes the database instance
- *
+ * 1.1 basic backend administration model created
  */
 class admin_model extends Model{
 	function __construct(database $database) {
 		// getting the base properties for the parent model
 		parent::__construct();
+
 		
 	}
 	
 	public function createUser($data){
-		$collection = $this->db->userMaster;
-		
+		/*
+		Creating Administrating user for the organisation
+		 */
+		$collection = $this->db->userMaster;		
+		//setting default password
 		$data['serverData']['password'] = "default123";
 		$data['serverData']['device'] = new stdClass();
 		$data['serverData']['genFunc'] = new stdClass();
 		$response = $collection->insert($data['serverData']);
 		if($response['ok'] == 0){
+			//if no data is appended
 			http_response_code(202);
 		}		
 		header('Content-Type: application/json');
@@ -29,9 +34,7 @@ class admin_model extends Model{
 	public function getUsers() {
 
 	/*
-	 *
-	 * Helper function to return all user
-	 *
+	 // responds to get request for all users
 	 */	
 	
 		$collection = $this->db->userMaster;
@@ -57,12 +60,11 @@ class admin_model extends Model{
 	public function getAllDevices() {
 
 	/*
-	 *
-	 * Helper function to return all user
-	 *
+	 * gets all devices for user administration
 	 */	
 	
 		$collection = $this->db->DeviceMaster;
+		// only controller devices sent
 		$readings = $collection->find(array('EquipTypeID' => 'c1'));
 		
 		$result = array();	
@@ -83,9 +85,7 @@ class admin_model extends Model{
 	public function getDeviceFunc() {
 
 	/*
-	 *
-	 * Helper function to return all user
-	 *
+	 * gets all the general device functions
 	 */	
 	
 		$collection = $this->db->functionMaster;
@@ -104,6 +104,10 @@ class admin_model extends Model{
 	}
 	public function setDeviceAccess($data) {
 	
+	/*
+	 * sets individaul device access
+	 * @var - $data - recevied from controller with username and deviceAccess array
+	 */	
 		$collection = $this->db->userMaster;
 		//print_r($data['serverData']);
 		$username = $data['serverData']['uname'];		
@@ -117,14 +121,11 @@ class admin_model extends Model{
 		);
 		
 		if($response['n'] == 0){
+			// if no record updated
 			http_response_code(202);
 		}		
 		header('Content-Type: application/json');
 		echo json_encode( $response, JSON_PRETTY_PRINT);
-		/*$data['serverData']['password'] = "default123";
-		$data['serverData']['device'] = new stdClass();
-		$data['serverData']['genFunc'] = new stdClass();
-		$collection->insert($data['serverData']);*/
-	
+		
 	}
 }

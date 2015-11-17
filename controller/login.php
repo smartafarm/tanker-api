@@ -3,14 +3,18 @@
  * @desc - Dashboard controller
  * @author - Vandish Gandhi
  * @Version Control:
- * 1.0 - Main Login controller. Authentication not implemented.  
- * 
- *
+ * 1.0 - Main Login controller. Authentication not implemented.   * 
+ * 1.1 - Server preflight and cors request update.
  */
 class login extends controller{
 	function __construct() {
 		parent::__construct(false);
-	}
+		/*
+		Checking request to the server and token values
+		Setting headers for each request
+		*/
+		request::checkReq(false);
+		}
 	public function index(){
 		$this->view->render('login/index',false);
 	}
@@ -26,7 +30,7 @@ class login extends controller{
 	}
 	public function validate(){
 		/*
-		 * responds to the login credintials
+		 * Validates the token 
 		 */
 		$data = json_decode(file_get_contents('php://input'), true);		
 		$check = $this->model->validate($data);
@@ -34,7 +38,7 @@ class login extends controller{
 	}
 	public function destroy(){
 		/*
-		 * responds to the login credintials
+		 *destroys the token
 		 */
 		$data = json_decode(file_get_contents('php://input'), true);		
 		$check = $this->model->destroy($data);

@@ -1,7 +1,7 @@
 <?php 
 /*
  * @desc - class to receive data from the devices
- * @param - deviceID , Sesor Count , lat , long, date stamp ,readings , status code , * end
+ *
  * @variables 
  * 				$args = receiving the post query
  * 				$r_string = recevied string in request for evaluation
@@ -10,9 +10,9 @@
  */
 class feed_model extends Model{
 	function __construct(database $database) {
-		parent::__construct();		
-		$this->param = array(0 => "DEVICE" , 1=>"SENSOR COUNT" ,2=>"LAT",3=>"LONG",4=>"TIME STAMP");
+		parent::__construct();				
 	}
+	
 	public function getStatus(){
 	if ($_SERVER['REQUEST_METHOD'] == "POST"){	
 		$args =$_POST;

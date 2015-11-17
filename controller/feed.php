@@ -3,8 +3,8 @@
  * @desc - Feed controller
  * @author - Vandish Gandhi
  * @Version Control:
- * 1.0 - Feed API to handle the POST request on server for device data
- *
+ * 1.0 - Feed API to handle the POST request on server for device data. No Check implemented yet for this
+ * 
  */
 class feed extends controller{
 	function __construct() {

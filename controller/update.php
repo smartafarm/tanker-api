@@ -2,36 +2,23 @@
 class update extends controller{
 	protected $bearer;
 	function __construct() {
-		$reqHeader =apache_request_headers();
-		if(!isset($reqHeader['Bearer'])){
-			http_response_code(401);	
-			die();
-		}else{
-		$this->bearer = $reqHeader['Bearer'];
-		}
-		if (!isset($reqHeader['X-Auth-Token'])){
-			http_response_code(401);	
-			die();
-		}else{
-			$token = $reqHeader['X-Auth-Token'];
-			if(!Session::validate($token,$this->bearer)){
-				http_response_code(401);	
-				die();
-			}
+		if(request::checkReq()){
+			// set the bearer for further processing if request and token are valid
+			$this->bearer = $_SERVER['HTTP_BEARER'];
 		}
 	}
 	
 	public function deviceStatus(){
-		/*
-		 * get new status updates
-		 */
-		$data = json_decode(file_get_contents('php://input'), true);
-		$this->model->deviceStatus($data);
+	/*
+	 * toggles device status from active to in active
+	 */
+	$data = json_decode(file_get_contents('php://input'), true);
+	$this->model->deviceStatus($data);
 
-		}
+	}
 	public function fname(){
 	/*
-	 * get new device name updates
+	 * updates the friendly name of the device
 	 */
 	$data = json_decode(file_get_contents('php://input'), true);
 	$this->model->fname($data);

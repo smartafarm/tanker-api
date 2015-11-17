@@ -18,6 +18,7 @@ require 'config/paths.php';
 // Libraries
 require 'libs/database.php';
 require 'libs/session.php';
+require 'libs/request.php';
 
 //Authentication
 require 'libs/JWT.php';

@@ -9,19 +9,21 @@ class fetch_model extends Model{
 
 
 	function getDevices($bearer) {
-		/*
-		 *
-		 * Gets all the devices in the dataBase and passes Json array to the request
-		 *
+		/*		 
+		 * Gets all the devices in the dataBase based on the user
+		 * @var - $bearer - user received from fetch controller  		 
 		 */
+		
 		$dAccess = array();
 		$userCollection = $this->db->userMaster;
-		$dAccessResponse = $userCollection->find(array('uname'=>$bearer), array("device"));	
+		$dAccessResponse = $userCollection->find(array('uname'=>$bearer), array("device"));
+		//gets all devices accessible to the user	
 		foreach($dAccessResponse as $key=> $value)
 		{
 			$alldAccess = $value['device'];
 
 		}	
+		//creating device and function array for response
 		foreach($alldAccess as $key=> $value)
 		{
 			array_push($dAccess, $value['_id'][0]);
@@ -29,6 +31,7 @@ class fetch_model extends Model{
 		
 		$collection = $this->db->DeviceMaster;
 		$collection1 = $this->db->deviceData;
+		// getting users devices
 		$devices = $collection->find(array('_id'=>array('$in' => $dAccess)));
 		$result = Array();
 		$result = array();
@@ -47,10 +50,13 @@ class fetch_model extends Model{
 				}
 			}	
 			$data["readings"] = array();
+			// appending all the device readings 
 			$readings = $collection1->find(array('did' => $device["_id"]));
 			$index = 0;
 			foreach ($readings as $key => $reading) {
-				/*"_id": {
+				/*
+				JSON PROTOTYPE OF READING
+				"_id": {
                     "$id": "5626da24c2677bcc14000029"
                 },
                 "did": "s123xyz",
@@ -67,12 +73,15 @@ class fetch_model extends Model{
                 "L02": "45"*/
 
 				array_push($data["readings"],$reading);
+
+				// converting date into ISO for Client from mongo date object
 				$data["readings"][$index]["dt"] = date(DATE_ISO8601, $data["readings"][$index]["dt"]->sec);
 				$index++;
 			}
 			array_push($result,$data);	
 		
 		}
+		// updates the timestamp for users last reading
 		if(!isset($_SESSION['timestamps'][$bearer])){
 			Session::set('timestamps', array($bearer => date('c')));
 		}
@@ -86,47 +95,54 @@ class fetch_model extends Model{
 		 *
 		 * Helper function to the ajax poll request, responds if any new data is posted
 		 * Json array returned
-		 *
+		 * @var - $timestamp - timestamp of the request made by user recevied from controller
+		 *      - $bearer - user data received from the controller 
 		 */
+		
 		$dAccess = array();
 		$userCollection = $this->db->userMaster;
+		// gets all devices accessible to user
 		$dAccessResponse = $userCollection->find(array('uname'=>$bearer), array("device"));	
 		foreach($dAccessResponse as $key=> $value)
 		{
 			$alldAccess = $value['device'];
 
 		}	
+		// creating array for all devices and allowed functions
 		foreach($alldAccess as $key=> $value)
 		{
 			array_push($dAccess, $value['_id'][0]);
 		}	
+		// last timestamp of user accessed the reading
 		$lastReadings = Session::get('timestamps');
 		$bearerLastReading = new MongoDate(strtotime($lastReadings[$bearer]));
 		
 		
-		
-			$time =  new MongoDate(strtotime($timestamp));
+		// current request time stamp
+		$time =  new MongoDate(strtotime($timestamp));
 			
-		//	echo $time;
-			//find({"dt" : { $gte : $time }});
-			$collection = $this->db->deviceData;			
-			$condition = array('dt' => array(
-				'$gte'=>$bearerLastReading,
-				'$lte'=>$time
-				) ,
-			'did'=>array('$in' => $dAccess)
-			);	
-			$readings = $collection->find($condition);
-			$result = Array();
-			$result["readings"] = array();	
-			$index = 0;		
-			foreach ( $readings as $id => $value )
-			{
-				array_push($result["readings"], $value);
-				$result["readings"][$index]["dt"] = date(DATE_ISO8601, $result["readings"][$index]["dt"]->sec);
-				$index++;			
-			}
-				
+		$collection = $this->db->deviceData;			
+		// getting readings of each device from last time stamp of user
+		// and user request time stamp
+		$condition = array('dt' => array(
+			'$gte'=>$bearerLastReading,
+			'$lte'=>$time
+			) ,
+		// only for the accessible devices
+		'did'=>array('$in' => $dAccess)
+		);	
+		$readings = $collection->find($condition);
+		$result = Array();
+		$result["readings"] = array();	
+		$index = 0;		
+		foreach ( $readings as $id => $value )
+		{
+			array_push($result["readings"], $value);
+			// replacing ISO date from mongo date for front end
+			$result["readings"][$index]["dt"] = date(DATE_ISO8601, $result["readings"][$index]["dt"]->sec);
+			$index++;			
+		}
+		// updating last reading timestamp for user				
 		Session::set('timestamps', array($bearer => $timestamp));
 		header('Content-Type: application/json');
 		echo json_encode($result,JSON_PRETTY_PRINT);
