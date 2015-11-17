@@ -34,14 +34,14 @@ class session {
 		// Checking token and beare from each request
 		if(!isset($request['HTTP_BEARER']) || !isset($request['HTTP_X_AUTH_TOKEN'])){
 		// If No Token			
-	 	header("HTTP/1.1 401");
+	 	header("HTTP/1.1 401 No token or bearer");
 	    header("Content-Type: text/plain");
 	    echo "Access Denied";
 	    die();
 		}else{
 		if($checkAdmin == true){
 			if($request['HTTP_BEARER'] != 'admin')			{
-				header("HTTP/1.1 401 Unauthorized");
+				header("HTTP/1.1 401 not admin");
 			    header("Content-Type: text/plain");
 			    echo "Access Denied";
 			    die();
@@ -52,7 +52,7 @@ class session {
 		$token = $request['HTTP_X_AUTH_TOKEN'];
 		// Validate token against the PHP session
 			if(!self::validate($token,$bearer)){
-				header("HTTP/1.1 401 401 Unauthorized");
+				header("HTTP/1.1 401 no session");
 			    header("Content-Type: text/plain");
 			    echo "Access Denied";
 			    die();
