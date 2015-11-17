@@ -12,7 +12,12 @@ class request {
         	{
                 // Setting accepted headers for get request
         	    
-        	    header('Access-Control-Allow-Headers: accept, bearer, x-auth-token');	
+        	    header('Access-Control-Allow-Headers: accept, bearer, x-auth-token');
+                if($checkToken) {
+                       if(Session::tokenCheck($_SERVER,$checkAdmin)){               
+                           return true;
+                       }
+               } 	
                
         	}
             elseif($_SERVER['REQUEST_METHOD'] == "OPTIONS")
@@ -46,8 +51,12 @@ class request {
                 if($_SERVER['HTTP_ORIGIN'] == "http://smartafarm.com.au" || $_SERVER['HTTP_ORIGIN'] == "http://localhost")
                 {
                         // Header expectation from POST request
-                        header('Access-Control-Allow-Origin: http://smartafarm.com.au');
-                        header('Content-Type: application/json');
+                        header('Access-Control-Allow-Origin: http://smartafarm.com.au');                        
+                        if($checkToken) {
+                           if(Session::tokenCheck($_SERVER,$checkAdmin)){               
+                               return true;
+                           }
+                   } 
                 }
                 else{
                     die("POSTing Only Allowed from http://smartafarm.com.au");
@@ -60,11 +69,7 @@ class request {
         //Token check from user
         //Uses Session class
         
-        if($checkToken) {
-                       if(Session::tokenCheck($_SERVER,$checkAdmin)){               
-                           return true;
-                       }
-                   }        
+               
         }
             
 }
