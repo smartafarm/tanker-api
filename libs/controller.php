@@ -11,7 +11,7 @@ class controller {
 	
 	function __construct($check = true) {
 		$this->view =  new View();
-		Session::init();			
+				
 		
 	}
 	public function loadModel($name) {

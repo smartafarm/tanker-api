@@ -13,7 +13,8 @@ class login extends controller{
 		Checking request to the server and token values
 		Setting headers for each request
 		*/
-		request::checkReq(false);
+		$request = new request();
+		$request->checkReq(false);
 		}
 	public function index(){
 		$this->view->render('login/index',false);

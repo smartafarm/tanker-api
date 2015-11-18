@@ -12,12 +12,13 @@ class dashboard extends controller{
 		// array of all javascritps and css to load as per the view
 		$this->view->js = array('dashboard/js/default.js','dashboard/js/notify.js');
 		$this->view->css = array('dashboard/css/default.css');
+		$this->session = new session();
 	}
 	public function index(){
 		$this->view->render('dashboard/index');		
 	}
 	public function logout(){
-		Session::destroy();
+		$this->session->destroy();
 		header('Location: ../login');
 		exit;
 	}

@@ -38,12 +38,13 @@ class login_model extends Model {
 		);
 		// creating a JSON web TOKEN
 		$jwt = JWT::encode($set, TOKEN_KEY);	
- 		if (!Session::get($username))
+ 		if (!$this->session->getToken($username))
  		{
  			//create session for user
- 			Session::set($username,$jwt);					
+ 			$this->session->setToken($username,$jwt);					
  		}
- 		$token = Session::get($username);
+ 		$token = $this->session->getToken($username);
+ 		
  		// sign token to forward on client side
  		$response = array(
  			'token' => $token,
@@ -68,9 +69,10 @@ class login_model extends Model {
 
 public function validate($data){
 	// validating user token 
-	// currently un used as preflight request already validates token	
-	if (Session::get($data['data']['user'])){
-		$gettoken= Session::get($data['data']['user']);
+	// currently un used as preflight request already validates token
+	print_r($_SESSION)	;
+	if ($this->session->get($data['data']['user'])){
+		$gettoken= $this->session->get($data['data']['user']);
 			if ($data['data']['token'] == $gettoken['token']){
 				http_response_code(200);		
 			}else{

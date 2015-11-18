@@ -2,10 +2,11 @@
 class fetch extends controller{
 	protected $bearer;
 	function __construct() {
-		if(request::checkReq()){
+		$this->bearer = $_SERVER['HTTP_BEARER'];
+		/*if(request::checkReq()){
 			// set the bearer for further processing if request and token are valid
 			$this->bearer = $_SERVER['HTTP_BEARER'];
-		}
+		}*/
 	}
 	
 	public function getDevices(){
@@ -21,6 +22,7 @@ class fetch extends controller{
 		// Triggers a notification if new reading has been added.
 		// responds JSON data of reading to ajax poll.
 		$reqBearer = $this->bearer;		
+		
 		$this->model->getUpdate($_GET['t'],$reqBearer);
 		
 	}

@@ -7,30 +7,100 @@
  *
  */
 use \Firebase\JWT\JWT;
+error_reporting(E_ALL ^ E_NOTICE);
 class session {
-	public static function init()
+	
+	public function __construct($database) {	
+		$this->db = $database;
+	}
+	public  function init()
 	{
 		@session_start();
 		//$_SESSION["TOKENS"] =array();
 	}
-	public static function set($key,$value){
+	public function set($key,$value){
 		// sets the value in Session Global as per the request by server
-		$_SESSION[$key] = $value;
+		$collection = $this->db->sessionMaster;		
+		   $collection->update(
+            array('_id' => $key),
+            array($value),
+            array('upsert' => false)
+        );
+		
 	}
-	public static function get($key){
+	public function setToken($key,$value){
+		// sets the value in Session Global as per the request by server
+		$collection = $this->db->sessionMaster;		
+		   $collection->update(
+            array('_id' => $key),
+            array('token'=>$value),
+            array('upsert' => false)
+        );
 		
-		// returns the status of the session
+	}
+
+	public function setTimestamp($key,$value){
+		// sets the value in Session Global as per the request by server
+		$collection = $this->db->sessionMaster;		
+		   $collection->update(
+            array('_id' => $key),
+            array('timestamp'=>$value),
+            array('upsert' => false)
+        );
 		
-		if(isset($_SESSION[$key]))
+	}
+
+	public function getToken($key){
+		// sets the value in Session Global as per the request by server
+		$collection = $this->db->sessionMaster;		
+		$result = $collection->find(array('_id' => $key));
+		if($collection->count() > 0){
+			foreach($result as $key1 => $value)
+			{
+				return $value['token'];
+			}
+			}else
+			{
+				return false;
+			}
+		
+	}
+	public function getTimestamp($key){
+		// sets the value in Session Global as per the request by server
+		$collection = $this->db->sessionMaster;		
+		$result = $collection->find(array('_id' => $key));
+		if($collection->count() > 0){
+			foreach($result as $key1 => $value)
+			{
+				
+				return $value['timestamp'];
+			}
+			}else
+			{
+				return false;
+			}
+		
+	}
+	public function get($key){
+		$collection = $this->db->sessionMaster;		
+		$result = $collection->find(array('_id' => $key));
+		if($collection->count() > 0){
+			foreach($result as $key1 => $value)
+			{
+				return $value;
+			}
+		}else
 		{
-		return $_SESSION[$key]; 
-		}else return false;
+			return false;
+		}
+		
 	}
 	
-	public static function destroy() {
+	public function destroy() {
 		@session_destroy();
 	}
-	public static function tokenCheck($request,$checkAdmin) {	
+	public function tokenCheck($request,$checkAdmin) {	
+		
 		// Checking token and beare from each request
 		if(!isset($request['HTTP_BEARER']) || !isset($request['HTTP_X_AUTH_TOKEN'])){
 		// If No Token			
@@ -64,9 +134,10 @@ class session {
 		}
 
 	}
-	public static function validate($token,$bearer) {
+	public function validate($token,$bearer) {
 		// checink token via JWT
-		if(self::get($bearer) != $token)
+		
+		if(self::getToken($bearer) != $token)
 		{
 			return false;
 		}else

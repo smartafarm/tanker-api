@@ -9,7 +9,8 @@ class admin extends controller{
 		Checking request to the server and token values
 		Setting headers for each request
 		*/
-		request::checkReq(true,true);
+		$request = new request();
+		$request->checkReq(true,true);
 
 
 	}

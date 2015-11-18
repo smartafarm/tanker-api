@@ -13,11 +13,11 @@ class database {
 	public static function get(){
 	// checking if instance exist
 	if (isset(self::$database)) {
-            return self::database;
+            return self::$database;
         }else {
         	// setting options to auto connect
         	$options = array('connect' => false); // 
-        	$connection = new MongoClient('localhost',$options);
+        	$connection = new MongoClient('mongodb://52.64.38.218:27017',$options);
         	
         	// selecting the project database
         	self::$database = $connection->smartfarm;

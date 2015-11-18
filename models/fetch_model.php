@@ -1,5 +1,5 @@
 <?php
-error_reporting(E_NOTICE);
+error_reporting(E_ALL ^ E_NOTICE);
 class fetch_model extends Model{
 	function __construct(database $database) {
 		// getting the base properties for the parent model
@@ -82,8 +82,8 @@ class fetch_model extends Model{
 		
 		}
 		// updates the timestamp for users last reading
-		if(!isset($_SESSION['timestamps'][$bearer])){
-			Session::set('timestamps', array($bearer => date('c')));
+		if(!$this->session->getTimestamp($bearer)){
+			$this->session->setTimestamp($bearer, date('c'));
 		}
 		header('Content-Type: application/json');
 		echo json_encode( $result , JSON_PRETTY_PRINT);
@@ -114,8 +114,8 @@ class fetch_model extends Model{
 			array_push($dAccess, $value['_id'][0]);
 		}	
 		// last timestamp of user accessed the reading
-		$lastReadings = Session::get('timestamps');
-		$bearerLastReading = new MongoDate(strtotime($lastReadings[$bearer]));
+		$lastReadings = $this->session->getTimestamp($bearer);
+		$bearerLastReading = new MongoDate(strtotime($lastReadings));
 		
 		
 		// current request time stamp
@@ -143,7 +143,7 @@ class fetch_model extends Model{
 			$index++;			
 		}
 		// updating last reading timestamp for user				
-		Session::set('timestamps', array($bearer => $timestamp));
+		$this->session->setTimestamp($bearer, $timestamp);
 		header('Content-Type: application/json');
 		echo json_encode($result,JSON_PRETTY_PRINT);
 	}
