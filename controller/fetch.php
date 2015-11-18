@@ -4,7 +4,7 @@ class fetch extends controller{
 	function __construct() {
 		
 		$request = new request();
-		if($request->checkReq(true,true))
+		if($request->checkReq())
 		{
 			$this->bearer = $_SERVER['HTTP_BEARER'];
 		}
