@@ -33,7 +33,7 @@ class session {
 		$collection = $this->db->sessionMaster;		
 		   $collection->update(
             array('_id' => $key),
-            array('token'=>$value),
+            array('$set'=>array('token'=>$value)),
             array('upsert' => false)
         );
 		
@@ -44,7 +44,7 @@ class session {
 		$collection = $this->db->sessionMaster;		
 		   $collection->update(
             array('_id' => $key),
-            array('timestamp'=>$value),
+            array('$set'=>array('timestamp'=>$value)),
             array('upsert' => false)
         );
 		
@@ -110,7 +110,7 @@ class session {
 	    die();
 		}else{
 		if($checkAdmin == true){
-			if($request['HTTP_BEARER'] != 'admin')			{
+			if($request['HTTP_BEARER'] != 'admin'){
 				header("HTTP/1.1 401 not admin");
 			    header("Content-Type: text/plain");
 			    echo "Access Denied";
@@ -121,6 +121,7 @@ class session {
 		$bearer = $request['HTTP_BEARER'];
 		$token = $request['HTTP_X_AUTH_TOKEN'];
 		// Validate token against the PHP session
+		
 			if(!self::validate($token,$bearer)){
 				header("HTTP/1.1 401 no session");
 			    header("Content-Type: text/plain");
@@ -143,13 +144,16 @@ class session {
 		}else
 		{
 			//decoding token
-			$decoded =(array) JWT::decode($token, TOKEN_KEY, array('HS256'));
+			
+			$decoded =(array) JWT::decode($token, TOKEN_KEY, array('HS256'));			
 			$user = $decoded['user'];
 			// checking session value of user
 			$validation = self::get($user);
+			
+			
 			if(!$validation) {
 				return false;
-			}elseif($validation != $token){
+			}elseif($validation['token'] != $token){
 				return false;
 			}
 			else{

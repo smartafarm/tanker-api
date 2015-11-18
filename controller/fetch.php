@@ -2,11 +2,12 @@
 class fetch extends controller{
 	protected $bearer;
 	function __construct() {
-		$this->bearer = $_SERVER['HTTP_BEARER'];
-		/*if(request::checkReq()){
-			// set the bearer for further processing if request and token are valid
+		
+		$request = new request();
+		if($request->checkReq(true,true))
+		{
 			$this->bearer = $_SERVER['HTTP_BEARER'];
-		}*/
+		}
 	}
 	
 	public function getDevices(){

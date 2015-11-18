@@ -11,8 +11,6 @@ class admin extends controller{
 		*/
 		$request = new request();
 		$request->checkReq(true,true);
-
-
 	}
 	
 	public function createUser(){

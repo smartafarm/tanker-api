@@ -38,6 +38,7 @@ class login_model extends Model {
 		);
 		// creating a JSON web TOKEN
 		$jwt = JWT::encode($set, TOKEN_KEY);	
+		
  		if (!$this->session->getToken($username))
  		{
  			//create session for user
