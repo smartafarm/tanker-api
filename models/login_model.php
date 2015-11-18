@@ -41,7 +41,7 @@ class login_model extends Model {
 		
  		if (!$this->session->getToken($username))
  		{
- 			//create session for user
+ 			//create session for user 			 			
  			$this->session->setToken($username,$jwt);					
  		}
  		$token = $this->session->getToken($username);
@@ -87,7 +87,7 @@ public function validate($data){
 	}
 public function destroy($data){
 	// destroy user session and token
-	unset($_SESSION[$data['user']]);
+	$this->session->destroy($data);
 
 }
 }

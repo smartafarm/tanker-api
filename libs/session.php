@@ -34,7 +34,7 @@ class session {
 		   $collection->update(
             array('_id' => $key),
             array('$set'=>array('token'=>$value)),
-            array('upsert' => false)
+            array('upsert' => true)
         );
 		
 	}
@@ -96,8 +96,11 @@ class session {
 		
 	}
 	
-	public function destroy() {
-		@session_destroy();
+	public function destroy($key) {
+
+		$collection = $this->db->sessionMaster;		
+		$result = $collection->remove(array('_id' => $key['user']));
+		print_r($result);
 	}
 	public function tokenCheck($request,$checkAdmin) {	
 		
