@@ -47,6 +47,7 @@ class fetch_model extends Model{
 				if ($value['_id'][0] == $device["_id"])
 				{
 					$data["func"] = $value['func'];
+					
 				}
 			}	
 			$data["readings"] = array();

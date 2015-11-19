@@ -2,8 +2,9 @@
 class update extends controller{
 	protected $bearer;
 	function __construct() {
-		if(request::checkReq()){
-			// set the bearer for further processing if request and token are valid
+		$request = new request();
+		if($request->checkReq())
+		{
 			$this->bearer = $_SERVER['HTTP_BEARER'];
 		}
 	}

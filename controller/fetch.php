@@ -15,14 +15,15 @@ class fetch extends controller{
 		 * get the devices and readings of the deivces
 		 * responds array of Json
 		 */
-		$reqBearer = $this->bearer;
+		
+		$reqBearer = $this->bearer;		
 		$this->model->getDevices($reqBearer);
 	}
 
 	public function getUpdate(){
 		// Triggers a notification if new reading has been added.
 		// responds JSON data of reading to ajax poll.
-		$reqBearer = $this->bearer;		
+		$reqBearer = $this->bearer;	
 		
 		$this->model->getUpdate($_GET['t'],$reqBearer);
 		

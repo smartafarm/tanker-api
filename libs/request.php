@@ -19,7 +19,7 @@ class request {
         	    
         	    header('Access-Control-Allow-Headers:accept,bearer,x-auth-token');
                 if($checkToken) {
-                       if($this->session->tokenCheck($_SERVER,$checkAdmin)){               
+                       if($this->session->tokenCheck($_SERVER,$checkAdmin)){                                      
                            return true;
                        }
                      } 	
