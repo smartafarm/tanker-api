@@ -16,7 +16,7 @@ class request {
     		if($_SERVER['REQUEST_METHOD'] == "GET")
         	{
                 // Setting accepted headers for get request
-        	    
+        	    header('Access-Control-Allow-Origin: http://smartafarm.com.au'); 
         	    header('Access-Control-Allow-Headers:accept,bearer,x-auth-token');
                 if($checkToken) {
                        if($this->session->tokenCheck($_SERVER,$checkAdmin)){                                      
