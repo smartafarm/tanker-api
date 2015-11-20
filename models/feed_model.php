@@ -16,6 +16,12 @@ class feed_model extends Model{
 	public function getStatus(){
 	if ($_SERVER['REQUEST_METHOD'] == "POST"){	
 		$args =$_POST;
+		// for raw data testing from device
+		$collection = $this->db->rawMaster;
+		$options = array('fsync'=>\TRUE);
+		$collection->insert(array('msg'=>$args["query"]));
+
+		// data insert			
 		if (empty($args["query"])) {												// IF no string received
 			http_response_code(403);	
 			$msg  =		"No Content"; 

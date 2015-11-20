@@ -28,6 +28,14 @@ class fetch extends controller{
 		$this->model->getUpdate($_GET['t'],$reqBearer);
 		
 	}
+	public function getrawdata(){
+		// Triggers a notification if new reading has been added.
+		// responds JSON data of reading to ajax poll.
+		
+		
+		$this->model->getrawdata();
+		
+	}
 	
 	
 }

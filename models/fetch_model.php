@@ -148,10 +148,27 @@ class fetch_model extends Model{
 		header('Content-Type: application/json');
 		echo json_encode($result,JSON_PRETTY_PRINT);
 	}
-
-
+	function getrawdata() {
 	
-	
+		/*
+		 *
+		 * Helper function to the ajax poll request, responds if any new data is posted
+		 * Json array returned
+		 * @var - $timestamp - timestamp of the request made by user recevied from controller
+		 *      - $bearer - user data received from the controller 
+		 */
+		
+		
+		$collection = $this->db->rawMaster;
+		$response = $collection->find();	
+		$result =[];
+		foreach ($response as $key => $value) {
+			array_push($result, $value['msg']);
+		}
+
+		header('Content-Type: application/json');
+		echo json_encode($result,JSON_PRETTY_PRINT);
+	}
 }	
 //1445297068211 
 //1445297090211
