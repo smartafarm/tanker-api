@@ -10,7 +10,8 @@
  */
 class feed_model extends Model{
 	function __construct(database $database) {
-		parent::__construct();				
+		parent::__construct();		
+
 	}
 	
 	public function getStatus(){
@@ -51,11 +52,13 @@ class feed_model extends Model{
 						}
 					}
 					// device header information data
+				
 					$data =array(
-					"did"		=> $device,							
-					"lat" 		=>$r_string[1],
-					"long" 		=>$r_string[2],
-					"dt"		=> new MongoDate(strtotime($r_string[3]))
+					"did"		=> $device,		
+					// convert unix timestamp to iso and then to string for mongo date object					
+					"dt"		=> new MongoDate(strtotime(date("c",$r_string[1]/1000))),
+					"lat" 		=>$r_string[2],
+					"long" 		=>$r_string[3],					
 					);
 					$index = -1;
 					$data['data']=[];
@@ -108,6 +111,7 @@ class feed_model extends Model{
 							$data['data'][$index]['sdata']['type'] =$type;*/
 						}			// Breaking string for value
 					}	
+					
 					$collection = $this->db->deviceData;
 					$options = array('fsync'=>\TRUE);
 					$collection->insert($data,$options);

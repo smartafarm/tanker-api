@@ -6,6 +6,7 @@
  * 1.0 - Setting up server and creating cient side login date (8/9/2015)
  * 
  */
+date_default_timezone_set('Australia/Sydney');
 require 'libs/database.php';
 require 'libs/bootstrap.php'; 										// This initiates the receiving of URL
 require 'libs/controller.php';										// This initialtes the controller for URL
