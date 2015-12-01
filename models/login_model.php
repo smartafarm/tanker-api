@@ -50,7 +50,8 @@ class login_model extends Model {
  		$response = array(
  			'token' => $token,
  			'id'	=> $username,
- 			'role'	=> $reading['user']['role']
+ 			'role'	=> $reading['user']['role'],
+ 			'details' => $reading['details']
  			 );
  		header('Content-Type: application/json');
  		echo json_encode($response);					

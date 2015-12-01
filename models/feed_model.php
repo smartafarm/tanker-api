@@ -62,7 +62,7 @@ class feed_model extends Model{
 					);
 					$index = -1;
 					$data['data']=[];
-					for ($i =4;$i<count($r_string);$i++ )
+					for ($i =4;$i<count($r_string)-1;$i++ )
 					{ 
 						// identifying the key
 						// wether sensor id or sensor data
