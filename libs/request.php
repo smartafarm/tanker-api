@@ -56,7 +56,8 @@ class request {
                /* if($_SERVER['HTTP_ORIGIN'] == "http://smartafarm.com.au" || $_SERVER['HTTP_ORIGIN'] == "http://localhost")
                 {*/
                         // Header expectation from POST request
-                        header('Access-Control-Allow-Origin: http://smartafarm.com.au');                        
+                        //header('Access-Control-Allow-Origin: http://smartafarm.com.au');
+                        header('Access-Control-Allow-Origin: *');                        
                         if($checkToken) {
                            if($this->session->tokenCheck($_SERVER,$checkAdmin)){               
                                return true;
