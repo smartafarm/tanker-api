@@ -16,11 +16,10 @@ class database {
             return self::$database;
         }else {
         	// setting options to auto connect
-        	$options = array('connect' => false); // 
-        	$connection = new MongoClient('mongodb://52.64.38.218:27017',$options);
         	
+        	$connection = new MongoClient();        	
         	// selecting the project database
-        	self::$database = $connection->smartfarm;
+        	self::$database = $connection->smartanker;
         	return self::$database;
         }
      
