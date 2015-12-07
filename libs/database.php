@@ -16,8 +16,8 @@ class database {
             return self::$database;
         }else {
         	// setting options to auto connect
-        	
-        	$connection = new MongoClient();        	
+        	$options = array('connect' => false); // 
+        	$connection = new MongoClient('mongodb://52.62.42.42:27017',$options);       	
         	// selecting the project database
         	self::$database = $connection->smartanker;
         	return self::$database;

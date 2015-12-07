@@ -14,7 +14,9 @@
  		{
 	 		$url = $_GET['url']; 									//get the URL string (.htacess) re-routes everything to index.php in main folder
 	 		$url = trim($url,'/');
-	 		$url = explode('/', $url) ; 							// creating the url array
+	 		$url = explode('/', $url) ; 
+	 		
+	 									// creating the url array
  		}else{
  			header('location:login'); 
  		}
@@ -35,6 +37,7 @@
  		
 	 	if (isset($url[2])) {
 				$controller->{$url[1]}($url[2]);
+
 			} elseif (isset($url[1])) {
 					$controller->{$url[1]}();
 			}else {
