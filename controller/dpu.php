@@ -1,6 +1,8 @@
 <?php
 class dpu extends controller{
 	
+	//DAILY PICK UP DATA CONTROLLER
+	
 	function __construct() {
 		/*
 		Checking request to the server and token values

@@ -1,7 +1,7 @@
 <?php
-class labr extends controller{
-
-	//LAB RESULTS DATA CONTROLLER
+class tloc extends controller{
+	
+	
 	
 	function __construct() {
 		/*
@@ -12,15 +12,13 @@ class labr extends controller{
 		
 	}
 	
-	public function get($data){
+	public function push(){
 		/*
 		 * push
 		 */
 		
-		//$data = json_decode(file_get_contents('php://input'), true);		
-				
-		
-		$this->model->get($data);
+		$data = json_decode(file_get_contents('php://input'), true);		
+		$this->model->push($data);
 
 
 		}

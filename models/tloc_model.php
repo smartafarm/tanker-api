@@ -1,13 +1,14 @@
 <?php 
 /*
- * @desc - class to receive data from tankers for daily pickup
+ * @desc - class to receive data from 
+ *
  * @variables 
  * 				$args = receiving the post query
  * 				$r_string = recevied string in request for evaluation
  *  Version History:
  *  1.0 - Inititalizing the file to receive the request
  */
-class dpu_model extends model{
+class tloc_model extends model{
 	function __construct(database $database) {
 		parent::__construct();		
 
@@ -39,9 +40,31 @@ class dpu_model extends model{
 			$r_string = explode(",", $args["query"]);
 			if(substr($r_string[0],0,2) != '##' || $r_string[count($r_string) -1 ] != '*'){
 				http_response_code(400);
+				exit();
 			}else
 			{
+				if(!isset($r_string[4])){
+					//if lat long not provided
+					http_response_code(400);
+					echo json_encode('Data not valid');
+					exit();	
+				}
+				$dt1 = DateTime::createFromFormat('Ymd\THis\Z', $r_string[1]);
+				$collection = $this->db->tlocData;
+				$options = array('fsync'=>\TRUE);
+				$collection->insert(
+					array(
+						//substring device id
+						'did' => substr($r_string[0],2,strlen($r_string[0]) ),							
+						//storing mongo date object
+						'dt' => new MongoDate($dt1->getTimestamp()),
+						//storing temprature value
+						'lat'=>$r_string[2],
+						'long'=>$r_string[3]
+						));
+				$response = $this->db->lastError();
 				http_response_code(200);
+				echo json_encode($response['ok']);
 			}
 			}
 	}
@@ -58,11 +81,16 @@ class dpu_model extends model{
 		 */
 		
 		
-		$userCollection = $this->db->rawData;
+		$userCollection = $this->db->tlocData;
 		$cursor = $userCollection->find();
 		$result = array();
+		$index = -1;
 		foreach($cursor as $key=>$value){
-			array_push($result,$value['msg']);
+			$index++;
+			array_push($result,$value);
+			$result[$index]["dt"] = date(DATE_ISO8601, $result[$index]["dt"]->sec);
+			//unsetting mongo id from response data
+			unset($result[$index]['_id']);
 		}
 		header('Content-Type: application/json');
 		echo json_encode( $result , JSON_PRETTY_PRINT);
