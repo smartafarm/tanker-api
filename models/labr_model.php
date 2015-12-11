@@ -31,6 +31,6 @@ class labr_model extends model{
 		echo json_encode( $response, JSON_PRETTY_PRINT);
 	}
 	
-	}// end of class
-}
+	}// end of get
+}//eof class
 ?>

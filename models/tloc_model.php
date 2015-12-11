@@ -74,15 +74,29 @@ class tloc_model extends model{
 		echo $msg;	
 	}
 	}// end of get status
-	function fetch() {
+	function fetch($data) {
 		/*		 
 		 * Gets all the devices in the dataBase based on the user
 		 * @var - $bearer - user received from fetch controller  		 
 		 */
 		
-		
-		$userCollection = $this->db->tlocData;
-		$cursor = $userCollection->find();
+	if(!isset($data)){
+		http_response_code(400);	
+		$msg  =		"BAD REQUEST"; 
+		echo json_encode($msg);
+		exit();
+	}
+
+	
+	$collection = $this->db->tlocData;
+	$cursor = $collection->find(array('did' => $data));
+	if($cursor->count() == 0){
+		http_response_code(400);	
+		$msg  =		"Device Not Found"; 
+		echo json_encode($msg);	}
+	else
+	{
+				
 		$result = array();
 		$index = -1;
 		foreach($cursor as $key=>$value){
@@ -94,6 +108,11 @@ class tloc_model extends model{
 		}
 		header('Content-Type: application/json');
 		echo json_encode( $result , JSON_PRETTY_PRINT);
+	}
+	
+	
+		
+		
 	}
 }// end of class
 ?>

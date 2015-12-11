@@ -22,12 +22,12 @@ class tloc extends controller{
 
 
 		}
-	public function fetch(){
+	public function fetch($data){
 	/*
 	 * push
 	 */
 	
-	$this->model->fetch();
+	$this->model->fetch($data);
 
 	}
 	

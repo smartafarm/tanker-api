@@ -22,12 +22,12 @@ class cip extends controller{
 
 
 		}
-	public function fetch(){
+	public function fetch($data){
 	/*
-	 * push
+	 * fetch data by device ID
 	 */
 	
-	$this->model->fetch();
+	$this->model->fetch($data);
 
 	}
 	
