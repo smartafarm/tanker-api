@@ -41,7 +41,7 @@
 			} elseif (isset($url[1])) {
 					$controller->{$url[1]}();
 			}else {
-				$controller->index();										// calling the index function by default if nothing is called
+				$controller->index();								// calling the index function by default if nothing is called
 			}
  		
  	}
