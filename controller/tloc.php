@@ -30,6 +30,24 @@ class tloc extends controller{
 	$this->model->fetch($data);
 
 	}
+	public function fetchall(){
+	/*
+	 * fetch data by device ID
+	 */
+	
+	$this->model->fetchall();
+
+	}
+	public function update(){
+		/*
+		 * push
+		 */
+		
+		$data = json_decode(file_get_contents('php://input'), true);		
+		$this->model->update($data);
+
+
+		}
 	
 	
 }

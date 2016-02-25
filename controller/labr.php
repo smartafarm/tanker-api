@@ -32,7 +32,22 @@ class labr extends controller{
 	$this->model->fetch();
 
 	}
-	
+	public function upload(){
+		/*
+		 * push
+		 */
+		
+		
+		$this->model->upload();
+
+
+		}
+	public function fetchall(){
+					
+			$this->model->fetchall();
+
+
+		}		
 	
 }
 ?>

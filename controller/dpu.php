@@ -24,12 +24,30 @@ class dpu extends controller{
 		}
 	public function fetch(){
 	/*
-	 * push
+	 * fetch
 	 */
 	
 	$this->model->fetch();
 
 	}
+	public function fetchdpu(){
+	/*
+	 * fetch
+	 */
+	
+	$this->model->fetchdpu();
+
+	}
+	public function update(){
+		/*
+		 * push
+		 */
+		
+		$data = json_decode(file_get_contents('php://input'), true);		
+		$this->model->update($data);
+
+
+		}
 	
 	
 }

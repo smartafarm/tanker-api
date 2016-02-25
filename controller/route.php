@@ -39,7 +39,45 @@ class route extends controller{
 	$this->model->get($data);
 
 	}
+
+	public function fetchallstart(){
+	/*
+	 * fetch
+	 */
 	
+	$this->model->fetchallstart();
+
+	}
+
+	public function fetchallend(){
+	/*
+	 * fetch
+	 */
+	
+	$this->model->fetchallend();
+
+	}
+
+	public function updatestart(){
+	/*
+	 * push
+	 */
+	
+	$data = json_decode(file_get_contents('php://input'), true);		
+	$this->model->updatestart($data);
+
+
+	}
+	public function updateend(){
+	/*
+	 * push
+	 */
+	
+	$data = json_decode(file_get_contents('php://input'), true);		
+	$this->model->updateend($data);
+
+
+	}
 	
 }
 ?>

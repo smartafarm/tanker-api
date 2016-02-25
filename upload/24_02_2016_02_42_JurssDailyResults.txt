@@ -1,0 +1,2222 @@
+0014  Parmalat Test Results for Farm - 0014  
+0014 ----------------------------------------
+0014 Results         26/10 28/10 30/10    MTD
+0014 Volume(L)        6212 12447 11927      0
+0014 Milkfat(%m/v)    3.65  3.25  3.92      0
+0014 Protein(%m/v)    3.18  3.12  3.17      0
+0014 BMCC(cells/ml)    146   116   166      0
+0014 ----------------------------------------
+0014 FreezingPt(°C) - No Result              
+0014 FPD Cryo(°C) - No Result                
+0014 Bactoscan       28/10     8             
+0020  Parmalat Test Results for Farm - 0020  
+0020 ----------------------------------------
+0020 Results         26/10 29/10 30/10    MTD
+0020 Volume(L)        2140  2167  2114      0
+0020 Milkfat(%m/v)    3.42  3.51  3.53      0
+0020 Protein(%m/v)    3.12  3.14  3.15      0
+0020 BMCC(cells/ml)    219   314   304      0
+0020 ----------------------------------------
+0020 FreezingPt(°C) - No Result              
+0020 FPD Cryo(°C) - No Result                
+0020 Bactoscan       30/10    11             
+0102  Parmalat Test Results for Farm - 0102  
+0102 ----------------------------------------
+0102 Results         27/10 29/10 31/10    MTD
+0102 Volume(L)        3690  3646  3558      0
+0102 Milkfat(%m/v)    3.27  3.38  3.51      0
+0102 Protein(%m/v)    3.02     3  3.03      0
+0102 BMCC(cells/ml)    257   260   279      0
+0102 ----------------------------------------
+0102 FreezingPt(°C) - No Result              
+0102 FPD Cryo(°C) - No Result                
+0102 Bactoscan       27/10    12             
+0110  Parmalat Test Results for Farm - 0110  
+0110 ----------------------------------------
+0110 Results         26/10 28/10 30/10    MTD
+0110 Volume(L)        7656  7773  7618      0
+0110 Milkfat(%m/v)    3.72  3.83  3.76      0
+0110 Protein(%m/v)    3.43  3.38  3.36      0
+0110 BMCC(cells/ml)    150   148   140      0
+0110 ----------------------------------------
+0110 FreezingPt(°C) - No Result              
+0110 FPD Cryo(°C) - No Result                
+0110 Bactoscan       28/10    10             
+0334  Parmalat Test Results for Farm - 0334  
+0334 ----------------------------------------
+0334 Results         29/10 30/10 31/10    MTD
+0334 Volume(L)        5062  4960  5064      0
+0334 Milkfat(%m/v)    4.03  4.16     4      0
+0334 Protein(%m/v)    3.38   3.4  3.33      0
+0334 BMCC(cells/ml)    244   267   226      0
+0334 ----------------------------------------
+0334 FreezingPt(°C) - No Result              
+0334 FPD Cryo(°C) - No Result                
+0334 Bactoscan       28/10     5             
+0370  Parmalat Test Results for Farm - 0370  
+0370 ----------------------------------------
+0370 Results         26/10 28/10 30/10    MTD
+0370 Volume(L)        3939  3867  3833      0
+0370 Milkfat(%m/v)    3.91  4.13  4.13      0
+0370 Protein(%m/v)    3.14  3.18  3.22      0
+0370 BMCC(cells/ml)    233   227   231      0
+0370 ----------------------------------------
+0370 FreezingPt(°C) - No Result              
+0370 FPD Cryo(°C) - No Result                
+0370 Bactoscan       28/10     6             
+0379  Parmalat Test Results for Farm - 0379  
+0379 ----------------------------------------
+0379 Results         25/10 27/10 29/10    MTD
+0379 Volume(L)        9434  9378  9570      0
+0379 Milkfat(%m/v)    3.76  3.68  3.65      0
+0379 Protein(%m/v)    3.11  3.07   3.1      0
+0379 BMCC(cells/ml)    137   125   125      0
+0379 ----------------------------------------
+0379 FreezingPt(°C) - No Result              
+0379 FPD Cryo(°C) - No Result                
+0379 Bactoscan       27/10     4             
+0388  Parmalat Test Results for Farm - 0388  
+0388 ----------------------------------------
+0388 Results         28/10 29/10 30/10    MTD
+0388 Volume(L)        5395  5410  5512      0
+0388 Milkfat(%m/v)    3.82   3.7  3.68      0
+0388 Protein(%m/v)    3.15  3.13   3.1      0
+0388 BMCC(cells/ml)    273   256   225      0
+0388 ----------------------------------------
+0388 FreezingPt(°C) - No Result              
+0388 FPD Cryo(°C) - No Result                
+0388 Bactoscan       30/10    23             
+0390  Parmalat Test Results for Farm - 0390  
+0390 ----------------------------------------
+0390 Results         28/10 29/10 30/10    MTD
+0390 Volume(L)        2844  2740  2778      0
+0390 Milkfat(%m/v)    3.95  3.87  3.88      0
+0390 Protein(%m/v)    3.31  3.32  3.32      0
+0390 BMCC(cells/ml)    174   180   158      0
+0390 ----------------------------------------
+0390 FreezingPt(°C) - No Result              
+0390 FPD Cryo(°C) - No Result                
+0390 Bactoscan       27/10     9             
+0397  Parmalat Test Results for Farm - 0397  
+0397 ----------------------------------------
+0397 Results         25/10 27/10 29/10    MTD
+0397 Volume(L)        5062  4941  4875      0
+0397 Milkfat(%m/v)    3.79  3.82  3.94      0
+0397 Protein(%m/v)    3.33  3.29  3.28      0
+0397 BMCC(cells/ml)    286   235   303      0
+0397 ----------------------------------------
+0397 FreezingPt(°C) - No Result              
+0397 FPD Cryo(°C) - No Result                
+0397 Bactoscan       29/10    18             
+0399  Parmalat Test Results for Farm - 0399  
+0399 ----------------------------------------
+0399 Results         28/10 29/10 30/10    MTD
+0399 Volume(L)        4429  4367  4521      0
+0399 Milkfat(%m/v)       4  4.02  3.96      0
+0399 Protein(%m/v)     3.3  3.38  3.34      0
+0399 BMCC(cells/ml)    155   161   151      0
+0399 ----------------------------------------
+0399 FreezingPt(°C) - No Result              
+0399 FPD Cryo(°C) - No Result                
+0399 Bactoscan       27/10    11             
+0402  Parmalat Test Results for Farm - 0402  
+0402 ----------------------------------------
+0402 Results         26/10 28/10 30/10    MTD
+0402 Volume(L)        8088  7735  7425      0
+0402 Milkfat(%m/v)    3.72   3.8  3.82      0
+0402 Protein(%m/v)    3.15  3.19  3.19      0
+0402 BMCC(cells/ml)    166   231   184      0
+0402 ----------------------------------------
+0402 FreezingPt(°C) - No Result              
+0402 FPD Cryo(°C) - No Result                
+0402 Bactoscan       28/10    14             
+0404  Parmalat Test Results for Farm - 0404  
+0404 ----------------------------------------
+0404 Results         28/10 29/10 30/10    MTD
+0404 Volume(L)        3554  1200  3601      0
+0404 Milkfat(%m/v)    3.72  3.74  3.67      0
+0404 Protein(%m/v)    2.99  2.98     3      0
+0404 BMCC(cells/ml)    191   266   230      0
+0404 ----------------------------------------
+0404 FreezingPt(°C) - No Result              
+0404 FPD Cryo(°C) - No Result                
+0404 Bactoscan       27/10    14             
+0564  Parmalat Test Results for Farm - 0564  
+0564 ----------------------------------------
+0564 Results         29/10 29/10 30/10    MTD
+0564 Volume(L)        4502  4695  4518      0
+0564 Milkfat(%m/v)    3.81     4  3.92      0
+0564 Protein(%m/v)    3.27  3.24  3.26      0
+0564 BMCC(cells/ml)    145   146   144      0
+0564 ----------------------------------------
+0564 FreezingPt(°C) - No Result              
+0564 FPD Cryo(°C) - No Result                
+0564 Bactoscan       27/10     6             
+0844  Parmalat Test Results for Farm - 0844  
+0844 ----------------------------------------
+0844 Results         25/10 27/10 29/10    MTD
+0844 Volume(L)        3278  3257  3130      0
+0844 Milkfat(%m/v)    3.54  3.37   3.6      0
+0844 Protein(%m/v)    3.26  3.27  3.36      0
+0844 BMCC(cells/ml)    140   109   125      0
+0844 ----------------------------------------
+0844 FreezingPt(°C) - No Result              
+0844 FPD Cryo(°C) - No Result                
+0844 Bactoscan       27/10     2             
+0852  Parmalat Test Results for Farm - 0852  
+0852 ----------------------------------------
+0852 Results         25/10 27/10 29/10    MTD
+0852 Volume(L)        6931  6904  1150      0
+0852 Milkfat(%m/v)    3.45  3.13  3.12      0
+0852 Protein(%m/v)    3.33  3.14  3.16      0
+0852 BMCC(cells/ml)    181   167   230      0
+0852 ----------------------------------------
+0852 FreezingPt(°C) - No Result              
+0852 FPD Cryo(°C) - No Result                
+0852 Bactoscan       27/10    10             
+0870  Parmalat Test Results for Farm - 0870  
+0870 ----------------------------------------
+0870 Results         25/10 27/10 29/10    MTD
+0870 Volume(L)       12828 12427 11926      0
+0870 Milkfat(%m/v)    3.36  3.39  3.57      0
+0870 Protein(%m/v)    3.23  3.22  3.28      0
+0870 BMCC(cells/ml)    185   184   272      0
+0870 ----------------------------------------
+0870 FreezingPt(°C) - No Result              
+0870 FPD Cryo(°C) - No Result                
+0870 Bactoscan       27/10    12             
+1040  Parmalat Test Results for Farm - 1040  
+1040 ----------------------------------------
+1040 Results         28/10 29/10 30/10    MTD
+1040 Volume(L)       10294 10021  9977      0
+1040 Milkfat(%m/v)    3.57  3.75  3.56      0
+1040 Protein(%m/v)    3.19  3.24  3.21      0
+1040 BMCC(cells/ml)    183   192   165      0
+1040 ----------------------------------------
+1040 FreezingPt(°C) - No Result              
+1040 FPD Cryo(°C) - No Result                
+1040 Bactoscan       27/10    19             
+1070  Parmalat Test Results for Farm - 1070  
+1070 ----------------------------------------
+1070 Results         30/10 30/10 31/10    MTD
+1070 Volume(L)        7667  5912  6007      0
+1070 Milkfat(%m/v)    4.33  3.88  3.99      0
+1070 Protein(%m/v)    3.44  3.49  3.49      0
+1070 BMCC(cells/ml)    198   162   163      0
+1070 ----------------------------------------
+1070 FreezingPt(°C) - No Result              
+1070 FPD Cryo(°C) - No Result                
+1070 Bactoscan       30/10    31             
+1102  Parmalat Test Results for Farm - 1102  
+1102 ----------------------------------------
+1102 Results         21/10 25/10 28/10    MTD
+1102 Volume(L)        1100  1386  1079      0
+1102 Milkfat(%m/v)    3.44  3.61   3.3      0
+1102 Protein(%m/v)    2.81  2.78  2.73      0
+1102 BMCC(cells/ml)   1096  1416  1239      0
+1102 ----------------------------------------
+1102 FreezingPt(°C) - No Result              
+1102 FPD Cryo(°C) - No Result                
+1102 Bactoscan       25/10    22             
+1109  Parmalat Test Results for Farm - 1109  
+1109 ----------------------------------------
+1109 Results         18/10 21/10 25/10    MTD
+1109 Volume(L)        1130   880  1204      0
+1109 Milkfat(%m/v)    3.36   3.2  3.25      0
+1109 Protein(%m/v)    2.84  2.81  2.81      0
+1109 BMCC(cells/ml)    760   485   702      0
+1109 ----------------------------------------
+1109 FreezingPt(°C) - No Result              
+1109 FPD Cryo(°C) - No Result                
+1109 Bactoscan       25/10   1.5             
+1114  Parmalat Test Results for Farm - 1114  
+1114 ----------------------------------------
+1114 Results         21/10 25/10 28/10    MTD
+1114 Volume(L)        3495  4697  3529      0
+1114 Milkfat(%m/v)    3.54  3.64  3.71      0
+1114 Protein(%m/v)    3.22  3.17  3.23      0
+1114 BMCC(cells/ml)   1420  1272  1218      0
+1114 ----------------------------------------
+1114 FreezingPt(°C) - No Result              
+1114 FPD Cryo(°C) - No Result                
+1114 Bactoscan       25/10    11             
+1118  Parmalat Test Results for Farm - 1118  
+1118 ----------------------------------------
+1118 Results         21/10 25/10 28/10    MTD
+1118 Volume(L)         727   982   476      0
+1118 Milkfat(%m/v)    4.52  4.48  4.34      0
+1118 Protein(%m/v)    3.16  3.06  3.07      0
+1118 BMCC(cells/ml)   1322  1507  1865      0
+1118 ----------------------------------------
+1118 FreezingPt(°C) - No Result              
+1118 FPD Cryo(°C) - No Result                
+1118 Bactoscan       25/10    75             
+1120  Parmalat Test Results for Farm - 1120  
+1120 ----------------------------------------
+1120 Results         21/10 25/10 28/10    MTD
+1120 Volume(L)        8030 10420  7734      0
+1120 Milkfat(%m/v)    3.49  3.55  3.46      0
+1120 Protein(%m/v)     2.8  2.75  2.73      0
+1120 BMCC(cells/ml)    777   742   747      0
+1120 ----------------------------------------
+1120 FreezingPt(°C) - No Result              
+1120 FPD Cryo(°C) - No Result                
+1120 Bactoscan       25/10   9.5             
+2002  Parmalat Test Results for Farm - 2002  
+2002 ----------------------------------------
+2002 Results         26/10 28/10 30/10    MTD
+2002 Volume(L)         414   424   493      0
+2002 Milkfat(%m/v)    4.48  3.25  3.97      0
+2002 Protein(%m/v)    3.05  2.85  3.03      0
+2002 BMCC(cells/ml)    208    73   243      0
+2002 ----------------------------------------
+2002 FreezingPt(°C) - No Result              
+2002 FPD Cryo(°C) - No Result                
+2002 Bactoscan       28/10     1             
+2006  Parmalat Test Results for Farm - 2006  
+2006 ----------------------------------------
+2006 Results         28/10 29/10 30/10    MTD
+2006 Volume(L)        3186  1957  2935      0
+2006 Milkfat(%m/v)    3.76  3.75  3.97      0
+2006 Protein(%m/v)    3.15  3.02  3.14      0
+2006 BMCC(cells/ml)    169   268   244      0
+2006 ----------------------------------------
+2006 FreezingPt(°C) - No Result              
+2006 FPD Cryo(°C) - No Result                
+2006 Bactoscan       28/10     8             
+2021  Parmalat Test Results for Farm - 2021  
+2021 ----------------------------------------
+2021 Results         25/10 27/10 29/10    MTD
+2021 Volume(L)        4718  4697  4835      0
+2021 Milkfat(%m/v)    4.47  4.44   4.5      0
+2021 Protein(%m/v)    3.62  3.61  3.65      0
+2021 BMCC(cells/ml)    178   167   154      0
+2021 ----------------------------------------
+2021 FreezingPt(°C) - No Result              
+2021 FPD Cryo(°C) - No Result                
+2021 Bactoscan       29/10    13             
+2022  Parmalat Test Results for Farm - 2022  
+2022 ----------------------------------------
+2022 Results         26/10 28/10 30/10    MTD
+2022 Volume(L)        3628  3721  3762      0
+2022 Milkfat(%m/v)    4.43  4.39  4.45      0
+2022 Protein(%m/v)     3.5  3.54  3.54      0
+2022 BMCC(cells/ml)    124   105   128      0
+2022 ----------------------------------------
+2022 FreezingPt(°C) - No Result              
+2022 FPD Cryo(°C) - No Result                
+2022 Bactoscan       28/10     3             
+2024  Parmalat Test Results for Farm - 2024  
+2024 ----------------------------------------
+2024 Results         26/10 28/10 30/10    MTD
+2024 Volume(L)       10617 10618 10036      0
+2024 Milkfat(%m/v)    3.75   3.7  3.87      0
+2024 Protein(%m/v)    3.13  3.14  3.19      0
+2024 BMCC(cells/ml)    166   169   171      0
+2024 ----------------------------------------
+2024 FreezingPt(°C) - No Result              
+2024 FPD Cryo(°C) - No Result                
+2024 Bactoscan       28/10     6             
+2056  Parmalat Test Results for Farm - 2056  
+2056 ----------------------------------------
+2056 Results         25/10 27/10 29/10    MTD
+2056 Volume(L)        2755  2923  2718      0
+2056 Milkfat(%m/v)    3.91  3.89  3.98      0
+2056 Protein(%m/v)    3.17  3.17  3.11      0
+2056 BMCC(cells/ml)    182   179   165      0
+2056 ----------------------------------------
+2056 FreezingPt(°C) - No Result              
+2056 FPD Cryo(°C) - No Result                
+2056 Bactoscan       29/10    50             
+2058  Parmalat Test Results for Farm - 2058  
+2058 ----------------------------------------
+2058 Results         25/10 27/10 29/10    MTD
+2058 Volume(L)        2200  2398  2233      0
+2058 Milkfat(%m/v)    4.84  4.48  4.95      0
+2058 Protein(%m/v)     3.8  3.62  3.82      0
+2058 BMCC(cells/ml)    358   309   300      0
+2058 ----------------------------------------
+2058 FreezingPt(°C) - No Result              
+2058 FPD Cryo(°C) - No Result                
+2058 Bactoscan       27/10     4             
+2059  Parmalat Test Results for Farm - 2059  
+2059 ----------------------------------------
+2059 Results         25/10 27/10 29/10    MTD
+2059 Volume(L)        8005  7859  7492      0
+2059 Milkfat(%m/v)    4.05  4.18  4.24      0
+2059 Protein(%m/v)    3.55  3.53  3.53      0
+2059 BMCC(cells/ml)    133   192   163      0
+2059 ----------------------------------------
+2059 FreezingPt(°C) - No Result              
+2059 FPD Cryo(°C) - No Result                
+2059 Bactoscan       27/10     4             
+2100  Parmalat Test Results for Farm - 2100  
+2100 ----------------------------------------
+2100 Results         28/10 29/10 30/10    MTD
+2100 Volume(L)        4169  4162  3894      0
+2100 Milkfat(%m/v)    3.66  3.82  3.77      0
+2100 Protein(%m/v)    3.03  3.19  3.18      0
+2100 BMCC(cells/ml)    193   211   226      0
+2100 ----------------------------------------
+2100 FreezingPt(°C) - No Result              
+2100 FPD Cryo(°C) - No Result                
+2100 Bactoscan       30/10    14             
+2200  Parmalat Test Results for Farm - 2200  
+2200 ----------------------------------------
+2200 Results         25/10 27/10 29/10    MTD
+2200 Volume(L)        2277  2261  2311      0
+2200 Milkfat(%m/v)    3.73  3.71  3.72      0
+2200 Protein(%m/v)    3.06  3.04  3.05      0
+2200 BMCC(cells/ml)    198   180   166      0
+2200 ----------------------------------------
+2200 FreezingPt(°C) - No Result              
+2200 FPD Cryo(°C) - No Result                
+2200 Bactoscan       27/10     3             
+2230  Parmalat Test Results for Farm - 2230  
+2230 ----------------------------------------
+2230 Results         28/10 29/10 30/10    MTD
+2230 Volume(L)       10196 10471 10016      0
+2230 Milkfat(%m/v)    3.72  3.48  3.43      0
+2230 Protein(%m/v)    3.25  3.22  3.31      0
+2230 BMCC(cells/ml)    196   246   356      0
+2230 ----------------------------------------
+2230 FreezingPt(°C) - No Result              
+2230 FPD Cryo(°C) - No Result                
+2230 Bactoscan       30/10    14             
+2270  Parmalat Test Results for Farm - 2270  
+2270 ----------------------------------------
+2270 Results         28/10 29/10 30/10    MTD
+2270 Volume(L)        6165  5844  5700      0
+2270 Milkfat(%m/v)    3.78   3.8  3.81      0
+2270 Protein(%m/v)    3.11   3.1  3.15      0
+2270 BMCC(cells/ml)     97   117   125      0
+2270 ----------------------------------------
+2270 FreezingPt(°C) - No Result              
+2270 FPD Cryo(°C) - No Result                
+2270 Bactoscan       27/10     7             
+2365  Parmalat Test Results for Farm - 2365  
+2365 ----------------------------------------
+2365 Results         25/10 27/10 29/10    MTD
+2365 Volume(L)        5713  5632  5589      0
+2365 Milkfat(%m/v)    4.11  4.07  4.08      0
+2365 Protein(%m/v)    3.32  3.28  3.27      0
+2365 BMCC(cells/ml)    176   147   136      0
+2365 ----------------------------------------
+2365 FreezingPt(°C) - No Result              
+2365 FPD Cryo(°C) - No Result                
+2365 Bactoscan       27/10     2             
+3080  Parmalat Test Results for Farm - 3080  
+3080 ----------------------------------------
+3080 Results         26/10 28/10 30/10    MTD
+3080 Volume(L)        3832  3752  3568      0
+3080 Milkfat(%m/v)    4.24  4.32  4.47      0
+3080 Protein(%m/v)    3.14  3.15  3.13      0
+3080 BMCC(cells/ml)    113   107   104      0
+3080 ----------------------------------------
+3080 FreezingPt(°C) - No Result              
+3080 FPD Cryo(°C) - No Result                
+3080 Bactoscan       28/10     2             
+3172  Parmalat Test Results for Farm - 3172  
+3172 ----------------------------------------
+3172 Results         25/10 27/10 29/10    MTD
+3172 Volume(L)        1240  1266  1248      0
+3172 Milkfat(%m/v)    3.65  3.69  3.71      0
+3172 Protein(%m/v)    2.83  2.85  2.85      0
+3172 BMCC(cells/ml)    166   133   141      0
+3172 ----------------------------------------
+3172 FreezingPt(°C) - No Result              
+3172 FPD Cryo(°C) - No Result                
+3172 Bactoscan       27/10     4             
+3230  Parmalat Test Results for Farm - 3230  
+3230 ----------------------------------------
+3230 Results         29/10 30/10 31/10    MTD
+3230 Volume(L)        3093 13178  8092      0
+3230 Milkfat(%m/v)    3.86  3.81  3.84      0
+3230 Protein(%m/v)    3.25  3.29   3.3      0
+3230 BMCC(cells/ml)    116   117   112      0
+3230 ----------------------------------------
+3230 FreezingPt(°C) - No Result              
+3230 FPD Cryo(°C) - No Result                
+3230 Bactoscan       27/10    10             
+3335  Parmalat Test Results for Farm - 3335  
+3335 ----------------------------------------
+3335 Results         25/10 27/10 29/10    MTD
+3335 Volume(L)        3847  3745  3664      0
+3335 Milkfat(%m/v)    4.15  4.06  4.13      0
+3335 Protein(%m/v)    3.32   3.3  3.33      0
+3335 BMCC(cells/ml)    304   242   252      0
+3335 ----------------------------------------
+3335 FreezingPt(°C) - No Result              
+3335 FPD Cryo(°C) - No Result                
+3335 Bactoscan       27/10    14             
+3520  Parmalat Test Results for Farm - 3520  
+3520 ----------------------------------------
+3520 Results         25/10 27/10 29/10    MTD
+3520 Volume(L)        5166  5149  4949      0
+3520 Milkfat(%m/v)     3.8  4.09  3.89      0
+3520 Protein(%m/v)    3.39  3.35  3.31      0
+3520 BMCC(cells/ml)    183   199   156      0
+3520 ----------------------------------------
+3520 FreezingPt(°C) - No Result              
+3520 FPD Cryo(°C) - No Result                
+3520 Bactoscan       27/10     4             
+3563  Parmalat Test Results for Farm - 3563  
+3563 ----------------------------------------
+3563 Results         25/10 27/10 29/10    MTD
+3563 Volume(L)        1370  1781  1263      0
+3563 Milkfat(%m/v)    3.86  3.73  3.86      0
+3563 Protein(%m/v)    3.06     3  2.98      0
+3563 BMCC(cells/ml)    190   211   246      0
+3563 ----------------------------------------
+3563 FreezingPt(°C) - No Result              
+3563 FPD Cryo(°C) - No Result                
+3563 Bactoscan       27/10     5             
+3650  Parmalat Test Results for Farm - 3650  
+3650 ----------------------------------------
+3650 Results         29/10 29/10 31/10    MTD
+3650 Volume(L)        2417  3163  3133      0
+3650 Milkfat(%m/v)    4.47  4.39  4.46      0
+3650 Protein(%m/v)    3.56  3.49   3.5      0
+3650 BMCC(cells/ml)    144   118   133      0
+3650 ----------------------------------------
+3650 FreezingPt(°C) - No Result              
+3650 FPD Cryo(°C) - No Result                
+3650 Bactoscan       27/10     5             
+3785  Parmalat Test Results for Farm - 3785  
+3785 ----------------------------------------
+3785 Results         26/10 28/10 30/10    MTD
+3785 Volume(L)        4879  4800  4370      0
+3785 Milkfat(%m/v)    3.95  3.92  4.08      0
+3785 Protein(%m/v)    3.42  3.35  3.34      0
+3785 BMCC(cells/ml)    157   112   188      0
+3785 ----------------------------------------
+3785 FreezingPt(°C) - No Result              
+3785 FPD Cryo(°C) - No Result                
+3785 Bactoscan       28/10     5             
+3790  Parmalat Test Results for Farm - 3790  
+3790 ----------------------------------------
+3790 Results         25/10 27/10 29/10    MTD
+3790 Volume(L)        1929  1815  1827      0
+3790 Milkfat(%m/v)     3.9  3.96  3.93      0
+3790 Protein(%m/v)    3.29   3.2  3.26      0
+3790 BMCC(cells/ml)    198   238   251      0
+3790 ----------------------------------------
+3790 FreezingPt(°C) - No Result              
+3790 FPD Cryo(°C) - No Result                
+3790 Bactoscan       27/10     8             
+3804  Parmalat Test Results for Farm - 3804  
+3804 ----------------------------------------
+3804 Results         26/10 28/10 30/10    MTD
+3804 Volume(L)        4255  4246  4119      0
+3804 Milkfat(%m/v)    4.03     4  4.07      0
+3804 Protein(%m/v)    3.23  3.21  3.22      0
+3804 BMCC(cells/ml)    189   178   262      0
+3804 ----------------------------------------
+3804 FreezingPt(°C) - No Result              
+3804 FPD Cryo(°C) - No Result                
+3804 Bactoscan       28/10     4             
+3807  Parmalat Test Results for Farm - 3807  
+3807 ----------------------------------------
+3807 Results         29/10 30/10 31/10    MTD
+3807 Volume(L)        6240  6212  2064      0
+3807 Milkfat(%m/v)    3.58  3.49   3.7      0
+3807 Protein(%m/v)    3.23  3.17  3.24      0
+3807 BMCC(cells/ml)    152   140   176      0
+3807 ----------------------------------------
+3807 FreezingPt(°C) - No Result              
+3807 FPD Cryo(°C) - No Result                
+3807 Bactoscan       29/10    11             
+3809  Parmalat Test Results for Farm - 3809  
+3809 ----------------------------------------
+3809 Results         25/10 27/10 29/10    MTD
+3809 Volume(L)        4878  4728  5135      0
+3809 Milkfat(%m/v)    4.05  4.11  3.99      0
+3809 Protein(%m/v)    3.16  3.15  3.13      0
+3809 BMCC(cells/ml)    238   224   177      0
+3809 ----------------------------------------
+3809 FreezingPt(°C) - No Result              
+3809 FPD Cryo(°C) - No Result                
+3809 Bactoscan       27/10    12             
+4101  Parmalat Test Results for Farm - 4101  
+4101 ----------------------------------------
+4101 Results         26/10 28/10 30/10    MTD
+4101 Volume(L)        1383  1030  1513      0
+4101 Milkfat(%m/v)    4.55  6.17  4.83      0
+4101 Protein(%m/v)    3.42  3.26  3.43      0
+4101 BMCC(cells/ml)    228   275   350      0
+4101 ----------------------------------------
+4101 FreezingPt(°C) - No Result              
+4101 FPD Cryo(°C) - No Result                
+4101 Bactoscan       28/10     6             
+4208  Parmalat Test Results for Farm - 4208  
+4208 ----------------------------------------
+4208 Results         26/10 28/10 30/10    MTD
+4208 Volume(L)        1511   746  1335      0
+4208 Milkfat(%m/v)    3.55  3.55  3.55      0
+4208 Protein(%m/v)    3.17  3.14  3.21      0
+4208 BMCC(cells/ml)    272   400   257      0
+4208 ----------------------------------------
+4208 FreezingPt(°C) - No Result              
+4208 FPD Cryo(°C) - No Result                
+4208 Bactoscan       28/10     4             
+4212  Parmalat Test Results for Farm - 4212  
+4212 ----------------------------------------
+4212 Results         26/10 28/10 30/10    MTD
+4212 Volume(L)        2376  2358  2349      0
+4212 Milkfat(%m/v)    3.76  3.78  3.84      0
+4212 Protein(%m/v)    3.01  2.98  2.99      0
+4212 BMCC(cells/ml)    105   107    93      0
+4212 ----------------------------------------
+4212 FreezingPt(°C) - No Result              
+4212 FPD Cryo(°C) - No Result                
+4212 Bactoscan       28/10     3             
+4300  Parmalat Test Results for Farm - 4300  
+4300 ----------------------------------------
+4300 Results         26/10 28/10 30/10    MTD
+4300 Volume(L)        1182  1238  1174      0
+4300 Milkfat(%m/v)    4.68  4.68  4.82      0
+4300 Protein(%m/v)    3.43  3.35  3.43      0
+4300 BMCC(cells/ml)    334   361   353      0
+4300 ----------------------------------------
+4300 FreezingPt(°C) - No Result              
+4300 FPD Cryo(°C) - No Result                
+4300 Bactoscan       28/10    16             
+4304  Parmalat Test Results for Farm - 4304  
+4304 ----------------------------------------
+4304 Results         26/10 28/10 30/10    MTD
+4304 Volume(L)         945  1012   971      0
+4304 Milkfat(%m/v)    4.12  4.09  4.02      0
+4304 Protein(%m/v)    3.15  3.11  3.13      0
+4304 BMCC(cells/ml)    316   257   326      0
+4304 ----------------------------------------
+4304 FreezingPt(°C) - No Result              
+4304 FPD Cryo(°C) - No Result                
+4304 Bactoscan       28/10     3             
+4310  Parmalat Test Results for Farm - 4310  
+4310 ----------------------------------------
+4310 Results         28/10 29/10 30/10    MTD
+4310 Volume(L)        4641  1001  4704      0
+4310 Milkfat(%m/v)    4.69  4.58  4.88      0
+4310 Protein(%m/v)     3.6  3.45  3.57      0
+4310 BMCC(cells/ml)    208   232   202      0
+4310 ----------------------------------------
+4310 FreezingPt(°C) - No Result              
+4310 FPD Cryo(°C) - No Result                
+4310 Bactoscan       27/10     7             
+4313  Parmalat Test Results for Farm - 4313  
+4313 ----------------------------------------
+4313 Results         26/10 28/10 30/10    MTD
+4313 Volume(L)        1193  1128  1138      0
+4313 Milkfat(%m/v)    4.29  4.06  4.14      0
+4313 Protein(%m/v)    3.26  3.21   3.3      0
+4313 BMCC(cells/ml)    353   344   398      0
+4313 ----------------------------------------
+4313 FreezingPt(°C) - No Result              
+4313 FPD Cryo(°C) - No Result                
+4313 Bactoscan       28/10     8             
+4314  Parmalat Test Results for Farm - 4314  
+4314 ----------------------------------------
+4314 Results         26/10 28/10 30/10    MTD
+4314 Volume(L)        3790  3637  3697      0
+4314 Milkfat(%m/v)    3.63  3.79  3.77      0
+4314 Protein(%m/v)    3.13  3.08  3.12      0
+4314 BMCC(cells/ml)    178   212   254      0
+4314 ----------------------------------------
+4314 FreezingPt(°C) - No Result              
+4314 FPD Cryo(°C) - No Result                
+4314 Bactoscan       28/10     7             
+4410  Parmalat Test Results for Farm - 4410  
+4410 ----------------------------------------
+4410 Results         26/10 28/10 30/10    MTD
+4410 Volume(L)        3065  3118  2979      0
+4410 Milkfat(%m/v)    4.09  4.05  4.18      0
+4410 Protein(%m/v)    3.35  3.34  3.43      0
+4410 BMCC(cells/ml)    171   144   143      0
+4410 ----------------------------------------
+4410 FreezingPt(°C) - No Result              
+4410 FPD Cryo(°C) - No Result                
+4410 Bactoscan       28/10     1             
+4416  Parmalat Test Results for Farm - 4416  
+4416 ----------------------------------------
+4416 Results         28/10 29/10 30/10    MTD
+4416 Volume(L)        4763  4782  4657      0
+4416 Milkfat(%m/v)    3.95  3.91  3.97      0
+4416 Protein(%m/v)    3.35  3.35  3.41      0
+4416 BMCC(cells/ml)    109   111   143      0
+4416 ----------------------------------------
+4416 FreezingPt(°C) - No Result              
+4416 FPD Cryo(°C) - No Result                
+4416 Bactoscan       29/10    14             
+4830  Parmalat Test Results for Farm - 4830  
+4830 ----------------------------------------
+4830 Results         26/10 28/10 30/10    MTD
+4830 Volume(L)        4943  7163  6445      0
+4830 Milkfat(%m/v)    4.26  4.18  4.52      0
+4830 Protein(%m/v)    3.29  3.27  3.21      0
+4830 BMCC(cells/ml)    115   107   155      0
+4830 ----------------------------------------
+4830 FreezingPt(°C) - No Result              
+4830 FPD Cryo(°C) - No Result                
+4830 Bactoscan       28/10    10             
+5208  Parmalat Test Results for Farm - 5208  
+5208 ----------------------------------------
+5208 Results         26/10 28/10 30/10    MTD
+5208 Volume(L)        2757  2143  1937      0
+5208 Milkfat(%m/v)    3.43  3.43  3.43      0
+5208 Protein(%m/v)    3.07  3.04  3.09      0
+5208 BMCC(cells/ml)    179   262   449      0
+5208 ----------------------------------------
+5208 FreezingPt(°C) - No Result              
+5208 FPD Cryo(°C) - No Result                
+5208 Bactoscan       28/10     8             
+5211  Parmalat Test Results for Farm - 5211  
+5211 ----------------------------------------
+5211 Results         26/10 28/10 30/10    MTD
+5211 Volume(L)         828   577  1023      0
+5211 Milkfat(%m/v)    3.77  3.84  3.77      0
+5211 Protein(%m/v)    3.09  3.03  3.08      0
+5211 BMCC(cells/ml)    465   612   934      0
+5211 ----------------------------------------
+5211 FreezingPt(°C) - No Result              
+5211 FPD Cryo(°C) - No Result                
+5211 Bactoscan       28/10     6             
+5214  Parmalat Test Results for Farm - 5214  
+5214 ----------------------------------------
+5214 Results         24/10 26/10 30/10    MTD
+5214 Volume(L)        3528  3332  3383      0
+5214 Milkfat(%m/v)    3.77  3.85  3.97      0
+5214 Protein(%m/v)    3.13  3.23  3.24      0
+5214 BMCC(cells/ml)    209   260   218      0
+5214 ----------------------------------------
+5214 FreezingPt(°C) - No Result              
+5214 FPD Cryo(°C) - No Result                
+5214 Bactoscan       14/10     6             
+5219  Parmalat Test Results for Farm - 5219  
+5219 ----------------------------------------
+5219 Results         26/10 28/10 30/10    MTD
+5219 Volume(L)        1889  1992  1814      0
+5219 Milkfat(%m/v)    3.87  3.78  3.94      0
+5219 Protein(%m/v)    3.03     3  3.11      0
+5219 BMCC(cells/ml)    192   195   207      0
+5219 ----------------------------------------
+5219 FreezingPt(°C) - No Result              
+5219 FPD Cryo(°C) - No Result                
+5219 Bactoscan       30/10    14             
+5239  Parmalat Test Results for Farm - 5239  
+5239 ----------------------------------------
+5239 Results         26/10 28/10 30/10    MTD
+5239 Volume(L)        1960  2032  1969      0
+5239 Milkfat(%m/v)    4.32  4.17  4.19      0
+5239 Protein(%m/v)    3.52  3.37  3.46      0
+5239 BMCC(cells/ml)    208   153   164      0
+5239 ----------------------------------------
+5239 FreezingPt(°C) - No Result              
+5239 FPD Cryo(°C) - No Result                
+5239 Bactoscan       28/10    13             
+5244  Parmalat Test Results for Farm - 5244  
+5244 ----------------------------------------
+5244 Results         26/10 28/10 30/10    MTD
+5244 Volume(L)        7149  6901  6996      0
+5244 Milkfat(%m/v)    3.74  3.89  3.75      0
+5244 Protein(%m/v)    3.24   3.2  3.23      0
+5244 BMCC(cells/ml)    197   210   191      0
+5244 ----------------------------------------
+5244 FreezingPt(°C) - No Result              
+5244 FPD Cryo(°C) - No Result                
+5244 Bactoscan       28/10     8             
+5309  Parmalat Test Results for Farm - 5309  
+5309 ----------------------------------------
+5309 Results         28/10 29/10 30/10    MTD
+5309 Volume(L)        4254  5737  2684      0
+5309 Milkfat(%m/v)    3.88  3.88  3.91      0
+5309 Protein(%m/v)    3.12  3.18  3.28      0
+5309 BMCC(cells/ml)    156   147   166      0
+5309 ----------------------------------------
+5309 FreezingPt(°C) - No Result              
+5309 FPD Cryo(°C) - No Result                
+5309 Bactoscan       29/10    13             
+5310  Parmalat Test Results for Farm - 5310  
+5310 ----------------------------------------
+5310 Results         25/10 27/10 29/10    MTD
+5310 Volume(L)        1584  1543  1567      0
+5310 Milkfat(%m/v)    3.55  3.63   3.7      0
+5310 Protein(%m/v)     2.9  2.89  2.85      0
+5310 BMCC(cells/ml)    272   319   282      0
+5310 ----------------------------------------
+5310 FreezingPt(°C) - No Result              
+5310 FPD Cryo(°C) - No Result                
+5310 Bactoscan       27/10    10             
+5313  Parmalat Test Results for Farm - 5313  
+5313 ----------------------------------------
+5313 Results         25/10 27/10 29/10    MTD
+5313 Volume(L)        5702  5681  5852      0
+5313 Milkfat(%m/v)    3.79  3.86  3.92      0
+5313 Protein(%m/v)    3.08  3.09  3.09      0
+5313 BMCC(cells/ml)    320   292   283      0
+5313 ----------------------------------------
+5313 FreezingPt(°C) - No Result              
+5313 FPD Cryo(°C) - No Result                
+5313 Bactoscan       27/10     8             
+5327  Parmalat Test Results for Farm - 5327  
+5327 ----------------------------------------
+5327 Results         25/10 27/10 29/10    MTD
+5327 Volume(L)        7459  7667  7747      0
+5327 Milkfat(%m/v)    4.33  4.08  4.13      0
+5327 Protein(%m/v)    3.39  3.39  3.36      0
+5327 BMCC(cells/ml)    127    88   100      0
+5327 ----------------------------------------
+5327 FreezingPt(°C) - No Result              
+5327 FPD Cryo(°C) - No Result                
+5327 Bactoscan       27/10     4             
+5433  Parmalat Test Results for Farm - 5433  
+5433 ----------------------------------------
+5433 Results         25/10 27/10 29/10    MTD
+5433 Volume(L)        1550  1561  1247      0
+5433 Milkfat(%m/v)    3.94  3.92  3.93      0
+5433 Protein(%m/v)     2.9  2.92   2.9      0
+5433 BMCC(cells/ml)    142   149   162      0
+5433 ----------------------------------------
+5433 FreezingPt(°C) - No Result              
+5433 FPD Cryo(°C) - No Result                
+5433 Bactoscan       27/10    11             
+5444  Parmalat Test Results for Farm - 5444  
+5444 ----------------------------------------
+5444 Results         25/10 27/10 29/10    MTD
+5444 Volume(L)        2975  2972  2996      0
+5444 Milkfat(%m/v)    4.38  4.42  4.31      0
+5444 Protein(%m/v)    3.18  3.21  3.18      0
+5444 BMCC(cells/ml)    114   127   130      0
+5444 ----------------------------------------
+5444 FreezingPt(°C) - No Result              
+5444 FPD Cryo(°C) - No Result                
+5444 Bactoscan       27/10     3             
+5449  Parmalat Test Results for Farm - 5449  
+5449 ----------------------------------------
+5449 Results         25/10 27/10 29/10    MTD
+5449 Volume(L)        2442  2244  1895      0
+5449 Milkfat(%m/v)    4.04  3.88  3.75      0
+5449 Protein(%m/v)    2.85  3.04  3.02      0
+5449 BMCC(cells/ml)    327   271   312      0
+5449 ----------------------------------------
+5449 FreezingPt(°C) - No Result              
+5449 FPD Cryo(°C) - No Result                
+5449 Bactoscan       29/10    24             
+5504  Parmalat Test Results for Farm - 5504  
+5504 ----------------------------------------
+5504 Results         26/10 28/10 30/10    MTD
+5504 Volume(L)        1915  2103  2209      0
+5504 Milkfat(%m/v)    4.09  4.06  4.12      0
+5504 Protein(%m/v)    3.51  3.52  3.55      0
+5504 BMCC(cells/ml)    135    87   103      0
+5504 ----------------------------------------
+5504 FreezingPt(°C) - No Result              
+5504 FPD Cryo(°C) - No Result                
+5504 Bactoscan       28/10     5             
+5507  Parmalat Test Results for Farm - 5507  
+5507 ----------------------------------------
+5507 Results         26/10 28/10 30/10    MTD
+5507 Volume(L)        3860  3952  3790      0
+5507 Milkfat(%m/v)    4.14  4.15  4.11      0
+5507 Protein(%m/v)     3.4  3.36  3.42      0
+5507 BMCC(cells/ml)    169   158   188      0
+5507 ----------------------------------------
+5507 FreezingPt(°C) - No Result              
+5507 FPD Cryo(°C) - No Result                
+5507 Bactoscan       30/10    27             
+5510  Parmalat Test Results for Farm - 5510  
+5510 ----------------------------------------
+5510 Results         26/10 28/10 30/10    MTD
+5510 Volume(L)        2922  2881  2809      0
+5510 Milkfat(%m/v)    3.31  3.55  3.63      0
+5510 Protein(%m/v)    3.02  3.04  3.01      0
+5510 BMCC(cells/ml)    170   193   175      0
+5510 ----------------------------------------
+5510 FreezingPt(°C) - No Result              
+5510 FPD Cryo(°C) - No Result                
+5510 Bactoscan       28/10    13             
+5511  Parmalat Test Results for Farm - 5511  
+5511 ----------------------------------------
+5511 Results         26/10 28/10 30/10    MTD
+5511 Volume(L)         723   707   859      0
+5511 Milkfat(%m/v)    3.94  3.76  3.61      0
+5511 Protein(%m/v)    3.15  3.09  3.15      0
+5511 BMCC(cells/ml)    176   136   141      0
+5511 ----------------------------------------
+5511 FreezingPt(°C) - No Result              
+5511 FPD Cryo(°C) - No Result                
+5511 Bactoscan       28/10    10             
+5533  Parmalat Test Results for Farm - 5533  
+5533 ----------------------------------------
+5533 Results         26/10 28/10 30/10    MTD
+5533 Volume(L)        6303  6477  6562      0
+5533 Milkfat(%m/v)    4.12  3.82  3.93      0
+5533 Protein(%m/v)    3.31  3.36  3.44      0
+5533 BMCC(cells/ml)    176   236   183      0
+5533 ----------------------------------------
+5533 FreezingPt(°C) - No Result              
+5533 FPD Cryo(°C) - No Result                
+5533 Bactoscan       28/10     7             
+5545  Parmalat Test Results for Farm - 5545  
+5545 ----------------------------------------
+5545 Results         26/10 28/10 30/10    MTD
+5545 Volume(L)         417   467   473      0
+5545 Milkfat(%m/v)    3.98  4.14  4.22      0
+5545 Protein(%m/v)    3.18  3.17  3.34      0
+5545 BMCC(cells/ml)    345   254   304      0
+5545 ----------------------------------------
+5545 FreezingPt(°C) - No Result              
+5545 FPD Cryo(°C) - No Result                
+5545 Bactoscan       30/10    72             
+5573  Parmalat Test Results for Farm - 5573  
+5573 ----------------------------------------
+5573 Results         26/10 28/10 30/10    MTD
+5573 Volume(L)        6548  6409  6391      0
+5573 Milkfat(%m/v)    3.68  3.84  3.79      0
+5573 Protein(%m/v)    3.31  3.25  3.26      0
+5573 BMCC(cells/ml)    112   108   118      0
+5573 ----------------------------------------
+5573 FreezingPt(°C) - No Result              
+5573 FPD Cryo(°C) - No Result                
+5573 Bactoscan       28/10    10             
+5575  Parmalat Test Results for Farm - 5575  
+5575 ----------------------------------------
+5575 Results         26/10 28/10 30/10    MTD
+5575 Volume(L)        2657  2795  2752      0
+5575 Milkfat(%m/v)     4.1   4.1  4.02      0
+5575 Protein(%m/v)    3.35  3.31  3.35      0
+5575 BMCC(cells/ml)    309   529   307      0
+5575 ----------------------------------------
+5575 FreezingPt(°C) - No Result              
+5575 FPD Cryo(°C) - No Result                
+5575 Bactoscan       28/10     4             
+5605  Parmalat Test Results for Farm - 5605  
+5605 ----------------------------------------
+5605 Results         26/10 28/10 30/10    MTD
+5605 Volume(L)        2716  2598  2716      0
+5605 Milkfat(%m/v)    4.21  4.08   4.3      0
+5605 Protein(%m/v)    3.21  3.18  3.29      0
+5605 BMCC(cells/ml)    196   226   234      0
+5605 ----------------------------------------
+5605 FreezingPt(°C) - No Result              
+5605 FPD Cryo(°C) - No Result                
+5605 Bactoscan       28/10     9             
+5634  Parmalat Test Results for Farm - 5634  
+5634 ----------------------------------------
+5634 Results         25/10 27/10 29/10    MTD
+5634 Volume(L)        2000  2004  2075      0
+5634 Milkfat(%m/v)    3.89  3.91   3.9      0
+5634 Protein(%m/v)    3.23  3.28  3.25      0
+5634 BMCC(cells/ml)    147   194   179      0
+5634 ----------------------------------------
+5634 FreezingPt(°C) - No Result              
+5634 FPD Cryo(°C) - No Result                
+5634 Bactoscan       27/10     9             
+5647  Parmalat Test Results for Farm - 5647  
+5647 ----------------------------------------
+5647 Results         25/10 27/10 29/10    MTD
+5647 Volume(L)        3570  3542  3568      0
+5647 Milkfat(%m/v)    3.81  3.82  3.47      0
+5647 Protein(%m/v)    3.02  2.98  2.99      0
+5647 BMCC(cells/ml)    286   309   205      0
+5647 ----------------------------------------
+5647 FreezingPt(°C) - No Result              
+5647 FPD Cryo(°C) - No Result                
+5647 Bactoscan       27/10     8             
+5651  Parmalat Test Results for Farm - 5651  
+5651 ----------------------------------------
+5651 Results         25/10 27/10 29/10    MTD
+5651 Volume(L)        8464  8341  8111      0
+5651 Milkfat(%m/v)    3.46  3.41  3.54      0
+5651 Protein(%m/v)    3.23   3.2  3.25      0
+5651 BMCC(cells/ml)    278   312   291      0
+5651 ----------------------------------------
+5651 FreezingPt(°C) - No Result              
+5651 FPD Cryo(°C) - No Result                
+5651 Bactoscan       27/10    11             
+5673  Parmalat Test Results for Farm - 5673  
+5673 ----------------------------------------
+5673 Results         26/10 28/10 30/10    MTD
+5673 Volume(L)         661   724   736      0
+5673 Milkfat(%m/v)    3.55  3.33  3.36      0
+5673 Protein(%m/v)    2.96  2.95  3.05      0
+5673 BMCC(cells/ml)    449   396   418      0
+5673 ----------------------------------------
+5673 FreezingPt(°C) - No Result              
+5673 FPD Cryo(°C) - No Result                
+5673 Bactoscan       28/10     8             
+5678  Parmalat Test Results for Farm - 5678  
+5678 ----------------------------------------
+5678 Results         26/10 28/10 30/10    MTD
+5678 Volume(L)       11160 11201 11056      0
+5678 Milkfat(%m/v)    3.53  3.49  3.49      0
+5678 Protein(%m/v)    3.23   3.2  3.23      0
+5678 BMCC(cells/ml)    313   240   267      0
+5678 ----------------------------------------
+5678 FreezingPt(°C) - No Result              
+5678 FPD Cryo(°C) - No Result                
+5678 Bactoscan       28/10     7             
+5679  Parmalat Test Results for Farm - 5679  
+5679 ----------------------------------------
+5679 Results         26/10 28/10 30/10    MTD
+5679 Volume(L)        1505  1612  1546      0
+5679 Milkfat(%m/v)    3.83  3.59  3.74      0
+5679 Protein(%m/v)    3.12  3.06  3.08      0
+5679 BMCC(cells/ml)    132   124   171      0
+5679 ----------------------------------------
+5679 FreezingPt(°C) - No Result              
+5679 FPD Cryo(°C) - No Result                
+5679 Bactoscan       28/10     7             
+5685  Parmalat Test Results for Farm - 5685  
+5685 ----------------------------------------
+5685 Results         25/10 27/10 29/10    MTD
+5685 Volume(L)       11098 10944 10906      0
+5685 Milkfat(%m/v)    4.35  4.45  4.34      0
+5685 Protein(%m/v)    3.54  3.52  3.46      0
+5685 BMCC(cells/ml)    231   213   194      0
+5685 ----------------------------------------
+5685 FreezingPt(°C) - No Result              
+5685 FPD Cryo(°C) - No Result                
+5685 Bactoscan       27/10     3             
+5690  Parmalat Test Results for Farm - 5690  
+5690 ----------------------------------------
+5690 Results         26/10 28/10 30/10    MTD
+5690 Volume(L)        3645  3563  3466      0
+5690 Milkfat(%m/v)    3.55  3.56  3.71      0
+5690 Protein(%m/v)    3.49  3.38   3.4      0
+5690 BMCC(cells/ml)    212   220   212      0
+5690 ----------------------------------------
+5690 FreezingPt(°C) - No Result              
+5690 FPD Cryo(°C) - No Result                
+5690 Bactoscan       30/10    10             
+6010  Parmalat Test Results for Farm - 6010  
+6010 ----------------------------------------
+6010 Results         25/10 27/10 29/10    MTD
+6010 Volume(L)        2299  2269  2335      0
+6010 Milkfat(%m/v)    3.19  3.18  3.06      0
+6010 Protein(%m/v)    3.19  3.18  3.13      0
+6010 BMCC(cells/ml)    182   157   162      0
+6010 ----------------------------------------
+6010 FreezingPt(°C) - No Result              
+6010 FPD Cryo(°C) - No Result                
+6010 Bactoscan       27/10    16             
+6050  Parmalat Test Results for Farm - 6050  
+6050 ----------------------------------------
+6050 Results         25/10 27/10 29/10    MTD
+6050 Volume(L)       13134 13023 12607      0
+6050 Milkfat(%m/v)    3.72  3.69  3.83      0
+6050 Protein(%m/v)    3.33  3.35  3.35      0
+6050 BMCC(cells/ml)    125   109   196      0
+6050 ----------------------------------------
+6050 FreezingPt(°C) - No Result              
+6050 FPD Cryo(°C) - No Result                
+6050 Bactoscan       27/10    12             
+6060  Parmalat Test Results for Farm - 6060  
+6060 ----------------------------------------
+6060 Results         28/10 29/10 30/10    MTD
+6060 Volume(L)        3551  3398  3455      0
+6060 Milkfat(%m/v)    3.92  3.97  3.93      0
+6060 Protein(%m/v)     3.4  3.43   3.4      0
+6060 BMCC(cells/ml)    189   229   243      0
+6060 ----------------------------------------
+6060 FreezingPt(°C) - No Result              
+6060 FPD Cryo(°C) - No Result                
+6060 Bactoscan       30/10    42             
+6120  Parmalat Test Results for Farm - 6120  
+6120 ----------------------------------------
+6120 Results         25/10 27/10 29/10    MTD
+6120 Volume(L)        2725  2706  2359      0
+6120 Milkfat(%m/v)    3.58  3.51  3.65      0
+6120 Protein(%m/v)    3.06  3.04  3.03      0
+6120 BMCC(cells/ml)    141   165   192      0
+6120 ----------------------------------------
+6120 FreezingPt(°C) - No Result              
+6120 FPD Cryo(°C) - No Result                
+6120 Bactoscan       29/10    22             
+6125  Parmalat Test Results for Farm - 6125  
+6125 ----------------------------------------
+6125 Results         26/10 28/10 30/10    MTD
+6125 Volume(L)        2781  2738  2391      0
+6125 Milkfat(%m/v)    3.75  3.25  4.15      0
+6125 Protein(%m/v)    2.94  2.99  2.85      0
+6125 BMCC(cells/ml)    163   121   202      0
+6125 ----------------------------------------
+6125 FreezingPt(°C) - No Result              
+6125 FPD Cryo(°C) - No Result                
+6125 Bactoscan       28/10    13             
+6250  Parmalat Test Results for Farm - 6250  
+6250 ----------------------------------------
+6250 Results         27/10 29/10 31/10    MTD
+6250 Volume(L)        1167  1098   985      0
+6250 Milkfat(%m/v)    3.91  3.67  4.04      0
+6250 Protein(%m/v)    3.18  3.15  3.27      0
+6250 BMCC(cells/ml)    347   325  1332      0
+6250 ----------------------------------------
+6250 FreezingPt(°C) - No Result              
+6250 FPD Cryo(°C) - No Result                
+6250 Bactoscan       31/10   115             
+6270  Parmalat Test Results for Farm - 6270  
+6270 ----------------------------------------
+6270 Results         25/10 27/10 29/10    MTD
+6270 Volume(L)        2162  2120  2084      0
+6270 Milkfat(%m/v)       4  3.91  3.96      0
+6270 Protein(%m/v)     3.4  3.29  3.33      0
+6270 BMCC(cells/ml)    228   243   317      0
+6270 ----------------------------------------
+6270 FreezingPt(°C) - No Result              
+6270 FPD Cryo(°C) - No Result                
+6270 Bactoscan       27/10     7             
+6300  Parmalat Test Results for Farm - 6300  
+6300 ----------------------------------------
+6300 Results         25/10 27/10 29/10    MTD
+6300 Volume(L)        2886  2765  2783      0
+6300 Milkfat(%m/v)    3.95  3.99  4.03      0
+6300 Protein(%m/v)    3.41  3.38  3.36      0
+6300 BMCC(cells/ml)    160   164   162      0
+6300 ----------------------------------------
+6300 FreezingPt(°C) - No Result              
+6300 FPD Cryo(°C) - No Result                
+6300 Bactoscan       27/10     3             
+6320  Parmalat Test Results for Farm - 6320  
+6320 ----------------------------------------
+6320 Results         25/10 27/10 29/10    MTD
+6320 Volume(L)        1990  2061  2030      0
+6320 Milkfat(%m/v)    4.62  4.36  4.43      0
+6320 Protein(%m/v)    3.51  3.56  3.62      0
+6320 BMCC(cells/ml)    367   298   302      0
+6320 ----------------------------------------
+6320 FreezingPt(°C) - No Result              
+6320 FPD Cryo(°C) - No Result                
+6320 Bactoscan       29/10   176             
+6330  Parmalat Test Results for Farm - 6330  
+6330 ----------------------------------------
+6330 Results         26/10 28/10 30/10    MTD
+6330 Volume(L)        3035  2861  3169      0
+6330 Milkfat(%m/v)    3.45  3.88  3.45      0
+6330 Protein(%m/v)    3.16  3.27  3.21      0
+6330 BMCC(cells/ml)    185   190   205      0
+6330 ----------------------------------------
+6330 FreezingPt(°C) - No Result              
+6330 FPD Cryo(°C) - No Result                
+6330 Bactoscan       30/10     7             
+6395  Parmalat Test Results for Farm - 6395  
+6395 ----------------------------------------
+6395 Results         25/10 27/10 29/10    MTD
+6395 Volume(L)       10772 11117 11107      0
+6395 Milkfat(%m/v)    3.59  3.58   3.6      0
+6395 Protein(%m/v)    3.31  3.29  3.27      0
+6395 BMCC(cells/ml)    209   213   207      0
+6395 ----------------------------------------
+6395 FreezingPt(°C) - No Result              
+6395 FPD Cryo(°C) - No Result                
+6395 Bactoscan       27/10    14             
+6425  Parmalat Test Results for Farm - 6425  
+6425 ----------------------------------------
+6425 Results         25/10 27/10 29/10    MTD
+6425 Volume(L)       10618 10820 10502      0
+6425 Milkfat(%m/v)    3.55   3.6  3.74      0
+6425 Protein(%m/v)    3.14  3.16   3.2      0
+6425 BMCC(cells/ml)    141   135   118      0
+6425 ----------------------------------------
+6425 FreezingPt(°C) - No Result              
+6425 FPD Cryo(°C) - No Result                
+6425 Bactoscan       27/10     4             
+6435  Parmalat Test Results for Farm - 6435  
+6435 ----------------------------------------
+6435 Results         25/10 27/10 29/10    MTD
+6435 Volume(L)        9146  9391  9571      0
+6435 Milkfat(%m/v)    3.89  3.93  3.88      0
+6435 Protein(%m/v)    3.09  3.08   3.1      0
+6435 BMCC(cells/ml)    119   118   138      0
+6435 ----------------------------------------
+6435 FreezingPt(°C) - No Result              
+6435 FPD Cryo(°C) - No Result                
+6435 Bactoscan       29/10     7             
+6455  Parmalat Test Results for Farm - 6455  
+6455 ----------------------------------------
+6455 Results         25/10 27/10 29/10    MTD
+6455 Volume(L)        6876  6989  6627      0
+6455 Milkfat(%m/v)    3.63  3.61  3.71      0
+6455 Protein(%m/v)    3.28  3.27  3.26      0
+6455 BMCC(cells/ml)    183   204   250      0
+6455 ----------------------------------------
+6455 FreezingPt(°C) - No Result              
+6455 FPD Cryo(°C) - No Result                
+6455 Bactoscan       27/10    13             
+6460  Parmalat Test Results for Farm - 6460  
+6460 ----------------------------------------
+6460 Results         26/10 28/10 30/10    MTD
+6460 Volume(L)        2186  2111  1955      0
+6460 Milkfat(%m/v)    4.01  4.07  4.33      0
+6460 Protein(%m/v)     3.4  3.36  3.33      0
+6460 BMCC(cells/ml)    687   565   538      0
+6460 ----------------------------------------
+6460 FreezingPt(°C) - No Result              
+6460 FPD Cryo(°C) - No Result                
+6460 Bactoscan       28/10     9             
+6465  Parmalat Test Results for Farm - 6465  
+6465 ----------------------------------------
+6465 Results         28/10 29/10 30/10    MTD
+6465 Volume(L)        4148  1741  3969      0
+6465 Milkfat(%m/v)    4.06  3.63  4.07      0
+6465 Protein(%m/v)     3.2  3.05  3.15      0
+6465 BMCC(cells/ml)    152   147   159      0
+6465 ----------------------------------------
+6465 FreezingPt(°C) - No Result              
+6465 FPD Cryo(°C) - No Result                
+6465 Bactoscan       27/10     4             
+6470  Parmalat Test Results for Farm - 6470  
+6470 ----------------------------------------
+6470 Results         25/10 27/10 29/10    MTD
+6470 Volume(L)        2181  2218  2087      0
+6470 Milkfat(%m/v)    4.34  4.23  4.42      0
+6470 Protein(%m/v)     3.6  3.55  3.68      0
+6470 BMCC(cells/ml)    138   142   141      0
+6470 ----------------------------------------
+6470 FreezingPt(°C) - No Result              
+6470 FPD Cryo(°C) - No Result                
+6470 Bactoscan       29/10     2             
+6475  Parmalat Test Results for Farm - 6475  
+6475 ----------------------------------------
+6475 Results         25/10 27/10 29/10    MTD
+6475 Volume(L)        5112  5170  4828      0
+6475 Milkfat(%m/v)    4.14  3.99  4.18      0
+6475 Protein(%m/v)    3.47  3.41  3.49      0
+6475 BMCC(cells/ml)    149   148   163      0
+6475 ----------------------------------------
+6475 FreezingPt(°C) - No Result              
+6475 FPD Cryo(°C) - No Result                
+6475 Bactoscan       29/10    18             
+6480  Parmalat Test Results for Farm - 6480  
+6480 ----------------------------------------
+6480 Results         26/10 28/10 30/10    MTD
+6480 Volume(L)       23746 23346 22986      0
+6480 Milkfat(%m/v)     3.9  3.89  3.93      0
+6480 Protein(%m/v)    3.22   3.2  3.24      0
+6480 BMCC(cells/ml)    150   143   129      0
+6480 ----------------------------------------
+6480 FreezingPt(°C) - No Result              
+6480 FPD Cryo(°C) - No Result                
+6480 Bactoscan       30/10    23             
+6490  Parmalat Test Results for Farm - 6490  
+6490 ----------------------------------------
+6490 Results         26/10 28/10 30/10    MTD
+6490 Volume(L)        9653  9833  9758      0
+6490 Milkfat(%m/v)     3.9  3.93  4.01      0
+6490 Protein(%m/v)    3.48  3.48  3.44      0
+6490 BMCC(cells/ml)    125   137   145      0
+6490 ----------------------------------------
+6490 FreezingPt(°C) - No Result              
+6490 FPD Cryo(°C) - No Result                
+6490 Bactoscan       30/10     9             
+6505  Parmalat Test Results for Farm - 6505  
+6505 ----------------------------------------
+6505 Results         28/10 29/10 30/10    MTD
+6505 Volume(L)         981  2956  1033      0
+6505 Milkfat(%m/v)    4.33  3.76  4.01      0
+6505 Protein(%m/v)     3.2   3.3  3.28      0
+6505 BMCC(cells/ml)    356   240   285      0
+6505 ----------------------------------------
+6505 FreezingPt(°C) - No Result              
+6505 FPD Cryo(°C) - No Result                
+6505 Bactoscan       27/10     8             
+6510  Parmalat Test Results for Farm - 6510  
+6510 ----------------------------------------
+6510 Results         26/10 28/10 30/10    MTD
+6510 Volume(L)        5134  5255  5250      0
+6510 Milkfat(%m/v)    4.28  4.18   4.2      0
+6510 Protein(%m/v)     3.4  3.39  3.46      0
+6510 BMCC(cells/ml)    139   140    91      0
+6510 ----------------------------------------
+6510 FreezingPt(°C) - No Result              
+6510 FPD Cryo(°C) - No Result                
+6510 Bactoscan       28/10    12             
+6515  Parmalat Test Results for Farm - 6515  
+6515 ----------------------------------------
+6515 Results         26/10 28/10 30/10    MTD
+6515 Volume(L)       11569 11555 11732      0
+6515 Milkfat(%m/v)    3.93  3.95  3.95      0
+6515 Protein(%m/v)    3.41  3.42  3.45      0
+6515 BMCC(cells/ml)    168   185   164      0
+6515 ----------------------------------------
+6515 FreezingPt(°C) - No Result              
+6515 FPD Cryo(°C) - No Result                
+6515 Bactoscan       28/10     6             
+6545  Parmalat Test Results for Farm - 6545  
+6545 ----------------------------------------
+6545 Results         26/10 28/10 30/10    MTD
+6545 Volume(L)        2275  2193  2126      0
+6545 Milkfat(%m/v)     3.8  3.56  3.78      0
+6545 Protein(%m/v)    3.03  3.01  3.09      0
+6545 BMCC(cells/ml)    244   296   398      0
+6545 ----------------------------------------
+6545 FreezingPt(°C) - No Result              
+6545 FPD Cryo(°C) - No Result                
+6545 Bactoscan       28/10     8             
+6550  Parmalat Test Results for Farm - 6550  
+6550 ----------------------------------------
+6550 Results         26/10 28/10 30/10    MTD
+6550 Volume(L)        6971  6961  6954      0
+6550 Milkfat(%m/v)    4.37  4.19  4.29      0
+6550 Protein(%m/v)    3.53  3.57  3.59      0
+6550 BMCC(cells/ml)    240   204   230      0
+6550 ----------------------------------------
+6550 FreezingPt(°C) - No Result              
+6550 FPD Cryo(°C) - No Result                
+6550 Bactoscan       28/10    11             
+6590  Parmalat Test Results for Farm - 6590  
+6590 ----------------------------------------
+6590 Results         26/10 28/10 30/10    MTD
+6590 Volume(L)        6302  6200  5913      0
+6590 Milkfat(%m/v)    4.15  4.12  4.22      0
+6590 Protein(%m/v)    3.16  3.12  3.11      0
+6590 BMCC(cells/ml)    279   342   305      0
+6590 ----------------------------------------
+6590 FreezingPt(°C) - No Result              
+6590 FPD Cryo(°C) - No Result                
+6590 Bactoscan       28/10    19             
+6620  Parmalat Test Results for Farm - 6620  
+6620 ----------------------------------------
+6620 Results         25/10 27/10 29/10    MTD
+6620 Volume(L)        9949 10117  9866      0
+6620 Milkfat(%m/v)    4.15  4.11  4.23      0
+6620 Protein(%m/v)    3.31  3.22  3.24      0
+6620 BMCC(cells/ml)    157   165   190      0
+6620 ----------------------------------------
+6620 FreezingPt(°C) - No Result              
+6620 FPD Cryo(°C) - No Result                
+6620 Bactoscan       29/10    15             
+6630  Parmalat Test Results for Farm - 6630  
+6630 ----------------------------------------
+6630 Results         25/10 27/10 29/10    MTD
+6630 Volume(L)        6001  5999  5733      0
+6630 Milkfat(%m/v)    4.18  4.51  4.18      0
+6630 Protein(%m/v)     3.4  3.38  3.43      0
+6630 BMCC(cells/ml)    175   205   172      0
+6630 ----------------------------------------
+6630 FreezingPt(°C) - No Result              
+6630 FPD Cryo(°C) - No Result                
+6630 Bactoscan       29/10    17             
+6640  Parmalat Test Results for Farm - 6640  
+6640 ----------------------------------------
+6640 Results         25/10 27/10 29/10    MTD
+6640 Volume(L)        5663  5768  5638      0
+6640 Milkfat(%m/v)    3.79  3.81  3.85      0
+6640 Protein(%m/v)    3.15  3.21  3.22      0
+6640 BMCC(cells/ml)    155   146   134      0
+6640 ----------------------------------------
+6640 FreezingPt(°C) - No Result              
+6640 FPD Cryo(°C) - No Result                
+6640 Bactoscan       27/10     5             
+6645  Parmalat Test Results for Farm - 6645  
+6645 ----------------------------------------
+6645 Results         26/10 28/10 30/10    MTD
+6645 Volume(L)        2673  2576  2494      0
+6645 Milkfat(%m/v)    4.09  4.25  4.01      0
+6645 Protein(%m/v)    3.52  3.55   3.3      0
+6645 BMCC(cells/ml)    176   161   183      0
+6645 ----------------------------------------
+6645 FreezingPt(°C) - No Result              
+6645 FPD Cryo(°C) - No Result                
+6645 Bactoscan       28/10     7             
+6650  Parmalat Test Results for Farm - 6650  
+6650 ----------------------------------------
+6650 Results         28/10 29/10 30/10    MTD
+6650 Volume(L)        4682  4607  4627      0
+6650 Milkfat(%m/v)    3.89  3.83  3.66      0
+6650 Protein(%m/v)    3.12  3.17  3.14      0
+6650 BMCC(cells/ml)    267   274   208      0
+6650 ----------------------------------------
+6650 FreezingPt(°C) - No Result              
+6650 FPD Cryo(°C) - No Result                
+6650 Bactoscan       27/10     6             
+6680  Parmalat Test Results for Farm - 6680  
+6680 ----------------------------------------
+6680 Results         25/10 27/10 29/10    MTD
+6680 Volume(L)        6654  6811  6621      0
+6680 Milkfat(%m/v)    3.67   3.7  3.78      0
+6680 Protein(%m/v)    3.13  3.13  3.12      0
+6680 BMCC(cells/ml)    127   139   170      0
+6680 ----------------------------------------
+6680 FreezingPt(°C) - No Result              
+6680 FPD Cryo(°C) - No Result                
+6680 Bactoscan       27/10     4             
+6700  Parmalat Test Results for Farm - 6700  
+6700 ----------------------------------------
+6700 Results         26/10 28/10 30/10    MTD
+6700 Volume(L)        2187  2132  2102      0
+6700 Milkfat(%m/v)    3.85  3.83  3.86      0
+6700 Protein(%m/v)    3.07   3.1  3.15      0
+6700 BMCC(cells/ml)    389   445   398      0
+6700 ----------------------------------------
+6700 FreezingPt(°C) - No Result              
+6700 FPD Cryo(°C) - No Result                
+6700 Bactoscan       30/10    12             
+6730  Parmalat Test Results for Farm - 6730  
+6730 ----------------------------------------
+6730 Results         28/10 29/10 30/10    MTD
+6730 Volume(L)        4640  4717  4458      0
+6730 Milkfat(%m/v)    3.54  3.67  3.56      0
+6730 Protein(%m/v)    3.03  2.92  2.86      0
+6730 BMCC(cells/ml)    348   414   330      0
+6730 ----------------------------------------
+6730 FreezingPt(°C) - No Result              
+6730 FPD Cryo(°C) - No Result                
+6730 Bactoscan       30/10    54             
+6740  Parmalat Test Results for Farm - 6740  
+6740 ----------------------------------------
+6740 Results         25/10 27/10 29/10    MTD
+6740 Volume(L)        8766  9073  8599      0
+6740 Milkfat(%m/v)    4.14  3.94  4.09      0
+6740 Protein(%m/v)    3.17   3.1  3.21      0
+6740 BMCC(cells/ml)    206   161   213      0
+6740 ----------------------------------------
+6740 FreezingPt(°C) - No Result              
+6740 FPD Cryo(°C) - No Result                
+6740 Bactoscan       27/10    11             
+6750  Parmalat Test Results for Farm - 6750  
+6750 ----------------------------------------
+6750 Results         26/10 28/10 30/10    MTD
+6750 Volume(L)        8407  8591  8411      0
+6750 Milkfat(%m/v)    3.36  3.62  3.63      0
+6750 Protein(%m/v)    2.98  3.04  3.04      0
+6750 BMCC(cells/ml)    349   215   215      0
+6750 ----------------------------------------
+6750 FreezingPt(°C) - No Result              
+6750 FPD Cryo(°C) - No Result                
+6750 Bactoscan       28/10    14             
+6770  Parmalat Test Results for Farm - 6770  
+6770 ----------------------------------------
+6770 Results         26/10 28/10 30/10    MTD
+6770 Volume(L)        6173  6158  5751      0
+6770 Milkfat(%m/v)    3.58  3.69  3.84      0
+6770 Protein(%m/v)    3.26  3.22  3.26      0
+6770 BMCC(cells/ml)    233   246   257      0
+6770 ----------------------------------------
+6770 FreezingPt(°C) - No Result              
+6770 FPD Cryo(°C) - No Result                
+6770 Bactoscan       28/10     3             
+6815  Parmalat Test Results for Farm - 6815  
+6815 ----------------------------------------
+6815 Results         26/10 28/10 30/10    MTD
+6815 Volume(L)        2337  3424  2097      0
+6815 Milkfat(%m/v)    4.03  4.03  3.89      0
+6815 Protein(%m/v)    3.42  3.38  3.37      0
+6815 BMCC(cells/ml)    176   204   246      0
+6815 ----------------------------------------
+6815 FreezingPt(°C) - No Result              
+6815 FPD Cryo(°C) - No Result                
+6815 Bactoscan       28/10    14             
+6840  Parmalat Test Results for Farm - 6840  
+6840 ----------------------------------------
+6840 Results         25/10 27/10 29/10    MTD
+6840 Volume(L)        4645  4726  4681      0
+6840 Milkfat(%m/v)    3.82  3.86  3.88      0
+6840 Protein(%m/v)    3.24  3.24  3.24      0
+6840 BMCC(cells/ml)    174   201   130      0
+6840 ----------------------------------------
+6840 FreezingPt(°C) - No Result              
+6840 FPD Cryo(°C) - No Result                
+6840 Bactoscan       27/10    18             
+6850  Parmalat Test Results for Farm - 6850  
+6850 ----------------------------------------
+6850 Results         28/10 29/10 30/10    MTD
+6850 Volume(L)        2453  2355  2301      0
+6850 Milkfat(%m/v)    3.98  3.96  3.96      0
+6850 Protein(%m/v)    3.21  3.24   3.2      0
+6850 BMCC(cells/ml)    174   219   180      0
+6850 ----------------------------------------
+6850 FreezingPt(°C) - No Result              
+6850 FPD Cryo(°C) - No Result                
+6850 Bactoscan       29/10    13             
+6890  Parmalat Test Results for Farm - 6890  
+6890 ----------------------------------------
+6890 Results         28/10 29/10 30/10    MTD
+6890 Volume(L)        9238  9322  9311      0
+6890 Milkfat(%m/v)    3.95  4.12  4.05      0
+6890 Protein(%m/v)    3.34  3.37  3.34      0
+6890 BMCC(cells/ml)    300   339   295      0
+6890 ----------------------------------------
+6890 FreezingPt(°C) - No Result              
+6890 FPD Cryo(°C) - No Result                
+6890 Bactoscan       30/10    64             
+6905  Parmalat Test Results for Farm - 6905  
+6905 ----------------------------------------
+6905 Results         26/10 28/10 30/10    MTD
+6905 Volume(L)        7016  7093  6808      0
+6905 Milkfat(%m/v)    4.01  3.92  3.85      0
+6905 Protein(%m/v)    3.13  3.13  3.14      0
+6905 BMCC(cells/ml)    354   330   335      0
+6905 ----------------------------------------
+6905 FreezingPt(°C) - No Result              
+6905 FPD Cryo(°C) - No Result                
+6905 Bactoscan       28/10    15             
+6915  Parmalat Test Results for Farm - 6915  
+6915 ----------------------------------------
+6915 Results         28/10 29/10 30/10    MTD
+6915 Volume(L)        4234  4264  4283      0
+6915 Milkfat(%m/v)    3.83  3.79  3.78      0
+6915 Protein(%m/v)    2.96  3.05  3.05      0
+6915 BMCC(cells/ml)    163   158   195      0
+6915 ----------------------------------------
+6915 FreezingPt(°C) - No Result              
+6915 FPD Cryo(°C) - No Result                
+6915 Bactoscan       27/10     3             
+6920  Parmalat Test Results for Farm - 6920  
+6920 ----------------------------------------
+6920 Results         26/10 29/10 30/10    MTD
+6920 Volume(L)        8172  8017  7927      0
+6920 Milkfat(%m/v)    3.69  3.75  3.72      0
+6920 Protein(%m/v)    2.99  3.03  3.05      0
+6920 BMCC(cells/ml)    209   210   267      0
+6920 ----------------------------------------
+6920 FreezingPt(°C) - No Result              
+6920 FPD Cryo(°C) - No Result                
+6920 Bactoscan       30/10    14             
+6925  Parmalat Test Results for Farm - 6925  
+6925 ----------------------------------------
+6925 Results         26/10 28/10 30/10    MTD
+6925 Volume(L)        2869  2912  2840      0
+6925 Milkfat(%m/v)    3.86  3.74  3.81      0
+6925 Protein(%m/v)    3.21  3.08  3.16      0
+6925 BMCC(cells/ml)    480   473   440      0
+6925 ----------------------------------------
+6925 FreezingPt(°C) - No Result              
+6925 FPD Cryo(°C) - No Result                
+6925 Bactoscan       28/10    13             
+6930  Parmalat Test Results for Farm - 6930  
+6930 ----------------------------------------
+6930 Results         26/10 28/10 30/10    MTD
+6930 Volume(L)        7659  7740  7863      0
+6930 Milkfat(%m/v)    4.14  4.04  4.14      0
+6930 Protein(%m/v)     3.3  3.35   3.4      0
+6930 BMCC(cells/ml)    114   134   104      0
+6930 ----------------------------------------
+6930 FreezingPt(°C) - No Result              
+6930 FPD Cryo(°C) - No Result                
+6930 Bactoscan       28/10     6             
+6935  Parmalat Test Results for Farm - 6935  
+6935 ----------------------------------------
+6935 Results         27/10 29/10 29/10    MTD
+6935 Volume(L)       10918  1597 10702      0
+6935 Milkfat(%m/v)       4  4.22   4.1      0
+6935 Protein(%m/v)    3.33  3.41  3.38      0
+6935 BMCC(cells/ml)    153   174   171      0
+6935 ----------------------------------------
+6935 FreezingPt(°C) - No Result              
+6935 FPD Cryo(°C) - No Result                
+6935 Bactoscan       27/10     1             
+6950  Parmalat Test Results for Farm - 6950  
+6950 ----------------------------------------
+6950 Results         26/10 28/10 30/10    MTD
+6950 Volume(L)       10625 11375  9893      0
+6950 Milkfat(%m/v)     3.8  3.79  3.83      0
+6950 Protein(%m/v)    3.36  3.36  3.38      0
+6950 BMCC(cells/ml)    182   175   151      0
+6950 ----------------------------------------
+6950 FreezingPt(°C) - No Result              
+6950 FPD Cryo(°C) - No Result                
+6950 Bactoscan       30/10    17             
+6955  Parmalat Test Results for Farm - 6955  
+6955 ----------------------------------------
+6955 Results         26/10 28/10 30/10    MTD
+6955 Volume(L)        8761  8157  7712      0
+6955 Milkfat(%m/v)    4.13  4.07  4.15      0
+6955 Protein(%m/v)    3.35  3.38  3.39      0
+6955 BMCC(cells/ml)    149   153   138      0
+6955 ----------------------------------------
+6955 FreezingPt(°C) - No Result              
+6955 FPD Cryo(°C) - No Result                
+6955 Bactoscan       26/10     8             
+6975  Parmalat Test Results for Farm - 6975  
+6975 ----------------------------------------
+6975 Results         26/10 28/10 30/10    MTD
+6975 Volume(L)        8299  8236  8130      0
+6975 Milkfat(%m/v)    4.11  4.09  4.14      0
+6975 Protein(%m/v)    3.37  3.36  3.39      0
+6975 BMCC(cells/ml)    134   141   145      0
+6975 ----------------------------------------
+6975 FreezingPt(°C) - No Result              
+6975 FPD Cryo(°C) - No Result                
+6975 Bactoscan       28/10     7             
+6989  Parmalat Test Results for Farm - 6989  
+6989 ----------------------------------------
+6989 Results         25/10 27/10 29/10    MTD
+6989 Volume(L)        2565  2577  2339      0
+6989 Milkfat(%m/v)    4.28  4.55  4.62      0
+6989 Protein(%m/v)    3.66  3.48  3.61      0
+6989 BMCC(cells/ml)    297   320   422      0
+6989 ----------------------------------------
+6989 FreezingPt(°C) - No Result              
+6989 FPD Cryo(°C) - No Result                
+6989 Bactoscan       29/10    17             
+6990  Parmalat Test Results for Farm - 6990  
+6990 ----------------------------------------
+6990 Results         26/10 28/10 30/10    MTD
+6990 Volume(L)       20425 21011 20137      0
+6990 Milkfat(%m/v)    3.71  3.61  3.79      0
+6990 Protein(%m/v)     3.3  3.26  3.36      0
+6990 BMCC(cells/ml)    297   277   289      0
+6990 ----------------------------------------
+6990 FreezingPt(°C) - No Result              
+6990 FPD Cryo(°C) - No Result                
+6990 Bactoscan       28/10    20             
+6991  Parmalat Test Results for Farm - 6991  
+6991 ----------------------------------------
+6991 Results         26/10 28/10 30/10    MTD
+6991 Volume(L)        7635  7721  7725      0
+6991 Milkfat(%m/v)    4.27   4.1  4.13      0
+6991 Protein(%m/v)    3.47  3.51  3.53      0
+6991 BMCC(cells/ml)    195   188   197      0
+6991 ----------------------------------------
+6991 FreezingPt(°C) - No Result              
+6991 FPD Cryo(°C) - No Result                
+6991 Bactoscan       28/10    12             
+6993  Parmalat Test Results for Farm - 6993  
+6993 ----------------------------------------
+6993 Results         28/10 29/10 30/10    MTD
+6993 Volume(L)        3008  9634  3009      0
+6993 Milkfat(%m/v)    3.08  3.22  3.31      0
+6993 Protein(%m/v)    3.03  3.03     3      0
+6993 BMCC(cells/ml)    148   171   164      0
+6993 ----------------------------------------
+6993 FreezingPt(°C) - No Result              
+6993 FPD Cryo(°C) - No Result                
+6993 Bactoscan       13/10     3             
+6994  Parmalat Test Results for Farm - 6994  
+6994 ----------------------------------------
+6994 Results         12/10 14/10 16/10    MTD
+6994 Volume(L)        3373  3348  2654      0
+6994 Milkfat(%m/v)    4.15  4.17  3.78      0
+6994 Protein(%m/v)    3.65   3.6  4.17      0
+6994 BMCC(cells/ml)    119   155   124      0
+6994 ----------------------------------------
+6994 FreezingPt(°C) - No Result              
+6994 FPD Cryo(°C) - No Result                
+6994 Bactoscan       14/10     3             
+6997  Parmalat Test Results for Farm - 6997  
+6997 ----------------------------------------
+6997 Results         28/10 29/10 30/10    MTD
+6997 Volume(L)        3063  3088  3122      0
+6997 Milkfat(%m/v)    4.29  4.25  4.12      0
+6997 Protein(%m/v)    3.47  3.54  3.54      0
+6997 BMCC(cells/ml)    160   153   143      0
+6997 ----------------------------------------
+6997 FreezingPt(°C) - No Result              
+6997 FPD Cryo(°C) - No Result                
+6997 Bactoscan       27/10     3             
+6999  Parmalat Test Results for Farm - 6999  
+6999 ----------------------------------------
+6999 Results         26/10 28/10 30/10    MTD
+6999 Volume(L)        4814  5004  4699      0
+6999 Milkfat(%m/v)    3.84  3.88  3.89      0
+6999 Protein(%m/v)    3.26  3.26   3.1      0
+6999 BMCC(cells/ml)     78    82   108      0
+6999 ----------------------------------------
+6999 FreezingPt(°C) - No Result              
+6999 FPD Cryo(°C) - No Result                
+6999 Bactoscan       28/10    16             
+7050  Parmalat Test Results for Farm - 7050  
+7050 ----------------------------------------
+7050 Results         26/10 28/10 30/10    MTD
+7050 Volume(L)        3517  3565  3281      0
+7050 Milkfat(%m/v)    4.05  4.03  4.19      0
+7050 Protein(%m/v)    3.71  3.63  3.68      0
+7050 BMCC(cells/ml)    316   336   338      0
+7050 ----------------------------------------
+7050 FreezingPt(°C) - No Result              
+7050 FPD Cryo(°C) - No Result                
+7050 Bactoscan       30/10    36             
+7200  Parmalat Test Results for Farm - 7200  
+7200 ----------------------------------------
+7200 Results         26/10 29/10 30/10    MTD
+7200 Volume(L)        6153  5877  5472      0
+7200 Milkfat(%m/v)    3.93  3.87  4.03      0
+7200 Protein(%m/v)    3.26  3.21  3.25      0
+7200 BMCC(cells/ml)    131   156   216      0
+7200 ----------------------------------------
+7200 FreezingPt(°C) - No Result              
+7200 FPD Cryo(°C) - No Result                
+7200 Bactoscan       29/10    10             
+7400  Parmalat Test Results for Farm - 7400  
+7400 ----------------------------------------
+7400 Results         27/10 29/10 31/10    MTD
+7400 Volume(L)        6004  5866  5992      0
+7400 Milkfat(%m/v)    3.95  3.88  3.91      0
+7400 Protein(%m/v)    3.17  3.06  3.06      0
+7400 BMCC(cells/ml)    111   125   170      0
+7400 ----------------------------------------
+7400 FreezingPt(°C) - No Result              
+7400 FPD Cryo(°C) - No Result                
+7400 Bactoscan       29/10     9             
+7430  Parmalat Test Results for Farm - 7430  
+7430 ----------------------------------------
+7430 Results         26/10 28/10 30/10    MTD
+7430 Volume(L)        5840  5726  5766      0
+7430 Milkfat(%m/v)    3.63  3.71  3.72      0
+7430 Protein(%m/v)    3.08  3.13  3.08      0
+7430 BMCC(cells/ml)    202   182   195      0
+7430 ----------------------------------------
+7430 FreezingPt(°C) - No Result              
+7430 FPD Cryo(°C) - No Result                
+7430 Bactoscan       28/10     8             
+7450  Parmalat Test Results for Farm - 7450  
+7450 ----------------------------------------
+7450 Results         26/10 28/10 30/10    MTD
+7450 Volume(L)        2230  2168  2024      0
+7450 Milkfat(%m/v)    3.63  3.78  3.98      0
+7450 Protein(%m/v)    2.94  2.86  2.93      0
+7450 BMCC(cells/ml)    181   231   277      0
+7450 ----------------------------------------
+7450 FreezingPt(°C) - No Result              
+7450 FPD Cryo(°C) - No Result                
+7450 Bactoscan       28/10    16             
+7560  Parmalat Test Results for Farm - 7560  
+7560 ----------------------------------------
+7560 Results         25/10 27/10 29/10    MTD
+7560 Volume(L)        4037  3980  3965      0
+7560 Milkfat(%m/v)       4  3.81  3.91      0
+7560 Protein(%m/v)    3.18  0.71  3.16      0
+7560 BMCC(cells/ml)    195   202   270      0
+7560 ----------------------------------------
+7560 FreezingPt(°C) - No Result              
+7560 FPD Cryo(°C) - No Result                
+7560 Bactoscan       27/10     2             
+7580  Parmalat Test Results for Farm - 7580  
+7580 ----------------------------------------
+7580 Results         26/10 28/10 30/10    MTD
+7580 Volume(L)        2969  2867  2894      0
+7580 Milkfat(%m/v)    3.92   3.9  3.96      0
+7580 Protein(%m/v)    3.12  3.03  3.13      0
+7580 BMCC(cells/ml)    282   162   284      0
+7580 ----------------------------------------
+7580 FreezingPt(°C) - No Result              
+7580 FPD Cryo(°C) - No Result                
+7580 Bactoscan       28/10    10             
+7590  Parmalat Test Results for Farm - 7590  
+7590 ----------------------------------------
+7590 Results         25/10 27/10 29/10    MTD
+7590 Volume(L)        8171  8080  8217      0
+7590 Milkfat(%m/v)    4.03  4.15  4.21      0
+7590 Protein(%m/v)    3.39  3.42  3.41      0
+7590 BMCC(cells/ml)    265   215   219      0
+7590 ----------------------------------------
+7590 FreezingPt(°C) - No Result              
+7590 FPD Cryo(°C) - No Result                
+7590 Bactoscan       27/10    10             
+7620  Parmalat Test Results for Farm - 7620  
+7620 ----------------------------------------
+7620 Results         26/10 28/10 30/10    MTD
+7620 Volume(L)        4439  4425  4427      0
+7620 Milkfat(%m/v)    4.73  3.87  4.54      0
+7620 Protein(%m/v)     3.5   3.5  3.54      0
+7620 BMCC(cells/ml)    386   237   322      0
+7620 ----------------------------------------
+7620 FreezingPt(°C) - No Result              
+7620 FPD Cryo(°C) - No Result                
+7620 Bactoscan       28/10    12             
+7920  Parmalat Test Results for Farm - 7920  
+7920 ----------------------------------------
+7920 Results         25/10 27/10 29/10    MTD
+7920 Volume(L)        1451  1438  1136      0
+7920 Milkfat(%m/v)    3.67  3.77  3.83      0
+7920 Protein(%m/v)    3.24  3.27  3.22      0
+7920 BMCC(cells/ml)    384   433   401      0
+7920 ----------------------------------------
+7920 FreezingPt(°C) - No Result              
+7920 FPD Cryo(°C) - No Result                
+7920 Bactoscan       29/10    77             
+8001  Parmalat Test Results for Farm - 8001  
+8001 ----------------------------------------
+8001 Results         26/10 28/10 30/10    MTD
+8001 Volume(L)        1809  1797  1777      0
+8001 Milkfat(%m/v)    3.77  3.73  3.75      0
+8001 Protein(%m/v)    3.19  3.17  3.17      0
+8001 BMCC(cells/ml)    230   223   235      0
+8001 ----------------------------------------
+8001 FreezingPt(°C) - No Result              
+8001 FPD Cryo(°C) - No Result                
+8001 Bactoscan       28/10     1             
+8015  Parmalat Test Results for Farm - 8015  
+8015 ----------------------------------------
+8015 Results         29/10 30/10 31/10    MTD
+8015 Volume(L)        4382  4264  4217      0
+8015 Milkfat(%m/v)    3.78  3.74  3.77      0
+8015 Protein(%m/v)     3.3  3.36   3.4      0
+8015 BMCC(cells/ml)    207   263   248      0
+8015 ----------------------------------------
+8015 FreezingPt(°C) - No Result              
+8015 FPD Cryo(°C) - No Result                
+8015 Bactoscan       27/10     4             
+8027  Parmalat Test Results for Farm - 8027  
+8027 ----------------------------------------
+8027 Results         27/10 29/10 31/10    MTD
+8027 Volume(L)        4860  4849  4766      0
+8027 Milkfat(%m/v)    3.74  3.84  3.83      0
+8027 Protein(%m/v)    3.25   3.3   3.3      0
+8027 BMCC(cells/ml)    190   228   235      0
+8027 ----------------------------------------
+8027 FreezingPt(°C) - No Result              
+8027 FPD Cryo(°C) - No Result                
+8027 Bactoscan       27/10     2             
+8054  Parmalat Test Results for Farm - 8054  
+8054 ----------------------------------------
+8054 Results         26/10 28/10 30/10    MTD
+8054 Volume(L)        4207  4100  3986      0
+8054 Milkfat(%m/v)    3.61  6.35  3.66      0
+8054 Protein(%m/v)    3.12  2.87  3.07      0
+8054 BMCC(cells/ml)     70   265    65      0
+8054 ----------------------------------------
+8054 FreezingPt(°C) - No Result              
+8054 FPD Cryo(°C) - No Result                
+8054 Bactoscan       30/10    17             
+8096  Parmalat Test Results for Farm - 8096  
+8096 ----------------------------------------
+8096 Results         25/10 27/10 29/10    MTD
+8096 Volume(L)        6488  6611  6247      0
+8096 Milkfat(%m/v)    3.91  3.72  3.92      0
+8096 Protein(%m/v)    3.55  3.51   3.5      0
+8096 BMCC(cells/ml)    399   332   405      0
+8096 ----------------------------------------
+8096 FreezingPt(°C) - No Result              
+8096 FPD Cryo(°C) - No Result                
+8096 Bactoscan       27/10    12             
+8107  Parmalat Test Results for Farm - 8107  
+8107 ----------------------------------------
+8107 Results         29/10 30/10 31/10    MTD
+8107 Volume(L)        7228  7034  6988      0
+8107 Milkfat(%m/v)    3.73  3.81  3.81      0
+8107 Protein(%m/v)    3.36  3.35  3.31      0
+8107 BMCC(cells/ml)    203   175   215      0
+8107 ----------------------------------------
+8107 FreezingPt(°C) - No Result              
+8107 FPD Cryo(°C) - No Result                
+8107 Bactoscan       27/10     5             
+8108  Parmalat Test Results for Farm - 8108  
+8108 ----------------------------------------
+8108 Results         25/10 27/10 29/10    MTD
+8108 Volume(L)       13125 13384 13023      0
+8108 Milkfat(%m/v)    3.67  3.68  3.77      0
+8108 Protein(%m/v)    3.15  3.13  3.11      0
+8108 BMCC(cells/ml)    277   238   253      0
+8108 ----------------------------------------
+8108 FreezingPt(°C) - No Result              
+8108 FPD Cryo(°C) - No Result                
+8108 Bactoscan       27/10     8             
+8109  Parmalat Test Results for Farm - 8109  
+8109 ----------------------------------------
+8109 Results         29/10 30/10 31/10    MTD
+8109 Volume(L)        4608  4465  4955      0
+8109 Milkfat(%m/v)    3.87  3.84  3.79      0
+8109 Protein(%m/v)    3.31  3.27  3.26      0
+8109 BMCC(cells/ml)    263   212   240      0
+8109 ----------------------------------------
+8109 FreezingPt(°C) - No Result              
+8109 FPD Cryo(°C) - No Result                
+8109 Bactoscan       31/10    38             
+8110  Parmalat Test Results for Farm - 8110  
+8110 ----------------------------------------
+8110 Results         29/10 30/10 31/10    MTD
+8110 Volume(L)        4640  4697  4924      0
+8110 Milkfat(%m/v)    3.98  3.86  3.85      0
+8110 Protein(%m/v)    3.04  3.05  3.04      0
+8110 BMCC(cells/ml)    139    99   130      0
+8110 ----------------------------------------
+8110 FreezingPt(°C) - No Result              
+8110 FPD Cryo(°C) - No Result                
+8110 Bactoscan       27/10     5             
+8113  Parmalat Test Results for Farm - 8113  
+8113 ----------------------------------------
+8113 Results         26/10 28/10 30/10    MTD
+8113 Volume(L)        5077  5010  4946      0
+8113 Milkfat(%m/v)    3.69  3.66  3.83      0
+8113 Protein(%m/v)     3.2  3.23  3.22      0
+8113 BMCC(cells/ml)    323   289   299      0
+8113 ----------------------------------------
+8113 FreezingPt(°C) - No Result              
+8113 FPD Cryo(°C) - No Result                
+8113 Bactoscan       28/10    14             
+8115  Parmalat Test Results for Farm - 8115  
+8115 ----------------------------------------
+8115 Results         29/10 30/10 31/10    MTD
+8115 Volume(L)        4524  9039  4516      0
+8115 Milkfat(%m/v)    3.64  3.74  3.59      0
+8115 Protein(%m/v)     3.2  3.17  3.16      0
+8115 BMCC(cells/ml)    179   136   127      0
+8115 ----------------------------------------
+8115 FreezingPt(°C) - No Result              
+8115 FPD Cryo(°C) - No Result                
+8115 Bactoscan       30/10     4             
+8120  Parmalat Test Results for Farm - 8120  
+8120 ----------------------------------------
+8120 Results         29/10 30/10 31/10    MTD
+8120 Volume(L)        8271  7915  7760      0
+8120 Milkfat(%m/v)    4.03  3.92  3.96      0
+8120 Protein(%m/v)    3.38  3.37  3.33      0
+8120 BMCC(cells/ml)    150   170   162      0
+8120 ----------------------------------------
+8120 FreezingPt(°C) - No Result              
+8120 FPD Cryo(°C) - No Result                
+8120 Bactoscan       28/10     6             
+8125  Parmalat Test Results for Farm - 8125  
+8125 ----------------------------------------
+8125 Results         26/10 28/10 30/10    MTD
+8125 Volume(L)        6796  6751  6669      0
+8125 Milkfat(%m/v)    3.45  3.59  3.78      0
+8125 Protein(%m/v)    3.28  3.19  3.21      0
+8125 BMCC(cells/ml)    188   232   237      0
+8125 ----------------------------------------
+8125 FreezingPt(°C) - No Result              
+8125 FPD Cryo(°C) - No Result                
+8125 Bactoscan       28/10    16             
+8127  Parmalat Test Results for Farm - 8127  
+8127 ----------------------------------------
+8127 Results         25/10 27/10 29/10    MTD
+8127 Volume(L)        5318  5147  4872      0
+8127 Milkfat(%m/v)    4.05  4.21  4.08      0
+8127 Protein(%m/v)    3.65   3.6  3.21      0
+8127 BMCC(cells/ml)    173   217   183      0
+8127 ----------------------------------------
+8127 FreezingPt(°C) - No Result              
+8127 FPD Cryo(°C) - No Result                
+8127 Bactoscan       27/10     4             
+8129  Parmalat Test Results for Farm - 8129  
+8129 ----------------------------------------
+8129 Results         25/10 27/10 29/10    MTD
+8129 Volume(L)        6852  7045  6761      0
+8129 Milkfat(%m/v)    3.79  3.66  3.83      0
+8129 Protein(%m/v)    3.26  3.21  3.26      0
+8129 BMCC(cells/ml)    107    91    78      0
+8129 ----------------------------------------
+8129 FreezingPt(°C) - No Result              
+8129 FPD Cryo(°C) - No Result                
+8129 Bactoscan       27/10     3             
+8130  Parmalat Test Results for Farm - 8130  
+8130 ----------------------------------------
+8130 Results         25/10 27/10 29/10    MTD
+8130 Volume(L)        4295  3995  4007      0
+8130 Milkfat(%m/v)    3.62  3.78  3.82      0
+8130 Protein(%m/v)    3.27  3.23   3.3      0
+8130 BMCC(cells/ml)    221   280   185      0
+8130 ----------------------------------------
+8130 FreezingPt(°C) - No Result              
+8130 FPD Cryo(°C) - No Result                
+8130 Bactoscan       27/10    13             
+8132  Parmalat Test Results for Farm - 8132  
+8132 ----------------------------------------
+8132 Results         28/10 29/10 30/10    MTD
+8132 Volume(L)        5572  5398  5710      0
+8132 Milkfat(%m/v)    3.87  3.92  3.81      0
+8132 Protein(%m/v)    3.16  3.19  3.19      0
+8132 BMCC(cells/ml)    230   249   175      0
+8132 ----------------------------------------
+8132 FreezingPt(°C) - No Result              
+8132 FPD Cryo(°C) - No Result                
+8132 Bactoscan       27/10    12             
+8141  Parmalat Test Results for Farm - 8141  
+8141 ----------------------------------------
+8141 Results         26/10 28/10 30/10    MTD
+8141 Volume(L)        5178  5134  4771      0
+8141 Milkfat(%m/v)    3.79   3.7  3.98      0
+8141 Protein(%m/v)    3.23  3.17  3.29      0
+8141 BMCC(cells/ml)    327   362   439      0
+8141 ----------------------------------------
+8141 FreezingPt(°C) - No Result              
+8141 FPD Cryo(°C) - No Result                
+8141 Bactoscan       28/10    18             
+8144  Parmalat Test Results for Farm - 8144  
+8144 ----------------------------------------
+8144 Results         27/10 29/10 31/10    MTD
+8144 Volume(L)       12308 11600 11538      0
+8144 Milkfat(%m/v)    3.46  3.72   3.7      0
+8144 Protein(%m/v)    3.18   3.3  3.27      0
+8144 BMCC(cells/ml)    134   152   165      0
+8144 ----------------------------------------
+8144 FreezingPt(°C) - No Result              
+8144 FPD Cryo(°C) - No Result                
+8144 Bactoscan       31/10     8             
+8152  Parmalat Test Results for Farm - 8152  
+8152 ----------------------------------------
+8152 Results         25/10 27/10 29/10    MTD
+8152 Volume(L)        2236  2387  2336      0
+8152 Milkfat(%m/v)    3.81   3.8  3.87      0
+8152 Protein(%m/v)    3.08  3.13   3.1      0
+8152 BMCC(cells/ml)    190   210   321      0
+8152 ----------------------------------------
+8152 FreezingPt(°C) - No Result              
+8152 FPD Cryo(°C) - No Result                
+8152 Bactoscan       29/10    22             
+8176  Parmalat Test Results for Farm - 8176  
+8176 ----------------------------------------
+8176 Results         26/10 28/10 30/10    MTD
+8176 Volume(L)        4603  3473  4091      0
+8176 Milkfat(%m/v)    3.97  4.69  4.28      0
+8176 Protein(%m/v)    3.38  3.46  3.35      0
+8176 BMCC(cells/ml)    208   386   356      0
+8176 ----------------------------------------
+8176 FreezingPt(°C) - No Result              
+8176 FPD Cryo(°C) - No Result                
+8176 Bactoscan       28/10     6             
+8189  Parmalat Test Results for Farm - 8189  
+8189 ----------------------------------------
+8189 Results         25/10 27/10 29/10    MTD
+8189 Volume(L)        5255  5216  5197      0
+8189 Milkfat(%m/v)    4.01  3.91     4      0
+8189 Protein(%m/v)    3.21  3.18  3.22      0
+8189 BMCC(cells/ml)    343   305   326      0
+8189 ----------------------------------------
+8189 FreezingPt(°C) - No Result              
+8189 FPD Cryo(°C) - No Result                
+8189 Bactoscan       27/10    14             
+8197  Parmalat Test Results for Farm - 8197  
+8197 ----------------------------------------
+8197 Results         26/10 28/10 30/10    MTD
+8197 Volume(L)        2712  2703  2671      0
+8197 Milkfat(%m/v)    5.41  5.35  5.49      0
+8197 Protein(%m/v)    3.79  3.82  3.82      0
+8197 BMCC(cells/ml)    108   120   111      0
+8197 ----------------------------------------
+8197 FreezingPt(°C) - No Result              
+8197 FPD Cryo(°C) - No Result                
+8197 Bactoscan       28/10     6             
+8209  Parmalat Test Results for Farm - 8209  
+8209 ----------------------------------------
+8209 Results         26/10 28/10 30/10    MTD
+8209 Volume(L)        3853  3727  3780      0
+8209 Milkfat(%m/v)    3.93  3.99  4.05      0
+8209 Protein(%m/v)    3.36  3.37  3.36      0
+8209 BMCC(cells/ml)     98    68    93      0
+8209 ----------------------------------------
+8209 FreezingPt(°C) - No Result              
+8209 FPD Cryo(°C) - No Result                
+8209 Bactoscan       28/10     4             
+8408  Parmalat Test Results for Farm - 8408  
+8408 ----------------------------------------
+8408 Results         25/10 27/10 29/10    MTD
+8408 Volume(L)        4364  4329  4100      0
+8408 Milkfat(%m/v)    3.52  3.87  4.03      0
+8408 Protein(%m/v)    3.05  3.12  3.19      0
+8408 BMCC(cells/ml)    140   192   239      0
+8408 ----------------------------------------
+8408 FreezingPt(°C) - No Result              
+8408 FPD Cryo(°C) - No Result                
+8408 Bactoscan       29/10    24             
+8409  Parmalat Test Results for Farm - 8409  
+8409 ----------------------------------------
+8409 Results         25/10 27/10 29/10    MTD
+8409 Volume(L)        4938  4782  4743      0
+8409 Milkfat(%m/v)    3.92  3.81  3.93      0
+8409 Protein(%m/v)    3.28  3.25  3.26      0
+8409 BMCC(cells/ml)    215   231   167      0
+8409 ----------------------------------------
+8409 FreezingPt(°C) - No Result              
+8409 FPD Cryo(°C) - No Result                
+8409 Bactoscan       27/10    11             
+8410  Parmalat Test Results for Farm - 8410  
+8410 ----------------------------------------
+8410 Results         28/10 29/10 30/10    MTD
+8410 Volume(L)       11807 11812 11868      0
+8410 Milkfat(%m/v)    3.67  3.47  3.43      0
+8410 Protein(%m/v)    3.27  3.24  3.23      0
+8410 BMCC(cells/ml)    172   152   166      0
+8410 ----------------------------------------
+8410 FreezingPt(°C) - No Result              
+8410 FPD Cryo(°C) - No Result                
+8410 Bactoscan       27/10     9             
+8412  Parmalat Test Results for Farm - 8412  
+8412 ----------------------------------------
+8412 Results         25/10 27/10 29/10    MTD
+8412 Volume(L)        3489  3594  3517      0
+8412 Milkfat(%m/v)    3.79  3.82  3.93      0
+8412 Protein(%m/v)    3.24  3.25  3.17      0
+8412 BMCC(cells/ml)    114   139   183      0
+8412 ----------------------------------------
+8412 FreezingPt(°C) - No Result              
+8412 FPD Cryo(°C) - No Result                
+8412 Bactoscan       27/10    11             
+8420  Parmalat Test Results for Farm - 8420  
+8420 ----------------------------------------
+8420 Results         28/10 30/10 30/10    MTD
+8420 Volume(L)        4282  4469  1368      0
+8420 Milkfat(%m/v)    4.26  4.17   4.3      0
+8420 Protein(%m/v)    3.65  3.59  3.56      0
+8420 BMCC(cells/ml)    106    71   184      0
+8420 ----------------------------------------
+8420 FreezingPt(°C) - No Result              
+8420 FPD Cryo(°C) - No Result                
+8420 Bactoscan       28/10    15             
+8422  Parmalat Test Results for Farm - 8422  
+8422 ----------------------------------------
+8422 Results         26/10 28/10 30/10    MTD
+8422 Volume(L)        6272  6364  5893      0
+8422 Milkfat(%m/v)    4.01  3.96     4      0
+8422 Protein(%m/v)    3.13   3.1   3.1      0
+8422 BMCC(cells/ml)    236   212   275      0
+8422 ----------------------------------------
+8422 FreezingPt(°C) - No Result              
+8422 FPD Cryo(°C) - No Result                
+8422 Bactoscan       30/10    40             
+8425  Parmalat Test Results for Farm - 8425  
+8425 ----------------------------------------
+8425 Results         28/10 29/10 30/10    MTD
+8425 Volume(L)        1724  1767  1763      0
+8425 Milkfat(%m/v)    3.98  3.85  3.74      0
+8425 Protein(%m/v)    3.19  3.12  3.13      0
+8425 BMCC(cells/ml)    294   239   244      0
+8425 ----------------------------------------
+8425 FreezingPt(°C) - No Result              
+8425 FPD Cryo(°C) - No Result                
+8425 Bactoscan       27/10    17             
+8440  Parmalat Test Results for Farm - 8440  
+8440 ----------------------------------------
+8440 Results         27/10 29/10 31/10    MTD
+8440 Volume(L)        3049  2989  2819      0
+8440 Milkfat(%m/v)    4.34  4.33  4.41      0
+8440 Protein(%m/v)    3.69  3.55  3.45      0
+8440 BMCC(cells/ml)    118   140   170      0
+8440 ----------------------------------------
+8440 FreezingPt(°C) - No Result              
+8440 FPD Cryo(°C) - No Result                
+8440 Bactoscan       31/10    14             
+8449  Parmalat Test Results for Farm - 8449  
+8449 ----------------------------------------
+8449 Results         27/10 29/10 31/10    MTD
+8449 Volume(L)        2317  2421  2314      0
+8449 Milkfat(%m/v)    4.01  4.34  4.05      0
+8449 Protein(%m/v)    3.34  3.42  3.23      0
+8449 BMCC(cells/ml)    186   186   146      0
+8449 ----------------------------------------
+8449 FreezingPt(°C) - No Result              
+8449 FPD Cryo(°C) - No Result                
+8449 Bactoscan       31/10     4             
+8452  Parmalat Test Results for Farm - 8452  
+8452 ----------------------------------------
+8452 Results         25/10 27/10 29/10    MTD
+8452 Volume(L)        7599  7582  7766      0
+8452 Milkfat(%m/v)    4.22  4.21  4.32      0
+8452 Protein(%m/v)    3.21  3.19  3.24      0
+8452 BMCC(cells/ml)    170   156   181      0
+8452 ----------------------------------------
+8452 FreezingPt(°C) - No Result              
+8452 FPD Cryo(°C) - No Result                
+8452 Bactoscan       27/10     6             
+8459  Parmalat Test Results for Farm - 8459  
+8459 ----------------------------------------
+8459 Results         29/10 30/10 31/10    MTD
+8459 Volume(L)        2149 17309 17786      0
+8459 Milkfat(%m/v)    4.42  4.41  4.08      0
+8459 Protein(%m/v)    3.65  3.51  3.44      0
+8459 BMCC(cells/ml)    245   261   216      0
+8459 ----------------------------------------
+8459 FreezingPt(°C) - No Result              
+8459 FPD Cryo(°C) - No Result                
+8459 Bactoscan       31/10    32             
+8460  Parmalat Test Results for Farm - 8460  
+8460 ----------------------------------------
+8460 Results         28/10 29/10 30/10    MTD
+8460 Volume(L)        8420  8253  8187      0
+8460 Milkfat(%m/v)    3.87  4.09  3.97      0
+8460 Protein(%m/v)    3.12  3.26  3.19      0
+8460 BMCC(cells/ml)    217   260   201      0
+8460 ----------------------------------------
+8460 FreezingPt(°C) - No Result              
+8460 FPD Cryo(°C) - No Result                
+8460 Bactoscan       28/10    13             
+8471  Parmalat Test Results for Farm - 8471  
+8471 ----------------------------------------
+8471 Results         25/10 27/10 29/10    MTD
+8471 Volume(L)       10666 10422 10778      0
+8471 Milkfat(%m/v)    3.56  3.73  3.92      0
+8471 Protein(%m/v)    3.28  3.27  3.31      0
+8471 BMCC(cells/ml)     60    88    66      0
+8471 ----------------------------------------
+8471 FreezingPt(°C) - No Result              
+8471 FPD Cryo(°C) - No Result                
+8471 Bactoscan       27/10    16             
+8474  Parmalat Test Results for Farm - 8474  
+8474 ----------------------------------------
+8474 Results         29/10 30/10 31/10    MTD
+8474 Volume(L)        4899  5038  4962      0
+8474 Milkfat(%m/v)    4.12  3.91  3.93      0
+8474 Protein(%m/v)     3.2  3.19  3.18      0
+8474 BMCC(cells/ml)    137    98   120      0
+8474 ----------------------------------------
+8474 FreezingPt(°C) - No Result              
+8474 FPD Cryo(°C) - No Result                
+8474 Bactoscan       27/10    13             
+8478  Parmalat Test Results for Farm - 8478  
+8478 ----------------------------------------
+8478 Results         29/10 30/10 31/10    MTD
+8478 Volume(L)        1664  1692  1731      0
+8478 Milkfat(%m/v)    3.85  3.89  3.76      0
+8478 Protein(%m/v)    3.07   3.2  3.14      0
+8478 BMCC(cells/ml)    117   161   143      0
+8478 ----------------------------------------
+8478 FreezingPt(°C) - No Result              
+8478 FPD Cryo(°C) - No Result                
+8478 Bactoscan       27/10    19             
+8486  Parmalat Test Results for Farm - 8486  
+8486 ----------------------------------------
+8486 Results         26/10 28/10 30/10    MTD
+8486 Volume(L)        2317  2361  2308      0
+8486 Milkfat(%m/v)    4.18   4.3  4.36      0
+8486 Protein(%m/v)    3.48  3.61  3.62      0
+8486 BMCC(cells/ml)    163   156   165      0
+8486 ----------------------------------------
+8486 FreezingPt(°C) - No Result              
+8486 FPD Cryo(°C) - No Result                
+8486 Bactoscan       28/10    13             
+8489  Parmalat Test Results for Farm - 8489  
+8489 ----------------------------------------
+8489 Results         27/10 29/10 31/10    MTD
+8489 Volume(L)        4390  4174  4400      0
+8489 Milkfat(%m/v)    3.96  4.15     4      0
+8489 Protein(%m/v)    2.98  3.05  2.95      0
+8489 BMCC(cells/ml)    104   171   140      0
+8489 ----------------------------------------
+8489 FreezingPt(°C) - No Result              
+8489 FPD Cryo(°C) - No Result                
+8489 Bactoscan       27/10     4             
+8493  Parmalat Test Results for Farm - 8493  
+8493 ----------------------------------------
+8493 Results         28/10 29/10 30/10    MTD
+8493 Volume(L)        3896  4005  3864      0
+8493 Milkfat(%m/v)    4.21  4.05  4.08      0
+8493 Protein(%m/v)    3.35  3.35  3.37      0
+8493 BMCC(cells/ml)    342   271   295      0
+8493 ----------------------------------------
+8493 FreezingPt(°C) - No Result              
+8493 FPD Cryo(°C) - No Result                
+8493 Bactoscan       30/10    54             
+8497  Parmalat Test Results for Farm - 8497  
+8497 ----------------------------------------
+8497 Results         26/10 28/10 30/10    MTD
+8497 Volume(L)        4400  4302  4270      0
+8497 Milkfat(%m/v)    4.02  4.32  4.28      0
+8497 Protein(%m/v)    3.52  3.55  3.53      0
+8497 BMCC(cells/ml)    211   312   218      0
+8497 ----------------------------------------
+8497 FreezingPt(°C) - No Result              
+8497 FPD Cryo(°C) - No Result                
+8497 Bactoscan       28/10    15             
+8510  Parmalat Test Results for Farm - 8510  
+8510 ----------------------------------------
+8510 Results         26/10 28/10 30/10    MTD
+8510 Volume(L)       15206 14988 14946      0
+8510 Milkfat(%m/v)    4.15  4.16  4.13      0
+8510 Protein(%m/v)     3.4  3.46  3.43      0
+8510 BMCC(cells/ml)    180   162   209      0
+8510 ----------------------------------------
+8510 FreezingPt(°C) - No Result              
+8510 FPD Cryo(°C) - No Result                
+8510 Bactoscan       30/10     5             
+8512  Parmalat Test Results for Farm - 8512  
+8512 ----------------------------------------
+8512 Results         26/10 28/10 30/10    MTD
+8512 Volume(L)        1945  1982  1937      0
+8512 Milkfat(%m/v)     3.7  3.61  3.72      0
+8512 Protein(%m/v)     3.1  3.15   3.2      0
+8512 BMCC(cells/ml)    343   312   266      0
+8512 ----------------------------------------
+8512 FreezingPt(°C) - No Result              
+8512 FPD Cryo(°C) - No Result                
+8512 Bactoscan       28/10     4             

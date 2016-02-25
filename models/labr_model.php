@@ -32,5 +32,44 @@ class labr_model extends model{
 	}
 	
 	}// end of get
+	public function upload(){
+
+	if (isset($_FILES['file'])) {				
+		
+		date_default_timezone_set('Australia/Sydney');
+		$date = date('d_m_Y_h_i', time());
+		$collection = $this->db->upload;
+		$filename =  $date . '_' .$_FILES['file']['name'];
+	  	$destination = 'upload/' . $filename ;	  	
+	  	move_uploaded_file( $_FILES['file']['tmp_name'] , $destination );
+	  	$newrecord = array( 'name' => $filename , 'path' => $destination);
+	  	$collection->insert($newrecord);	  
+	  	header('Content-Type: application/json');
+		echo json_encode($newrecord, JSON_PRETTY_PRINT);
+	  }
+	else
+	{
+		$msg = "400 BAD REQUEST";
+		echo $msg;	
+	}
+}
+
+function fetchall() {
+		//fetching display data
+		$userCollection = $this->db->upload;
+		$cursor = $userCollection->find();
+		$result = array();
+		foreach($cursor as $key=>$value){
+			if(file_exists($value['path'])){
+				array_push($result,$value);
+			}	else
+			{
+				//remove deleted files
+				$userCollection->remove(array('_id' => new MongoID( $value['_id'] )));
+			}		
+		}
+		header('Content-Type: application/json');
+		echo json_encode( $result , JSON_PRETTY_PRINT);
+	}
 }//eof class
 ?>

@@ -52,7 +52,7 @@ class tloc_model extends model{
 				$dt1 = DateTime::createFromFormat('Ymd\THis\Z', $r_string[1]);
 				$collection = $this->db->tlocData;
 				$options = array('fsync'=>\TRUE);
-				$collection->insert(
+				$newrecord = 
 					array(
 						//substring device id
 						'did' => substr($r_string[0],2,strlen($r_string[0]) ),							
@@ -61,10 +61,23 @@ class tloc_model extends model{
 						//storing temprature value
 						'lat'=>$r_string[2],
 						'long'=>$r_string[3]
-						));
-				$response = $this->db->lastError();
+						);
+				$result =$collection->insert($newrecord);
+
+				if(isset($r_string[4])){
+					
+					if($r_string[4] == 'return')
+					{
+						$response = $newrecord['_id'];
+					}else
+					{
+						$response = $this->db->lastError();
+						$response = $response['ok'];
+					}
+				}
+				
 				http_response_code(200);
-				echo json_encode($response['ok']);
+				echo json_encode($response);
 			}
 			}
 	}
@@ -113,6 +126,58 @@ class tloc_model extends model{
 	
 		
 		
+	}
+
+	function fetchall() {
+			
+	$collection = $this->db->tlocData;
+	$cursor = $collection->find();
+	if($cursor->count() == 0){
+		http_response_code(400);	
+		$msg  =		"Not Found"; 
+		echo json_encode($msg);	}
+	else
+	{
+		
+		
+		$result = array();	
+		foreach($cursor as $key=>$value){
+			
+			$value["dt"] = date('Y-m-d H:i:s', $value["dt"]->sec);
+			array_push($result,$value);
+			
+			//unsetting mongo id from response data
+			
+		}
+		header('Content-Type: application/json');
+		echo json_encode( $result , JSON_PRETTY_PRINT);
+	}
+		
+	}
+
+	function update($data) {
+		/*
+		@var - $data - revices device id and friendly name
+		 */
+		if(!isset($data['query'])){
+			http_response_code(400);	
+			$msg  =		"No Content"; 
+			echo json_encode($msg);
+			exit;
+		}
+		$collection = $this->db->tlocData;
+		
+	 
+		$response = $collection->update(
+		    array("_id" => new MongoID( $data['query']['id'] )),
+		    array(
+		        '$set' => array($data['query']['change'] => $data['query']['value']),
+		    ),
+		    array("upsert" => false)
+		);
+		//$response = $this->db->lastError();
+		header('Content-Type: application/json');
+		echo json_encode( $response['n'], JSON_PRETTY_PRINT);
 	}
 }// end of class
 ?>

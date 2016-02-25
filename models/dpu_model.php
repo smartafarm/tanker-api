@@ -37,26 +37,53 @@ class dpu_model extends model{
 			}
 		else{	
 			$r_string = explode(",", $args["query"]);
+			
 			if(substr($r_string[0],0,2) != '##' || $r_string[count($r_string) -1 ] != '*'){
 				http_response_code(400);
 			}else
 			{
+				$collection = $this->db->dpu;
+				$dt1 = DateTime::createFromFormat('Ymd\THis\Z', $r_string[1]);	
+				$newrecord = 	array(
+						//substring device id
+						'did' => substr($r_string[0],2,strlen($r_string[0]) ),							
+						'dt' => new MongoDate($dt1->getTimestamp()),						
+						'lat'=>$r_string[2],
+						'long'=>$r_string[3],
+						'supplier'=>$r_string[4],
+						'route'=>$r_string[5],
+						'tavg'=>$r_string[6],
+						'tmin'=>$r_string[7],
+						'tmax'=>$r_string[8],
+						'vol'=>$r_string[9]
+						)	;			
+				$result =$collection->insert($newrecord);
+
+				if(isset($r_string[10])){
+					
+					if($r_string[10] == 'return')
+					{
+						$response = $newrecord['_id'];
+					}else
+					{
+						$response = $this->db->lastError();
+						$response = $response['ok'];
+					}
+				}
+				
 				http_response_code(200);
+				echo json_encode($response);
 			}
-			}
+		}
 	}
 	else
 	{
 		$msg = "400 BAD REQUEST";
 		echo $msg;	
 	}
-	}// end of get status
+	}
 	function fetch() {
-		/*		 
-		 * Gets all the devices in the dataBase based on the user
-		 * @var - $bearer - user received from fetch controller  		 
-		 */
-		
+	
 		
 		$userCollection = $this->db->rawData;
 		$cursor = $userCollection->find();
@@ -66,6 +93,44 @@ class dpu_model extends model{
 		}
 		header('Content-Type: application/json');
 		echo json_encode( $result , JSON_PRETTY_PRINT);
+	}
+
+	function fetchdpu() {
+		//fetching display data
+		$userCollection = $this->db->dpu;
+		$cursor = $userCollection->find();
+		$result = array();
+		foreach($cursor as $key=>$value){
+			$value["dt"] = date('Y-m-d H:i:s', $value["dt"]->sec);
+			array_push($result,$value);
+		}
+		header('Content-Type: application/json');
+		echo json_encode( $result , JSON_PRETTY_PRINT);
+	}
+
+	function update($data) {
+		/*
+		@var - $data - revices device id and friendly name
+		 */
+		if(!isset($data['query'])){
+			http_response_code(400);	
+			$msg  =		"No Content"; 
+			echo json_encode($msg);
+			exit;
+		}
+		$collection = $this->db->dpu;
+		
+	 
+		$response = $collection->update(
+		    array("_id" => new MongoID( $data['query']['id'] )),
+		    array(
+		        '$set' => array($data['query']['change'] => $data['query']['value']),
+		    ),
+		    array("upsert" => false)
+		);
+		//$response = $this->db->lastError();
+		header('Content-Type: application/json');
+		echo json_encode( $response['n'], JSON_PRETTY_PRINT);
 	}
 }// end of class
 ?>
