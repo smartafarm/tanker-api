@@ -179,5 +179,20 @@ class tloc_model extends model{
 		header('Content-Type: application/json');
 		echo json_encode( $response['n'], JSON_PRETTY_PRINT);
 	}
+	function delete($data){
+		//print_r($data);
+		if(!isset($data['query'])){
+			http_response_code(400);	
+			$msg  =		"No Content"; 
+			echo json_encode($msg);
+			exit;
+		}
+		$collection = $this->db->tlocData;
+		$response = $collection->remove(array('_id' => new MongoID( $data['query']['id'])));
+		//$response = $this->db->lastError();
+		header('Content-Type: application/json');
+		echo json_encode( $response['n'], JSON_PRETTY_PRINT);
+		
+	}
 }// end of class
 ?>

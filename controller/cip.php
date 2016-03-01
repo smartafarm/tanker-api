@@ -49,6 +49,16 @@ class cip extends controller{
 
 
 		}
+	public function delete(){
+	/*
+	 * push
+	 */
+	
+	$data = json_decode(file_get_contents('php://input'), true);		
+	$this->model->delete($data);
+
+
+	}
 	
 }
 ?>

@@ -47,7 +47,18 @@ class tloc extends controller{
 		$this->model->update($data);
 
 
-		}
+	}
+	public function delete(){
+	/*
+	 * push
+	 */
+	
+	$data = json_decode(file_get_contents('php://input'), true);		
+	$this->model->delete($data);
+
+
+	}
+
 	
 	
 }

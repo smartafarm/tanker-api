@@ -11,6 +11,16 @@ class route extends controller{
 		$request = new request();
 		
 	}
+	public function pushdata(){
+	/*
+	 * push
+	 */
+	
+	$data = json_decode(file_get_contents('php://input'), true);		
+	$this->model->pushdata($data);
+
+
+	}
 	
 	public function pushstart(){
 		/*
@@ -48,6 +58,14 @@ class route extends controller{
 	$this->model->fetchallstart();
 
 	}
+	public function fetchalldata(){
+	/*
+	 * fetch
+	 */
+	
+	$this->model->fetchalldata();
+
+	}
 
 	public function fetchallend(){
 	/*
@@ -75,6 +93,46 @@ class route extends controller{
 	
 	$data = json_decode(file_get_contents('php://input'), true);		
 	$this->model->updateend($data);
+
+
+	}
+	public function updatedata(){
+	/*
+	 * push
+	 */
+	
+	$data = json_decode(file_get_contents('php://input'), true);		
+	$this->model->updatedata($data);
+
+
+	}
+	public function deletestart(){
+	/*
+	 * push
+	 */
+	
+	$data = json_decode(file_get_contents('php://input'), true);		
+	$this->model->deletestart($data);
+
+
+	}
+	public function deleteend(){
+	/*
+	 * push
+	 */
+	
+	$data = json_decode(file_get_contents('php://input'), true);		
+	$this->model->deleteend($data);
+
+
+	}
+	public function deletedata(){
+	/*
+	 * push
+	 */
+	
+	$data = json_decode(file_get_contents('php://input'), true);		
+	$this->model->deletedata($data);
 
 
 	}
