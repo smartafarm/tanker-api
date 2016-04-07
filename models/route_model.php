@@ -259,13 +259,28 @@ function get($data) {
 		echo json_encode($msg);
 		exit();
 	}
-
-	
 	$collection = $this->db->routedata;
-	$cursor = $collection->find(array('did' => $data));
+	// if date is supplied 
+	if (is_array($data)){
+		$device = $data[0];
+		// creating date range for mongo
+		$fromdate = DateTime::createFromFormat('dmYHis', $data[1].'000000');
+		$todate = DateTime::createFromFormat('dmYHis', $data[1].'000000');
+		$todate->add(new DateInterval('P1D')); 		
+		//date timestamps
+		$from = new MongoDate($fromdate->getTimestamp());
+		$to = new MongoDate($todate->getTimestamp());
+		// fetching values by date range
+		$cursor = $collection->find(array('did' => $device , 'dt' => array('$gt'=>$from , '$lt' => $to)));
+	}else{
+		$device = $data;
+		$cursor = $collection->find(array('did' => $device));
+	}
+	
+	
 	if($cursor->count() == 0){
 		http_response_code(400);	
-		$msg  =		"Device Not Found"; 
+		$msg  =		"No Data Found"; 
 		echo json_encode($msg);	}
 	else
 	{

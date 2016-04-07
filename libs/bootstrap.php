@@ -36,7 +36,16 @@
  		
  		
 	 	if (isset($url[2])) {
-				$controller->{$url[1]}($url[2]);
+	 			if (isset($url[3])){
+	 				// if third argument present
+	 				$argument = array();
+	 				array_push($argument, $url[2]);
+	 				array_push($argument, $url[3]);
+	 				$controller->{$url[1]}($argument);
+	 			}else
+	 			{
+	 				$controller->{$url[1]}($url[2]);
+	 			}
 
 			} elseif (isset($url[1])) {
 					$controller->{$url[1]}();
