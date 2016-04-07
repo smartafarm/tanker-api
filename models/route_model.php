@@ -266,15 +266,25 @@ function get($data) {
 		// creating date range for mongo
 		$fromdate = DateTime::createFromFormat('dmYHis', $data[1].'000000');
 		$todate = DateTime::createFromFormat('dmYHis', $data[1].'000000');
+		if(!$fromdate){
+			http_response_code(400);	
+			$msg  =		"DATE FORMAT INVALID"; 
+			echo json_encode($msg);
+			exit();
+		}
 		$todate->add(new DateInterval('P1D')); 		
 		//date timestamps
 		$from = new MongoDate($fromdate->getTimestamp());
 		$to = new MongoDate($todate->getTimestamp());
 		// fetching values by date range
-		$cursor = $collection->find(array('did' => $device , 'dt' => array('$gt'=>$from , '$lt' => $to)));
+		$cursor = $collection->find(array('did' => $device , 'dt' => array('$gt'=>$from , '$lt' => $to)))->sort(array('dt' => 1) );
 	}else{
-		$device = $data;
-		$cursor = $collection->find(array('did' => $device));
+		http_response_code(400);	
+		$msg  =		"DATE NOT PROVIDED"; 
+		echo json_encode($msg);
+		exit();
+		/*$device = $data;
+		$cursor = $collection->find(array('did' => $device));*/
 	}
 	
 	
@@ -287,19 +297,29 @@ function get($data) {
 		
 		
 		$result = array();		
-		foreach($cursor as $key=>$value){	
-			
-			$value["dt"] = date(DATE_ISO8601, $value["dt"]->sec);
-			
-		//returning string		
-			$string = 	'##'.$value['did' ] . ','.
-						$value['dt'] . ','.
-						$value['routeid'] . ','.
-						$value['supplier'] . ','.
-						$value['suppliercrn'] . ',*';
-			array_push($result,$string);		
-		}
+		$index = 0;
 		
+		foreach($cursor as $key=>$value){	
+			if($index == 0)	
+			{
+				$value["dt"] = date(DATE_ISO8601, $value["dt"]->sec);
+						
+					//returning string		
+						$string = 	'##'.$value['did' ] . ','.
+									$value['dt'] . ','.
+									$value['routeid'] . ','.
+									$value['supplier'] . ','.
+									$value['suppliercrn'] .',';
+								}
+				else{
+						$string.=$value['supplier'] . ','.
+						$value['suppliercrn']. ',' ;
+					}
+			$index++;
+				
+		}
+		$string.= '*';
+		array_push($result,$string);	
 		header('Content-Type: application/json');
 		echo json_encode( $result , JSON_PRETTY_PRINT);
 	}
