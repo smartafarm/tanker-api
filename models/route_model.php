@@ -289,7 +289,7 @@ function get($data) {
 		$result = array();		
 		foreach($cursor as $key=>$value){	
 			
-			$value["dt"] = date('m-d-Y', $value["dt"]->sec);
+			$value["dt"] = date(DATE_ISO8601, $value["dt"]->sec);
 			
 		//returning string		
 			$string = 	'##'.$value['did' ] . ','.
