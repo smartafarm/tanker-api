@@ -8,7 +8,7 @@
  *  Version History:
  *  1.0 - Inititalizing the file to receive the request
  */
-class supplier_model extends model{
+class processor_model extends model{
 	function __construct(database $database) {
 		parent::__construct();		
 
@@ -44,34 +44,33 @@ class supplier_model extends model{
 			}else
 			{
 				
-				$collection = $this->db->supplier;				
+				$collection = $this->db->processor;				
 				$newrecord = 	array(
 						//substring device id
 						'did' => substr($r_string[0],2,strlen($r_string[0]) ),													
-						'supID'=>$r_string[1],
-						'pid'=>$r_string[2],						
-						'supno'=>$r_string[3],
-						'supname'=>$r_string[4],
-						'street'=>$r_string[5],
-						'city'=>$r_string[6],
-						'lat'=>$r_string[7],
-						'long'=>$r_string[8],
-						'expqty'=>$r_string[9]
+						'pid'=>$r_string[1],
+						'pname'=>$r_string[2],						
+						'destID'=>$r_string[3],
+						'destName'=>$r_string[4],
+						'lat'=>$r_string[5],
+						'long'=>$r_string[6]
+						
 						
 						)	;			
 				$result = $collection->insert($newrecord);
 
-				if(isset($r_string[9])){
+				if(isset($r_string[8])){
 					
-					if($r_string[9] == 'return')
+					if($r_string[8] == 'return')
 					{
 						$response = $newrecord['_id'];
-					}else
+					}
+				}else
 					{
 						$response = $this->db->lastError();
 						$response = $response['ok'];
 					}
-				}
+					
 				
 				http_response_code(200);
 				echo json_encode($response);
@@ -86,10 +85,7 @@ class supplier_model extends model{
 	}
 
 	function get($data) {
-		/*		 
-		 * Gets all the devices in the dataBase based on the user
-		 * @var - $bearer - user received from fetch controller  		 
-		 */
+
 	if(!isset($data)){
 		http_response_code(400);	
 		$msg  =		"BAD REQUEST"; 
@@ -98,37 +94,59 @@ class supplier_model extends model{
 	}
 
 	
-	$collection = $this->db->supplier;
-	$cursor = $collection->find(array('supID' => $data));
+	$collection = $this->db->processor;
+	// if date is supplied 
+	if (is_array($data))
+	{
+		$pid = $data[0];
+		$destID = $data[1];
+		$cursor = $collection->find(array('pid' => $pid , 'destID' => $destID));
+		
+		
+	}
+	else{
+
+			$pid = $data;
+			$cursor = $collection->find(array('pid' => $pid ))->sort(array('destID'=>1));
+		}
 	if($cursor->count() == 0){
 		http_response_code(400);	
-		$msg  =		"Supplier Not Found"; 
-		echo json_encode($msg);	}
-	else
-	{
-		
-		
-		$result = array();		
-		foreach($cursor as $key=>$value){	
-		//returning string		
-			$string = 	'##'.$value['did' ] . ','.
-						$value['supID'] . ','.
-						$value['pid'] . ','.						
-						$value['supno'] . ','.
-						$value['supname'] . ','.
-						$value['street'] . ','.
-						$value['city'] . ','.
-						$value['lat'] . ','.
-						$value['long'] . ','.
-						$value['expqty'] . ',*';
-			array_push($result,$string);		
+		$msg  =		"No Data Found"; 
+		echo json_encode($msg);	
 		}
-		
-		header('Content-Type: application/json');
-		echo json_encode( $result , JSON_PRETTY_PRINT);
+	$result = array();		
+			$index = 0;
+			
+			foreach($cursor as $key=>$value){	
+				if($index == 0)	
+				{
+											
+						//returning string		
+							$string = 	'##'.$value['did' ] . ','.
+										$value['pid'] . ','.
+										$value['pname'] . ','.
+										'#'.$value['destID'] . ','.
+										$value['destName'] . ','.
+										$value['lat'] . ','.
+										$value['long'] .',';
+									}
+					else{
+							$string.='#'.$value['destID'] . ','.
+									$value['destName'] . ','.
+									$value['lat'] . ','.
+									$value['long'] .',';
+						}
+				$index++;
+					
+			}
+			$string.= '*';
+			array_push($result,$string);	
+			header('Content-Type: application/json');
+			echo json_encode( $result , JSON_PRETTY_PRINT);
+	
 	}
-		
-	}
+	
+	
 
 	function fetchall() {
 			

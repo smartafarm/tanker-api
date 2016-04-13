@@ -220,8 +220,10 @@ public function pushend($text){
 						'sibtemp' => $r_string[5],
 						//milk load average temprature
 						'mltemp' => $r_string[6],
-						//factory reference no
-						'frno' => $r_string[7],
+						//processor ref no
+						'prno' => $r_string[7],
+						//factory sample no
+						'frsn' => $r_string[8]
 						);
 				$result =$collection->insert($newrecord);
 
@@ -308,6 +310,8 @@ function get($data) {
 						$string = 	'##'.$value['did' ] . ','.
 									$value['dt'] . ','.
 									$value['routeid'] . ','.
+									$value['pid'] . ','.
+									$value['destID'] . ','.
 									$value['supplier'] . ','.
 									$value['suppliercrn'] .',';
 								}
