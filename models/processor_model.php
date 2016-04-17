@@ -59,9 +59,9 @@ class processor_model extends model{
 						)	;			
 				$result = $collection->insert($newrecord);
 
-				if(isset($r_string[8])){
+				if(isset($r_string[7])){
 					
-					if($r_string[8] == 'return')
+					if($r_string[7] == 'return')
 					{
 						$response = $newrecord['_id'];
 					}
@@ -150,7 +150,7 @@ class processor_model extends model{
 
 	function fetchall() {
 			
-	$collection = $this->db->supplier;
+	$collection = $this->db->processor;
 	$cursor = $collection->find();
 	if($cursor->count() == 0){
 		http_response_code(400);	
@@ -185,7 +185,7 @@ class processor_model extends model{
 			echo json_encode($msg);
 			exit;
 		}
-		$collection = $this->db->supplier;
+		$collection = $this->db->processor;
 		
 	 
 		$response = $collection->update(
@@ -208,7 +208,7 @@ class processor_model extends model{
 			echo json_encode($msg);
 			exit;
 		}
-		$collection = $this->db->supplier;
+		$collection = $this->db->processor;
 		$response = $collection->remove(array('_id' => new MongoID( $data['query']['id'])));
 		//$response = $this->db->lastError();
 		header('Content-Type: application/json');

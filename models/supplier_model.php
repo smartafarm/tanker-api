@@ -61,9 +61,9 @@ class supplier_model extends model{
 						)	;			
 				$result = $collection->insert($newrecord);
 
-				if(isset($r_string[9])){
+				if(isset($r_string[10])){
 					
-					if($r_string[9] == 'return')
+					if($r_string[10] == 'return')
 					{
 						$response = $newrecord['_id'];
 					}else

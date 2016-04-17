@@ -136,18 +136,22 @@ public function pushdata($text){
 						'dt' => new MongoDate($dt1->getTimestamp()),
 						
 						'routeid'=>$r_string[2],
+
+						'pid' => $r_string[3],
 						
-						'supplier' => $r_string[3],
+						'destID' => $r_string[4],
 						
-						'suppliercrn' => $r_string[4],
+						'supplier' => $r_string[5],
+						
+						'suppliercrn' => $r_string[6]
 						
 						
 						);
 				$result =$collection->insert($newrecord);
 
-				if(isset($r_string[5])){
+				if(isset($r_string[7])){
 					
-					if($r_string[5] == 'return')
+					if($r_string[7] == 'return')
 					{
 						$response = $newrecord['_id'];
 					}else
