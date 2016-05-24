@@ -46,40 +46,35 @@ class route_model extends model{
 				exit();
 			}else
 			{
+				$collection = $this->db->routeScheduler;
+				$routeScheduleid = $r_string[1];
+				$recordChecker = $collection->find(array('routeScheduleid' => (int)$routeScheduleid));
 				
-				$dt1 = DateTime::createFromFormat('Ymd\THis\Z', $r_string[1]);
-				$collection = $this->db->route;
-				$options = array('fsync'=>\TRUE);
-				$newrecord= 
-					array(
-						//substring device id
-						'did' => substr($r_string[0],2,strlen($r_string[0]) ),							
-						//storing mongo date object
-						'dt' => new MongoDate($dt1->getTimestamp()),
-						//route no
-						'rno'=>$r_string[2],
-						//driver id 
-						'dvrid' => $r_string[3],
-						//lat
-						'lat' => $r_string[4],
-						//long
-						'long' => $r_string[5],
-						//processor reference no
-						'prno' => $r_string[6],
-						);
-				$result =$collection->insert($newrecord);
-
-				if(isset($r_string[7])){
-					
-					if($r_string[7] == 'return')
-					{
-						$response = $newrecord['_id'];
-					}else
-					{
-						$response = $this->db->lastError();
-						$response = $response['ok'];
-					}
+				if($recordChecker->count() == 0){
+					echo json_encode("Route Schedule Not Found ");
+					http_response_code(400);
+					exit();
 				}
+				$startStamp = DateTime::createFromFormat('Ymd\THis\Z', $r_string[2]);
+				 
+				$response = $collection->update(
+				    array(
+			    	"routeScheduleid" => (int)$routeScheduleid
+			    	),
+				    array(
+				        '$set' => array(
+				        	"startStamp" => new MongoDate($startStamp->getTimestamp()),
+				        	"driverid" => $r_string[4],
+				        	"latStart" => $r_string[5],
+				        	"longStart" => $r_string[6],
+				        	"fref" => $r_string[7]
+				        	)
+				    ),
+				    array("upsert" => false)
+				);
+
+				$response = $this->db->lastError();
+				$response = $response['n'];
 				
 				http_response_code(200);
 				echo json_encode($response);
@@ -131,7 +126,7 @@ public function pushdata($text){
 				$newrecord= 
 					array(
 						//substring device id
-						'did' => substr($r_string[0],2,strlen($r_string[0]) ),							
+						'did' => substr($r_string[0],2,strlen($r_string[0])),							
 						
 						'dt' => new MongoDate($dt1->getTimestamp()),
 						
@@ -205,43 +200,36 @@ public function pushend($text){
 			}else
 			{
 				
-				$dt1 = DateTime::createFromFormat('Ymd\THis\Z', $r_string[1]);
-				$collection = $this->db->routeend;
-				$options = array('fsync'=>\TRUE);
-				$newrecord =
-					array(
-						//substring device id
-						'did' => substr($r_string[0],2,strlen($r_string[0]) ),							
-						//storing mongo date object
-						'dt' => new MongoDate($dt1->getTimestamp()),
-						//route no
-						'rno'=>$r_string[2],
-						//lat
-						'lat' => $r_string[3],
-						//long
-						'long' => $r_string[4],
-						//sample ice box avg temprature
-						'sibtemp' => $r_string[5],
-						//milk load average temprature
-						'mltemp' => $r_string[6],
-						//processor ref no
-						'prno' => $r_string[7],
-						//factory sample no
-						'frsn' => $r_string[8]
-						);
-				$result =$collection->insert($newrecord);
-
-				if(isset($r_string[8])){
-					
-					if($r_string[8] == 'return')
-					{
-						$response = $newrecord['_id'];
-					}else
-					{
-						$response = $this->db->lastError();
-						$response = $response['ok'];
-					}
+				$collection = $this->db->routeScheduler;
+				$routeScheduleid = $r_string[1];
+				$recordChecker = $collection->find(array('routeScheduleid' => (int)$routeScheduleid));
+				
+				if($recordChecker->count() == 0){
+					echo json_encode("Route Schedule Not Found ");
+					http_response_code(400);
+					exit();
 				}
+				$endStamp = DateTime::createFromFormat('Ymd\THis\Z', $r_string[2]);
+				 
+				$response = $collection->update(
+				    array(
+			    	"routeScheduleid" => (int)$routeScheduleid
+			    	),
+				    array(
+				        '$set' => array(
+				        	"endStamp" => new MongoDate($endStamp->getTimestamp()),				        	
+				        	"latEnd" => $r_string[4],
+				        	"longEnd" => $r_string[5],
+				        	"sibTemp" => $r_string[6],
+				        	"mlTemp" => $r_string[7],
+				        	"frsn" => $r_string[9],
+				        	)
+				    ),
+				    array("upsert" => false)
+				);
+
+				$response = $this->db->lastError();
+				$response = $response['n'];
 				
 				http_response_code(200);
 				echo json_encode($response);
@@ -257,7 +245,6 @@ public function pushend($text){
 function get($data) {
 		/*		 
 		 * Gets all the devices in the dataBase based on the user
-		 * @var - $bearer - user received from fetch controller  		 
 		 */
 	if(!isset($data)){
 		http_response_code(400);	
@@ -265,10 +252,12 @@ function get($data) {
 		echo json_encode($msg);
 		exit();
 	}
+	$existFlag = false;
 	$collection = $this->db->routedata;
 	// if date is supplied 
 	if (is_array($data)){
-		$device = $data[0];
+		$device = $data[0]; 
+
 		// creating date range for mongo
 		$fromdate = DateTime::createFromFormat('dmYHis', $data[1].'000000');
 		$todate = DateTime::createFromFormat('dmYHis', $data[1].'000000');
@@ -278,12 +267,20 @@ function get($data) {
 			echo json_encode($msg);
 			exit();
 		}
+		$fromdate->sub(new DateInterval('PT01M'));
 		$todate->add(new DateInterval('P1D')); 		
 		//date timestamps
 		$from = new MongoDate($fromdate->getTimestamp());
 		$to = new MongoDate($todate->getTimestamp());
 		// fetching values by date range
 		$cursor = $collection->find(array('did' => $device , 'dt' => array('$gt'=>$from , '$lt' => $to)))->sort(array('dt' => 1) );
+		$routeidindex = 0;
+		foreach($cursor as $key=>$value){
+			if($routeidindex == 0){
+				$routeid = $value["routeid"];
+			}
+			$routeidindex++;
+		}
 	}else{
 		http_response_code(400);	
 		$msg  =		"DATE NOT PROVIDED"; 
@@ -295,23 +292,117 @@ function get($data) {
 	
 	
 	if($cursor->count() == 0){
-		http_response_code(400);	
-		$msg  =		"No Data Found"; 
-		echo json_encode($msg);	}
-	else
-	{
+		// responding last found data of the route		
+		$cursor = $collection->find(array('did' => $device))->sort(array('dt'=>-1))->limit(1);
+		if($cursor->count() == 0){
+			echo json_encode("Route Not Found");
+		exit();
+		}	
+		foreach($cursor as $key=>$value){
+			$routeid = $value["routeid"];
+			$captureLastDate = DateTime::createFromFormat('U', $value["dt"]->sec );
+			$captureLastDate->setTimezone(new DateTimezone ('Australia/Brisbane'));
+			
+			$fromdate = DateTime::createFromFormat('dmYHis', $captureLastDate->format('dmY').'000000');
+			$todate = DateTime::createFromFormat('dmYHis', $captureLastDate->format('dmY').'000000');
+			$fromdate->sub(new DateInterval('PT01M'));
+			$todate->add(new DateInterval('P1D')); 	
+
+			//date timestamps
+			$from = new MongoDate($fromdate->getTimestamp());
+			$to = new MongoDate($todate->getTimestamp());
+			
+			$cursor1 = $collection->find(array('did' => $device , 'dt' => array('$gt'=>$from , '$lt' => $to)))->sort(array('dt' => 1) );
+		}				
 		
+		}
+
+		//getting route Schedule id
+		$searchDate =  DateTime::createFromFormat('dmYHis', $data[1].'000000');
+		$searchDate->sub(new DateInterval('PT01M'));
+		$todate = DateTime::createFromFormat('dmYHis', $data[1].'000000');		
+		$todate->add(new DateInterval('P1D')); 
+		$searchFrom = new MongoDate($searchDate->getTimestamp());
+		$to = new MongoDate($todate->getTimestamp());
+		
+		//creating route schedule id 
+		$schedullerCollection =  $this->db->routeScheduler;
+		$scheduleCursor = $schedullerCollection->find(array('routeid' => $routeid , 'dt' => array('$gt'=>$searchFrom , '$lt' => $to)));
+		
+		if($scheduleCursor->count() == 0){
+			$getNewScheduleid = $schedullerCollection->find(array('routeid' => $routeid))->sort(array('routeScheduleid' => -1))->limit(1);
+			foreach($getNewScheduleid as $key=>$value){				
+				$routeScheduleid = $value["routeScheduleid"] + 1;
+			}
+			//setting route date
+			$fromdate = DateTime::createFromFormat('dmYHis', $data[1].'000000');
+			$from = new MongoDate($fromdate->getTimestamp());
+			$newrecord =
+
+					array(
+						
+						'routeScheduleid' => $routeScheduleid,
+						
+						'routeid' =>$routeid,
+						
+						'supplier'=>"",
+						
+						'expQty' => "",
+						
+						'dt' => $from,
+						
+						'driverid' => "",
+						
+						'latStart' => "",
+						
+						'longStart' => "",
+						
+						'startStamp' => "",
+						
+						'latEnd' => "",
+						
+						'longEnd' => "",
+						
+						'endStamp'=>"",
+						
+						'sibTemp' => "",
+						
+						'mlTemp' => "",
+						
+						'fref' => "",
+						
+						'frsn' => ""
+
+						);
+			$schedullerCollection->insert($newrecord);
+			
+		}else{
+			foreach($scheduleCursor as $key=>$value){	
+					
+				$routeScheduleid = $value["routeScheduleid"];
+			}
+		}
 		
 		$result = array();		
 		$index = 0;
-		
+		if(isset($cursor1)){
+			$cursor = $cursor1 ; 
+			$existFlag = true;
+		}
 		foreach($cursor as $key=>$value){	
 			if($index == 0)	
 			{
-				$value["dt"] = date(DATE_ISO8601, $value["dt"]->sec);
+				//setting date as per fetched result
+				if($existFlag){
+					$value["dt"] = $fromdate->format(DATE_ISO8601);
+				}else
+				{
+					$value["dt"] = date(DATE_ISO8601, $value["dt"]->sec);
+				}
 						
 					//returning string		
 						$string = 	'##'.$value['did' ] . ','.
+									$routeScheduleid. ','.
 									$value['dt'] . ','.
 									$value['routeid'] . ','.
 									$value['pid'] . ','.
@@ -326,11 +417,12 @@ function get($data) {
 			$index++;
 				
 		}
+		
+	
 		$string.= '*';
 		array_push($result,$string);	
 		header('Content-Type: application/json');
 		echo json_encode( $result , JSON_PRETTY_PRINT);
-	}
 		
 	}
 

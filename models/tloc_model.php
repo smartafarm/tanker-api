@@ -60,13 +60,14 @@ class tloc_model extends model{
 						'dt' => new MongoDate($dt1->getTimestamp()),
 						//storing temprature value
 						'lat'=>$r_string[2],
-						'long'=>$r_string[3]
+						'long'=>$r_string[3],
+						'speed'=>$r_string[4]
 						);
 				$result =$collection->insert($newrecord);
 
-				if(isset($r_string[4])){
+				if(isset($r_string[5])){
 					
-					if($r_string[4] == 'return')
+					if($r_string[5] == 'return')
 					{
 						$response = $newrecord['_id'];
 					}else

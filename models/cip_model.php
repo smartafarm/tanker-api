@@ -1,3 +1,4 @@
+
 <?php 
 /*
  * @desc - class to receive data from 
@@ -56,13 +57,15 @@ class cip_model extends model{
 						//storing mongo date object
 						'dt' => new MongoDate($dt1->getTimestamp()),
 						//storing temprature value
-						'temp'=>$r_string[2]
+						'lat'=>$r_string[2],
+						'long'=>$r_string[3],
+						'temp'=>$r_string[4]
 						);
 				$result =$collection->insert($newrecord);
 
-				if(isset($r_string[3])){
+				if(isset($r_string[5])){
 					
-					if($r_string[3] == 'return')
+					if($r_string[5] == 'return')
 					{
 						$response = $newrecord['_id'];
 					}else

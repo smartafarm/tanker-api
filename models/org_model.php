@@ -3,12 +3,12 @@
  * @desc - class to receive data from 
  *
  * @variables 
-* 		$args = receiving the post query
-* 		$r_string = recevied string in request for evaluation
+ * 				$args = receiving the post query
+ * 				$r_string = recevied string in request for evaluation
  *  Version History:
  *  1.0 - Inititalizing the file to receive the request
  */
-class driver_model extends model{
+class org_model extends model{
 	function __construct(database $database) {
 		parent::__construct();		
 
@@ -44,14 +44,13 @@ class driver_model extends model{
 			}else
 			{
 				
-				$collection = $this->db->driver;				
+				$collection = $this->db->org;				
 				$newrecord = 	array(
 						//substring device id
-						'did' => substr($r_string[0],2,strlen($r_string[0]) ),													
-						'driverid'=>$r_string[1],
-						'drivername'=>$r_string[2]
-						
-						
+						'orgName' => substr($r_string[0],2,strlen($r_string[0]) ),													
+						'street'=>$r_string[1],
+						'city'=>$r_string[2],						
+				
 						)	;			
 				$result = $collection->insert($newrecord);
 
@@ -60,12 +59,13 @@ class driver_model extends model{
 					if($r_string[3] == 'return')
 					{
 						$response = $newrecord['_id'];
-					}else
+					}
+				}else
 					{
 						$response = $this->db->lastError();
 						$response = $response['ok'];
 					}
-				}
+					
 				
 				http_response_code(200);
 				echo json_encode($response);
@@ -79,11 +79,8 @@ class driver_model extends model{
 	}
 	}
 
-	function get($data) {
-		/*		 
-		 * Gets all the devices in the dataBase based on the user
-		 * @var - $bearer - user received from fetch controller  		 
-		 */
+	/*function get($data) {
+
 	if(!isset($data)){
 		http_response_code(400);	
 		$msg  =		"BAD REQUEST"; 
@@ -92,23 +89,82 @@ class driver_model extends model{
 	}
 
 	
-	$collection = $this->db->driver;
-	$cursor = $collection->find(array('did' => $data));
+	$collection = $this->db->processor;
+	// if date is supplied 
+	if (is_array($data))
+	{
+		$pid = $data[0];
+		$destID = $data[1];
+		$cursor = $collection->find(array('pid' => $pid , 'destID' => $destID));
+		
+		
+	}
+	else{
+
+			$pid = $data;
+			$cursor = $collection->find(array('pid' => $pid ))->sort(array('destID'=>1));
+		}
 	if($cursor->count() == 0){
 		http_response_code(400);	
-		$msg  =		"Device Not Found"; 
+		$msg  =		"No Data Found"; 
+		echo json_encode($msg);	
+		}
+	$result = array();		
+			$index = 0;
+			
+			foreach($cursor as $key=>$value){	
+				if($index == 0)	
+				{
+											
+						//returning string		
+							$string = 	'##'.$value['did' ] . ','.
+										$value['pid'] . ','.
+										$value['pname'] . ','.
+										'#'.$value['destID'] . ','.
+										$value['destName'] . ','.
+										$value['lat'] . ','.
+										$value['long'] .',';
+									}
+					else{
+							$string.='#'.$value['destID'] . ','.
+									$value['destName'] . ','.
+									$value['lat'] . ','.
+									$value['long'] .',';
+						}
+				$index++;
+					
+			}
+			$string.= '*';
+			array_push($result,$string);	
+			header('Content-Type: application/json');
+			echo json_encode( $result , JSON_PRETTY_PRINT);
+	
+	}
+	*/
+	function getID($user) {
+	// geting the orgarnisation id of the user
+	// when user setup is created this api call will return the user's org id for further data entry
+	// 				
+	$collection = $this->db->user;
+	$cursor = $collection->find(array("userid" => $user));
+	if($cursor->count() == 0){
+		http_response_code(400);	
+		$msg  =		"User Not Found"; 
 		echo json_encode($msg);	}
 	else
 	{
 		
 		
-		$result = array();
 		
 		foreach($cursor as $key=>$value){
-		$string = 	'##'.$value['did'] . ','.
-						$value['driverid'] . ','.						
-						$value['drivername'] . ',*';
-			array_push($result,$string);		
+			
+			foreach($value['orgId'] as $key1=>$value1)
+			{
+				$result=$value1;
+			}
+				
+			
+			
 		}
 		header('Content-Type: application/json');
 		echo json_encode( $result , JSON_PRETTY_PRINT);
@@ -118,7 +174,7 @@ class driver_model extends model{
 
 	function fetchall() {
 			
-	$collection = $this->db->driver;
+	$collection = $this->db->org;
 	$cursor = $collection->find();
 	if($cursor->count() == 0){
 		http_response_code(400);	
@@ -153,7 +209,7 @@ class driver_model extends model{
 			echo json_encode($msg);
 			exit;
 		}
-		$collection = $this->db->driver;
+		$collection = $this->db->org;
 		
 	 
 		$response = $collection->update(
@@ -176,13 +232,12 @@ class driver_model extends model{
 			echo json_encode($msg);
 			exit;
 		}
-		$collection = $this->db->driver;
+		$collection = $this->db->org;
 		$response = $collection->remove(array('_id' => new MongoID( $data['query']['id'])));
 		//$response = $this->db->lastError();
 		header('Content-Type: application/json');
 		echo json_encode( $response['n'], JSON_PRETTY_PRINT);
 		
 	}
-
 }// end of class
 ?>

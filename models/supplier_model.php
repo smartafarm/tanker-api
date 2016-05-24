@@ -47,15 +47,15 @@ class supplier_model extends model{
 				$collection = $this->db->supplier;				
 				$newrecord = 	array(
 						//substring device id
-						'did' => substr($r_string[0],2,strlen($r_string[0]) ),													
-						'supID'=>$r_string[1],
-						'pid'=>$r_string[2],						
-						'supno'=>$r_string[3],
-						'supname'=>$r_string[4],
-						'street'=>$r_string[5],
-						'city'=>$r_string[6],
-						'lat'=>$r_string[7],
-						'long'=>$r_string[8],
+						'supID' => substr($r_string[0],2,strlen($r_string[0]) ),													
+						'pid'=>$r_string[1],
+						'pref'=>$r_string[2],						
+						'supname'=>$r_string[3],						
+						'street'=>$r_string[4],
+						'city'=>$r_string[5],
+						'lat'=>$r_string[6],
+						'long'=>$r_string[7],
+						'zone'=>$r_string[8],
 						'expqty'=>$r_string[9]
 						
 						)	;			
@@ -111,15 +111,15 @@ class supplier_model extends model{
 		$result = array();		
 		foreach($cursor as $key=>$value){	
 		//returning string		
-			$string = 	'##'.$value['did' ] . ','.
-						$value['supID'] . ','.
+			$string = 	'##'.$value['supID'] . ','.
 						$value['pid'] . ','.						
-						$value['supno'] . ','.
+						$value['pref'] . ','.						
 						$value['supname'] . ','.
 						$value['street'] . ','.
 						$value['city'] . ','.
 						$value['lat'] . ','.
 						$value['long'] . ','.
+						$value['zone'] . ','.
 						$value['expqty'] . ',*';
 			array_push($result,$string);		
 		}

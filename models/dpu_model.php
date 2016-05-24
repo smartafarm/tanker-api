@@ -43,25 +43,27 @@ class dpu_model extends model{
 			}else
 			{
 				$collection = $this->db->dpu;
-				$dt1 = DateTime::createFromFormat('Ymd\THis\Z', $r_string[1]);	
+				$dt1 = DateTime::createFromFormat('Ymd\THis\Z', $r_string[2]);	
 				$newrecord = 	array(
 						//substring device id
 						'did' => substr($r_string[0],2,strlen($r_string[0]) ),							
+						'routeScheduleid' => $r_string[1],
 						'dt' => new MongoDate($dt1->getTimestamp()),						
-						'lat'=>$r_string[2],
-						'long'=>$r_string[3],
-						'supplier'=>$r_string[4],
-						'route'=>$r_string[5],
-						'tavg'=>$r_string[6],
-						'tmin'=>$r_string[7],
-						'tmax'=>$r_string[8],
-						'vol'=>$r_string[9]
+						'lat'=>$r_string[3],
+						'long'=>$r_string[4],
+						'supplier'=>$r_string[5],
+						'route'=>$r_string[6],
+						'tavg'=>$r_string[7],
+						'tmin'=>$r_string[8],
+						'tmax'=>$r_string[9],
+						'vol'=>$r_string[10],
+						'sno' => $r_string[11]
 						)	;			
 				$result =$collection->insert($newrecord);
 
-				if(isset($r_string[10])){
+				if(isset($r_string[12])){
 					
-					if($r_string[10] == 'return')
+					if($r_string[12] == 'return')
 					{
 						$response = $newrecord['_id'];
 					}else
