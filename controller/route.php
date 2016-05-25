@@ -49,7 +49,14 @@ class route extends controller{
 	$this->model->get($data);
 
 	}
+	public function fetchallroute(){
+	/*
+	 * fetch
+	 */
+	
+	$this->model->fetchallroute();
 
+	}
 	public function fetchallstart(){
 	/*
 	 * fetch

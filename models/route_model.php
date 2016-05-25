@@ -425,6 +425,19 @@ function get($data) {
 		echo json_encode( $result , JSON_PRETTY_PRINT);
 		
 	}
+	function fetchallroute() {
+		//fetching display data
+		$userCollection = $this->db->routeScheduler;
+		$cursor = $userCollection->find();
+		$result = array();
+		foreach($cursor as $key=>$value){
+			$value["dt"] = date('Y-m-d H:i:s', $value["dt"]->sec);
+			
+			array_push($result,$value);
+		}
+		header('Content-Type: application/json');
+		echo json_encode( $result , JSON_PRETTY_PRINT);
+	}
 
 
 	function fetchallstart() {
